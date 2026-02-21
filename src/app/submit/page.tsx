@@ -146,7 +146,7 @@ Complete JSON Data (copy and paste this into itineraries.json):
 ${jsonString}`;
 
         // Create mailto link
-        const mailtoLink = `mailto:cjchirag7@gmail.com?subject=${encodeURIComponent(`New Itinerary: ${title}`)}&body=${encodeURIComponent(emailBody)}`;
+        const mailtoLink = `mailto:cjchirag7+itineraries@gmail.com?subject=${encodeURIComponent(`New Itinerary: ${title}`)}&body=${encodeURIComponent(emailBody)}`;
 
         // Open email client
         window.location.href = mailtoLink;
