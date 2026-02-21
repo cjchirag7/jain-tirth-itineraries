@@ -1,66 +1,104 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import { useState, useMemo } from 'react';
+import styles from './page.module.css';
+import SearchFilters from '@/components/SearchFilters';
+import ItineraryCard from '@/components/ItineraryCard';
+import itinerariesOriginal from '@/data/itineraries.json';
+
+// Type definition to ensure type safety with JSON import
+interface Itinerary {
+  id: string;
+  title: string;
+  duration: string;
+  states: string[];
+  author: string;
+  description: string;
+  days: any[];
+}
+
+const itineraries: Itinerary[] = itinerariesOriginal as Itinerary[];
 
 export default function Home() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedState, setSelectedState] = useState('');
+  const [selectedDuration, setSelectedDuration] = useState('');
+
+  const filteredItineraries = useMemo(() => {
+    return itineraries.filter((itinerary) => {
+      const matchesSearch = searchTerm === '' ||
+        itinerary.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        itinerary.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        itinerary.days.some(day =>
+          day.stops.some((stop: any) =>
+            stop.name.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        );
+
+      const matchesState = selectedState === '' ||
+        itinerary.states.includes(selectedState);
+
+      // Extract number from duration string (e.g., "2 Days" -> 2)
+      const durationMatch = itinerary.duration.match(/\d+/);
+      const durationNumber = durationMatch ? parseInt(durationMatch[0]) : 0;
+
+      const matchesDuration = selectedDuration === '' ||
+        (selectedDuration === '5+' ? durationNumber >= 5 : durationNumber.toString() === selectedDuration);
+
+      return matchesSearch && matchesState && matchesDuration;
+    });
+  }, [searchTerm, selectedState, selectedDuration]);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className={styles.wrapper}>
+      <section className={styles.hero}>
+        <div className="container">
+          <h1 className={styles.heroTitle}>
+            Discover & Share <span className={styles.highlight}>Tirth Yatra Itineraries</span>
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Find detailed travel plans for Jain Tirths, complete with Dharmshala and Bhojanshala information. Plan your spiritual journey today.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+          <div className={styles.searchContainer}>
+            <SearchFilters
+              searchTerm={searchTerm}
+              setSearchTerm={setSearchTerm}
+              selectedState={selectedState}
+              setSelectedState={setSelectedState}
+              selectedDuration={selectedDuration}
+              setSelectedDuration={setSelectedDuration}
             />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
+      </section>
+
+      <section className={`container ${styles.featuredSection}`}>
+        <h2 className={styles.sectionTitle}>
+          {filteredItineraries.length === itineraries.length
+            ? 'Featured Itineraries'
+            : `Found ${filteredItineraries.length} Itinerary${filteredItineraries.length !== 1 ? 'ies' : ''}`
+          }
+        </h2>
+        {filteredItineraries.length === 0 ? (
+          <div className={styles.noResults}>
+            <p>No itineraries found matching your search criteria.</p>
+            <p className={styles.noResultsHint}>Try adjusting your filters or search term.</p>
+          </div>
+        ) : (
+          <div className={styles.grid}>
+            {filteredItineraries.map((itinerary) => (
+              <ItineraryCard
+                key={itinerary.id}
+                id={itinerary.id}
+                title={itinerary.title}
+                duration={itinerary.duration}
+                states={itinerary.states}
+                description={itinerary.description}
+              />
+            ))}
+          </div>
+        )}
+      </section>
     </div>
   );
 }

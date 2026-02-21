@@ -1,0 +1,200 @@
+.header {
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.backLink {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.backLink:hover {
+    color: var(--primary);
+}
+
+.categoryBadges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.categoryBadge {
+    display: inline-block;
+    background: var(--primary-light);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.meta {
+    display: flex;
+    gap: 2rem;
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.instagramLink {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: #E4405F;
+    transition: transform 0.2s;
+}
+
+.instagramLink:hover {
+    transform: scale(1.2);
+}
+
+.description {
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.whatsappBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #25D366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.whatsappBtn:hover {
+    background: #20BA5A;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappBtn svg {
+    flex-shrink: 0;
+}
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.dayBlock {
+    margin-bottom: 3rem;
+}
+
+.dayTitle {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border);
+    display: inline-block;
+}
+
+.stopsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stopCard {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    position: relative;
+}
+
+.stopCard::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 1.5rem;
+    width: 2px;
+    height: 100%;
+    background: var(--border);
+    display: none;
+    /* Can enable for connecting line design */
+}
+
+.stopHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.stopName {
+    font-size: 1.25rem;
+    color: var(--secondary);
+    margin: 0;
+}
+
+.stopType {
+    font-size: 0.75rem;
+    background: var(--background);
+    color: var(--muted);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+}
+
+.facilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.facilityTag {
+    font-size: 0.8rem;
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.stopDescription {
+    color: var(--foreground);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.mapLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.mapLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+}
