@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Custom Domain Setup
+
+If you purchase a custom domain, you generally **do not** need to update hardcoded links in this codebase for features like social sharing. The WhatsApp sharing feature uses `window.location.href` to automatically adapt to whatever domain the user is currently on.
+
+However, if you ever add advanced SEO features or sitemaps, here are the places you might need to specify your custom domain:
+- **`src/app/layout.tsx`**: If you add a `metadataBase` to the `metadata` object, you should set it to `new URL('https://your-custom-domain.com')`. This helps Next.js resolve relative image paths for Opengraph/Twitter cards.
+- **`next-sitemap.config.js`** (if added in the future): The `siteUrl` property will need to point to your new domain.
+- **Analytics/External Services**: Be sure to update Google Analytics, Search Console, or any other external services to whitelist your new domain.

@@ -24,8 +24,8 @@
     color: var(--secondary);
 }
 
-.icon {
-    font-size: 1.5rem;
+.iconImage {
+    object-fit: contain;
 }
 
 .title {

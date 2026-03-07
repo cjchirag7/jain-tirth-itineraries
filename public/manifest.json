@@ -1,7 +1,7 @@
 {
-    "name": "Jain Tirth Yatra Itineraries",
-    "short_name": "Tirth Yatra",
-    "description": "Share and discover Jain Tirth Yatra itineraries",
+    "name": "Jain Routes",
+    "short_name": "Jain Routes",
+    "description": "Share and discover Jain Routes",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f8f9fa",

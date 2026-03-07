@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": "northern-tamil-nadu-jain-tirths",
     "title": "Northern Tamil Nadu Jain Tirths",
     "duration": "2 Days",
     "states": [
@@ -158,10 +158,22 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Tamil Nadu",
+      "Arihantagiri",
+      "Arani",
+      "Kanchivaram",
+      "Ponnur Malai",
+      "Mel Chitamur",
+      "Gingee",
+      "Dharmshala",
+      "Bhojanshala",
+      "Jain Tirth"
     ]
   },
   {
-    "id": "2",
+    "id": "mysuru-sravanabelgola-gommatgiri-tour",
     "title": "Mysuru, Sravanabelgola & Gommatgiri Tour",
     "duration": "2 Days",
     "states": [
@@ -275,10 +287,20 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Mysuru",
+      "Sravanabelgola",
+      "Gommatgiri",
+      "Bahubali",
+      "Mandargiri",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   },
   {
-    "id": "3",
+    "id": "west-karnataka-coastal-pilgrimage",
     "title": "West Karnataka Coastal Pilgrimage",
     "duration": "2 Days",
     "states": [
@@ -399,10 +421,22 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Mangalore",
+      "Moodbadri",
+      "Vennoor",
+      "Dharmasthala",
+      "Karkala",
+      "Humcha",
+      "Bahubali",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   },
   {
-    "id": "4",
+    "id": "bundelkhand-yatra-nagpur-to-jabalpur-3d",
     "title": "Bundelkhand Digambar Jain Yatra",
     "duration": "3 Days",
     "states": [
@@ -569,10 +603,21 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Madhya Pradesh",
+      "Bundelkhand",
+      "Kundalpur",
+      "Bade Baba",
+      "Ramtek",
+      "Jabalpur",
+      "Pisanhari ki Madhiya",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   },
   {
-    "id": "5",
+    "id": "mandargiri-sravanabelgola-circuit",
     "title": "Mandargiri & Sravanabelgola Circuit",
     "duration": "2 Days",
     "states": [
@@ -655,10 +700,19 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Mandargiri",
+      "Sravanabelgola",
+      "Bahubali",
+      "Jain Mutt",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   },
   {
-    "id": "6",
+    "id": "hyderabad-kulcharam-pilgrimage",
     "title": "Hyderabad & Kulcharam Pilgrimage",
     "duration": "1 Day",
     "states": [
@@ -707,10 +761,19 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Telangana",
+      "Hyderabad",
+      "Hathnoora",
+      "Kulcharam",
+      "Aghapura",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   },
   {
-    "id": "7",
+    "id": "bangalore-to-hyderabad-heritage-trail",
     "title": "Bangalore to Hyderabad Heritage Trail",
     "duration": "1 Day",
     "states": [
@@ -744,6 +807,16 @@
           }
         ]
       }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Andhra Pradesh",
+      "Telangana",
+      "Penukonda",
+      "Konakondla",
+      "Acharya Kunda Kunda",
+      "Dharmshala",
+      "Bhojanshala"
     ]
   }
 ]

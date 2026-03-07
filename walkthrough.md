@@ -1,4 +1,4 @@
-# Jain Tirth Yatra Itineraries - Project Walkthrough
+# Jain Routes - Project Walkthrough
 
 ## Overview
 Successfully built a Progressive Web App (PWA) for the Jain community to share and discover Tirth Yatra itineraries. The app replaces WhatsApp text-based sharing with a structured, searchable, and visually appealing portal.

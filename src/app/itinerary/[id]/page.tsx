@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import styles from './page.module.css';
@@ -13,6 +14,7 @@ interface Itinerary {
     author: string;
     authorInstagram?: string;
     description: string;
+    keywords?: string[];
     days: {
         day: number;
         stops: {
@@ -31,6 +33,24 @@ export async function generateStaticParams() {
     return itineraries.map((itinerary) => ({
         id: itinerary.id,
     }));
+}
+
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+    const itinerary = itineraries.find((i) => i.id === params.id);
+
+    if (!itinerary) {
+        return {
+            title: 'Itinerary Not Found | Jain Routes'
+        };
+    }
+
+    const defaultKeywords = ['Jain', 'Tirth', 'Yatra', 'Itinerary', 'Dharmshala', 'Bhojanshala'];
+
+    return {
+        title: `${itinerary.title} | Jain Routes`,
+        description: itinerary.description,
+        keywords: itinerary.keywords ? [...defaultKeywords, ...itinerary.keywords] : defaultKeywords,
+    };
 }
 
 export default function ItineraryDetails({ params }: { params: { id: string } }) {

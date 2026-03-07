@@ -14,6 +14,7 @@ interface Itinerary {
   states: string[];
   author: string;
   description: string;
+  keywords?: string[];
   days: any[];
 }
 
@@ -54,7 +55,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className="container">
           <h1 className={styles.heroTitle}>
-            Discover & Share <span className={styles.highlight}>Tirth Yatra Itineraries</span>
+            Discover & Share <span className={styles.highlight}>Jain Routes</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Find detailed travel plans for Jain Tirths, complete with Dharmshala and Bhojanshala information. Plan your spiritual journey today.
