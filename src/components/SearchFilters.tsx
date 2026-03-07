@@ -1,6 +1,7 @@
 'use client';
 
 import styles from './SearchFilters.module.css';
+import Autocomplete from './Autocomplete';
 
 interface SearchFiltersProps {
     searchTerm: string;
@@ -25,20 +26,13 @@ export default function SearchFilters({
         <div className={`card ${styles.filters}`}>
             <div className={styles.inputGroup}>
                 <label htmlFor="search" className={styles.label}>Tirth / Place Name</label>
-                <input
-                    type="text"
+                <Autocomplete
                     id="search"
                     placeholder="e.g. Ponnur Malai"
                     value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    className={styles.input}
-                    list="search-suggestions"
+                    onChange={setSearchTerm}
+                    suggestions={searchSuggestions}
                 />
-                <datalist id="search-suggestions">
-                    {searchSuggestions.map((suggestion, index) => (
-                        <option key={index} value={suggestion} />
-                    ))}
-                </datalist>
             </div>
 
             <div className={styles.inputGroup}>
