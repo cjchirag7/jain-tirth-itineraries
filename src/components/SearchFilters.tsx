@@ -9,6 +9,7 @@ interface SearchFiltersProps {
     setSelectedState: (state: string) => void;
     selectedDuration: string;
     setSelectedDuration: (duration: string) => void;
+    searchSuggestions: string[];
 }
 
 export default function SearchFilters({
@@ -17,7 +18,8 @@ export default function SearchFilters({
     selectedState,
     setSelectedState,
     selectedDuration,
-    setSelectedDuration
+    setSelectedDuration,
+    searchSuggestions
 }: SearchFiltersProps) {
     return (
         <div className={`card ${styles.filters}`}>
@@ -30,7 +32,13 @@ export default function SearchFilters({
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className={styles.input}
+                    list="search-suggestions"
                 />
+                <datalist id="search-suggestions">
+                    {searchSuggestions.map((suggestion, index) => (
+                        <option key={index} value={suggestion} />
+                    ))}
+                </datalist>
             </div>
 
             <div className={styles.inputGroup}>

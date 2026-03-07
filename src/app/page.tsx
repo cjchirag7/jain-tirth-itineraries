@@ -50,6 +50,19 @@ export default function Home() {
     });
   }, [searchTerm, selectedState, selectedDuration]);
 
+  const searchSuggestions = useMemo(() => {
+    const suggestions = new Set<string>();
+    itineraries.forEach(itinerary => {
+      suggestions.add(itinerary.title);
+      itinerary.days.forEach(day => {
+        day.stops.forEach((stop: any) => {
+          suggestions.add(stop.name);
+        });
+      });
+    });
+    return Array.from(suggestions).sort();
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.hero}>
@@ -68,6 +81,7 @@ export default function Home() {
               setSelectedState={setSelectedState}
               selectedDuration={selectedDuration}
               setSelectedDuration={setSelectedDuration}
+              searchSuggestions={searchSuggestions}
             />
           </div>
         </div>
@@ -77,7 +91,7 @@ export default function Home() {
         <h2 className={styles.sectionTitle}>
           {filteredItineraries.length === itineraries.length
             ? 'Featured Itineraries'
-            : `Found ${filteredItineraries.length} Itinerary${filteredItineraries.length !== 1 ? 'ies' : ''}`
+            : `Found ${filteredItineraries.length} ${filteredItineraries.length !== 1 ? 'Itineraries' : 'Itinerary'}`
           }
         </h2>
         {filteredItineraries.length === 0 ? (
