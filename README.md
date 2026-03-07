@@ -43,3 +43,7 @@ However, if you ever add advanced SEO features or sitemaps, here are the places 
 - **`src/app/layout.tsx`**: If you add a `metadataBase` to the `metadata` object, you should set it to `new URL('https://your-custom-domain.com')`. This helps Next.js resolve relative image paths for Opengraph/Twitter cards.
 - **`next-sitemap.config.js`** (if added in the future): The `siteUrl` property will need to point to your new domain.
 - **Analytics/External Services**: Be sure to update Google Analytics, Search Console, or any other external services to whitelist your new domain.
+
+## Development Tools
+
+- **[Updating Stop Coordinates](./UPDATE_LAT_LONG.md)**: When adding new itineraries, run the coordinate extraction script to populate `lat`/`lng` values for the embedded route maps.

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import styles from './page.module.css';
 import itinerariesOriginal from '@/data/itineraries.json';
 import WhatsAppShareButton from '@/components/WhatsAppShareButton';
+import MapEmbed from '@/components/MapEmbed';
 
 // Type definition (same as Home page for now, could be shared)
 interface Itinerary {
@@ -23,6 +24,8 @@ interface Itinerary {
             facilities: string[];
             description: string;
             mapsLink: string;
+            lat?: number;
+            lng?: number;
         }[];
     }[];
 }
@@ -95,46 +98,58 @@ export default function ItineraryDetails({ params }: { params: { id: string } })
             </div>
 
             <div className={styles.timeline}>
-                {itinerary.days.map((day) => (
-                    <div key={day.day} className={styles.dayBlock}>
-                        <h2 className={styles.dayTitle}>Day {day.day}</h2>
-                        <div className={styles.stopsList}>
-                            {day.stops.map((stop, index) => (
-                                <div key={index} className={styles.stopCard}>
-                                    <div className={styles.stopHeader}>
-                                        <h3 className={styles.stopName}>
-                                            {index + 1}. {stop.name}
-                                        </h3>
-                                        <span className={styles.stopType}>{stop.type}</span>
-                                    </div>
+                {itinerary.days.map((day, dayIndex) => {
+                    const prevDayStops = dayIndex > 0 ? itinerary.days[dayIndex - 1].stops : [];
+                    const lastStop = prevDayStops.length > 0 ? prevDayStops[prevDayStops.length - 1] : undefined;
+                    const previousDayLastStop = lastStop ? { name: lastStop.name, lat: lastStop.lat, lng: lastStop.lng } : undefined;
 
-                                    {stop.facilities.length > 0 && (
-                                        <div className={styles.facilities}>
-                                            {stop.facilities.map((fac) => (
-                                                <span key={fac} className={styles.facilityTag}>
-                                                    {fac === 'Bhojanshala' ? '🍽️' : '🏨'} {fac}
-                                                </span>
-                                            ))}
+                    return (
+                        <div key={day.day} className={styles.dayBlock}>
+                            <h2 className={styles.dayTitle}>Day {day.day}</h2>
+                            <MapEmbed
+                                day={day.day}
+                                stops={day.stops}
+                                states={itinerary.states}
+                                previousDayLastStop={previousDayLastStop}
+                            />
+                            <div className={styles.stopsList}>
+                                {day.stops.map((stop, index) => (
+                                    <div key={index} className={styles.stopCard}>
+                                        <div className={styles.stopHeader}>
+                                            <h3 className={styles.stopName}>
+                                                {index + 1}. {stop.name}
+                                            </h3>
+                                            <span className={styles.stopType}>{stop.type}</span>
                                         </div>
-                                    )}
 
-                                    <p className={styles.stopDescription}>{stop.description}</p>
+                                        {stop.facilities.length > 0 && (
+                                            <div className={styles.facilities}>
+                                                {stop.facilities.map((fac) => (
+                                                    <span key={fac} className={styles.facilityTag}>
+                                                        {fac === 'Bhojanshala' ? '🍽️' : '🏨'} {fac}
+                                                    </span>
+                                                ))}
+                                            </div>
+                                        )}
 
-                                    {stop.mapsLink && (
-                                        <a
-                                            href={stop.mapsLink}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className={styles.mapLink}
-                                        >
-                                            View on Maps ↗
-                                        </a>
-                                    )}
-                                </div>
-                            ))}
+                                        <p className={styles.stopDescription}>{stop.description}</p>
+
+                                        {stop.mapsLink && (
+                                            <a
+                                                href={stop.mapsLink}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className={styles.mapLink}
+                                            >
+                                                View on Maps ↗
+                                            </a>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </div>
     );

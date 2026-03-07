@@ -21,56 +21,72 @@
               "Bhojanshala"
             ],
             "description": "Major pilgrimage center located 230 km from Bangalore. A gurukul is also being run by the trust for young students, with a large temple complex.",
-            "mapsLink": "https://maps.app.goo.gl/BMY91HTwYJb28bJ6A"
+            "mapsLink": "https://maps.app.goo.gl/BMY91HTwYJb28bJ6A",
+            "lat": 12.5619055,
+            "lng": 79.2023465
           },
           {
             "name": "Arihanthgiri Ancient Mountain Temples",
             "type": "Tirth",
             "facilities": [],
             "description": "Features 3-4 temples, 18-foot ancient idol of Neminatha, Samadhi Sthal of Acharya Shri Samantabhadra and Pandava Caves.",
-            "mapsLink": "https://maps.app.goo.gl/tvwR7VEZAx2onwt6A"
+            "mapsLink": "https://maps.app.goo.gl/tvwR7VEZAx2onwt6A",
+            "lat": 12.5567169,
+            "lng": 79.206001
           },
           {
             "name": "Arani Saidapet Jain Temple",
             "type": "Temple",
             "facilities": [],
             "description": "Located 19 km from Arihanthgiri.",
-            "mapsLink": "https://maps.app.goo.gl/vn2bdnZ6dHffEryNA"
+            "mapsLink": "https://maps.app.goo.gl/vn2bdnZ6dHffEryNA",
+            "lat": 12.6686668,
+            "lng": 79.2742944
           },
           {
             "name": "Shri 1008 Bhagwan Adinath Digambar Jain Temple, Arani",
             "type": "Temple",
             "facilities": [],
             "description": "Another significant Digambar Jain temple in Arani.",
-            "mapsLink": "https://maps.app.goo.gl/z8XRzafzBqSrLwq67"
+            "mapsLink": "https://maps.app.goo.gl/z8XRzafzBqSrLwq67",
+            "lat": 12.6618099,
+            "lng": 79.2879677
           },
           {
             "name": "Poondi Ponezhil Nathar Digamber Jain (Arugar) Temple",
             "type": "Temple",
             "facilities": [],
             "description": "Ancient Jain temple located in Poondi, 6 kms from Arani",
-            "mapsLink": "https://maps.app.goo.gl/ekUZW9Pk8KkirKgj7"
+            "mapsLink": "https://maps.app.goo.gl/ekUZW9Pk8KkirKgj7",
+            "lat": 12.6973945,
+            "lng": 79.3015215
           },
           {
             "name": "Ancient Jain Temple Munigiri, Karandai",
             "type": "Temple",
             "facilities": [],
             "description": "Historical temple site located 45 km from Poondi. With a magnificent seated idol of 1008 Kuntunatha Bhagavan, finished in a radiant golden hue, this place also has the honour of being tapasthali of Acharya Shri Akalank Swamy.",
-            "mapsLink": "https://maps.app.goo.gl/FZpZ5YjZrFFsn1KMA"
+            "mapsLink": "https://maps.app.goo.gl/FZpZ5YjZrFFsn1KMA",
+            "lat": 12.7609761,
+            "lng": 79.5875211
           },
           {
             "name": "Thiruppanamoor Digambar Jain Temple, Karandai",
             "type": "Temple",
             "facilities": [],
             "description": "With moolnayak as Bhagwan Pushpadantnath, this temple is just 1 km from Munigiri temple, Karandai.",
-            "mapsLink": "https://maps.app.goo.gl/w1MYvdSUS98KqGot6"
+            "mapsLink": "https://maps.app.goo.gl/w1MYvdSUS98KqGot6",
+            "lat": 12.7645493,
+            "lng": 79.5888364
           },
           {
             "name": "Thiruparuthikundram Sri Digambar Jain Temples, Kanchivaram",
             "type": "Temple",
             "facilities": [],
             "description": "Important Jain heritage site in Kanchivaram, 20 kms from Karandai.",
-            "mapsLink": "https://maps.app.goo.gl/X7pa3Z9LAHezkUF47"
+            "mapsLink": "https://maps.app.goo.gl/X7pa3Z9LAHezkUF47",
+            "lat": 12.8303113,
+            "lng": 79.6808334
           },
           {
             "name": "Ponnur Malai Dharmshala",
@@ -80,7 +96,9 @@
               "Bhojanshala"
             ],
             "description": "Night stay featuring 2 temples.",
-            "mapsLink": "https://maps.app.goo.gl/z9t8Jh9msM58f53v5"
+            "mapsLink": "https://maps.app.goo.gl/z9t8Jh9msM58f53v5",
+            "lat": 12.5017149,
+            "lng": 79.5235491
           }
         ]
       },
@@ -92,7 +110,9 @@
             "type": "Tirth",
             "facilities": [],
             "description": "The sacred ancient footprints of Acharya Kund Kund.",
-            "mapsLink": "https://maps.app.goo.gl/agDJH6552t5whrqw5"
+            "mapsLink": "https://maps.app.goo.gl/agDJH6552t5whrqw5",
+            "lat": 12.4986007,
+            "lng": 79.5235486
           },
           {
             "name": "Sri Adinath Digamber Jain Temple, Ponnur Malai",
@@ -102,42 +122,54 @@
               "Bhojanshala"
             ],
             "description": "Includes 3-4 other temples at the site.",
-            "mapsLink": "https://maps.app.goo.gl/BuhXyhEditRjDpe37"
+            "mapsLink": "https://maps.app.goo.gl/BuhXyhEditRjDpe37",
+            "lat": 12.5035798,
+            "lng": 79.5198345
           },
           {
             "name": "Thirakoil Jain Hill",
             "type": "Temple",
             "facilities": [],
             "description": "Contains rock-cut cave temples on the hill and at the base, 8 kms from Ponnur Malai.",
-            "mapsLink": "https://maps.app.goo.gl/rSGVAQg2Gr7emVEw5"
+            "mapsLink": "https://maps.app.goo.gl/rSGVAQg2Gr7emVEw5",
+            "lat": 12.4503981,
+            "lng": 79.497132
           },
           {
             "name": "Ariyampoondi Rock Cut Mahavir Jain Temple",
             "type": "Temple",
             "facilities": [],
             "description": "An ancient rock-cut temple dedicated to Bhagwan Mahavir, 6 kms from Ponnur Malai.",
-            "mapsLink": "https://maps.app.goo.gl/gjLzbo5tXZUKijEm6"
+            "mapsLink": "https://maps.app.goo.gl/gjLzbo5tXZUKijEm6",
+            "lat": 12.4341275,
+            "lng": 79.465263
           },
           {
             "name": "Sri 1008 Adinath Digambar Jain Temple, Ponnur",
             "type": "Temple",
             "facilities": [],
             "description": "Local Adinath temple in the Ponnur city, 12 kms from Ariyampoondi.",
-            "mapsLink": "https://maps.app.goo.gl/7Cg8hmdxrPruCEbL9"
+            "mapsLink": "https://maps.app.goo.gl/7Cg8hmdxrPruCEbL9",
+            "lat": 12.4716076,
+            "lng": 79.5419551
           },
           {
             "name": "Ancient Bhagwan Adinath Temple, Salukkai",
             "type": "Temple",
             "facilities": [],
             "description": "A 2300-year-old ancient temple site, 16 kms from Ponnur city.",
-            "mapsLink": "https://maps.app.goo.gl/dvWKomPB2s3gXL6K6"
+            "mapsLink": "https://maps.app.goo.gl/dvWKomPB2s3gXL6K6",
+            "lat": 12.5360885,
+            "lng": 79.6265988
           },
           {
             "name": "1008 Bhagavan Sri Adinath Digambar Jain Basadi, Vizhukkam",
             "type": "Temple",
             "facilities": [],
             "description": "Digambar Jain temple located 40 kms from Salukkai.",
-            "mapsLink": "https://maps.app.goo.gl/f6vL2wMHwjHUrBXE6"
+            "mapsLink": "https://maps.app.goo.gl/f6vL2wMHwjHUrBXE6",
+            "lat": 12.261088,
+            "lng": 79.5406257
           },
           {
             "name": "Mel Chitamur (Jin Kanchi)",
@@ -147,14 +179,18 @@
               "Bhojanshala"
             ],
             "description": "The administrative center (Jin Kanchi) of the Tamil Jain community, 7 kms from Vizhukkam. It features a seven-storeyed Raja Gopuram, a 52-foot manastambha, and a 14-foot black idol of Parshvanatha.",
-            "mapsLink": "https://maps.app.goo.gl/1BpxaR8PVtssDWLG6"
+            "mapsLink": "https://maps.app.goo.gl/1BpxaR8PVtssDWLG6",
+            "lat": 12.2702174,
+            "lng": 79.5137764
           },
           {
             "name": "Thirunathan Kundru Jain Hill, Gingee",
             "type": "Temple",
             "facilities": [],
             "description": "An ancient Jain hill site near Mel Chitamur, 15 kms from Mel Chitamur.",
-            "mapsLink": "https://maps.app.goo.gl/75CheaLH4Jk7c5v18"
+            "mapsLink": "https://maps.app.goo.gl/75CheaLH4Jk7c5v18",
+            "lat": 12.2727841,
+            "lng": 79.4072352
           }
         ]
       }
@@ -191,7 +227,9 @@
             "type": "Temple",
             "facilities": [],
             "description": "An ancient temple located 150 kms from Bangalore.",
-            "mapsLink": "https://maps.app.goo.gl/PwfdhRPq6iVRsU5a7"
+            "mapsLink": "https://maps.app.goo.gl/PwfdhRPq6iVRsU5a7",
+            "lat": 12.420903,
+            "lng": 76.6824007
           },
           {
             "name": "Shri Parshwanath Digambar Jain Temple and Jain Boarding Dharmashala, Mysuru",
@@ -201,21 +239,27 @@
               "Bhojanshala"
             ],
             "description": "Mysuru is just 11 kms from Srirangapatna. Visit the local temple and explore Mysuru palace.",
-            "mapsLink": "https://maps.app.goo.gl/uHSBUBX174x3EZgr7"
+            "mapsLink": "https://maps.app.goo.gl/uHSBUBX174x3EZgr7",
+            "lat": 12.1853185,
+            "lng": 76.5285637
           },
           {
             "name": "Gommatgiri",
             "type": "Tirth",
             "facilities": [],
             "description": "Small hillock with an ancient 16-feet statue of Bahubali, located 24 kms from Mysuru.",
-            "mapsLink": "https://maps.app.goo.gl/FcKCkstHTkVmtnTy9"
+            "mapsLink": "https://maps.app.goo.gl/FcKCkstHTkVmtnTy9",
+            "lat": 12.3703136,
+            "lng": 76.4874708
           },
           {
             "name": "Shri Baahubali Theertha, Kaaveri Dhaama, (Basadi Hosakote)",
             "type": "Tirth",
             "facilities": [],
             "description": "A peaceful temple and a nice viewpoint on the banks of the river Kaveri, located 40 kms from Gommatgiri.",
-            "mapsLink": "https://maps.app.goo.gl/sVdCQETNydujVqYw5"
+            "mapsLink": "https://maps.app.goo.gl/sVdCQETNydujVqYw5",
+            "lat": 12.4863104,
+            "lng": 76.4861975
           },
           {
             "name": "Assam Bhavan, Sravanabelgola",
@@ -225,7 +269,9 @@
               "Bhojanshala"
             ],
             "description": "50 kms from Kaaveri Dhaam. Comfortable stay with AC rooms available. Can also go for 'Vidyanand Nilaya' for a cheaper stay or in case if this dharmshala is full. Bhojanshala is located near jain mutt temple.",
-            "mapsLink": "https://maps.app.goo.gl/vWRtuRmgkJcEefHE6"
+            "mapsLink": "https://maps.app.goo.gl/vWRtuRmgkJcEefHE6",
+            "lat": 12.8588959,
+            "lng": 76.4840878
           }
         ]
       },
@@ -237,14 +283,18 @@
             "type": "Tirth",
             "facilities": [],
             "description": "Site of 15 ancient temples, the Samadhi cave of Acharya Bhadrabahu and charan of Muni Chandragupta.",
-            "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8"
+            "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
+            "lat": 12.8616935,
+            "lng": 76.4840913
           },
           {
             "name": "Vindhyagiri Hill, Sravanabelgola",
             "type": "Tirth",
             "facilities": [],
             "description": "Home to the popular massive monolithic idol of Bahubali Swamy, built during the 10th century.",
-            "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9"
+            "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9",
+            "lat": 12.8571705,
+            "lng": 76.4867811
           },
           {
             "name": "Jain Mutt Temple, Sravanabelgola",
@@ -253,28 +303,36 @@
               "Bhojanshala"
             ],
             "description": "Darshan, followed by lunch at the nearby Bhojanshala. There are 4-5 more temples in the town.",
-            "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7"
+            "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7",
+            "lat": 12.8565375,
+            "lng": 76.4892656
           },
           {
             "name": "Jinnathpuram",
             "type": "Tirth",
             "facilities": [],
             "description": "An ancient Jain pilgrimage site, just 2 kms from Sravanabelgola. 2 temples - Shri Parshwanath Basadi and Shri Shantinath Basadi are located here. ",
-            "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8"
+            "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8",
+            "lat": 12.865561,
+            "lng": 76.4883788
           },
           {
             "name": "Kambadahalli Jain Mutt",
             "type": "Tirth",
             "facilities": [],
             "description": "Located 20 kms from Sravanabelgola, a 2000-year-old temple complex and gurukul run by the trust for young kids.",
-            "mapsLink": "https://maps.app.goo.gl/WfUWEAphw9icKQC5A"
+            "mapsLink": "https://maps.app.goo.gl/WfUWEAphw9icKQC5A",
+            "lat": 12.867771,
+            "lng": 76.6333742
           },
           {
             "name": "Shri Paras Dham Atishay Kshetra",
             "type": "Tirth",
             "facilities": [],
             "description": "Located just 24 kms from Kambadahalli, on the way to bangalore.",
-            "mapsLink": "https://maps.app.goo.gl/Bix7FzkzPYddrZ6F9"
+            "mapsLink": "https://maps.app.goo.gl/Bix7FzkzPYddrZ6F9",
+            "lat": 12.9743471,
+            "lng": 76.6937388
           },
           {
             "name": "Mandargiri Hill",
@@ -283,7 +341,9 @@
               "Bhojanshala"
             ],
             "description": "Located 90 kms from Paras Dham. Features a unique Samosharan temple and a scenic lake viewpoint on the hill (you can either climb or use your vehicle). On the base, there is a 21 feet monolithic idol of Shri Chandraprabhu Swamy and a pichhi shaped guru mandir.",
-            "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7"
+            "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7",
+            "lat": 13.3033664,
+            "lng": 77.1867383
           }
         ]
       }
@@ -318,7 +378,9 @@
             "type": "Temple",
             "facilities": [],
             "description": "Ancient temple located near Mangalore Central station.",
-            "mapsLink": "https://maps.app.goo.gl/RSJA5HV8y7gb4wz7A"
+            "mapsLink": "https://maps.app.goo.gl/RSJA5HV8y7gb4wz7A",
+            "lat": 12.8661886,
+            "lng": 74.8354635
           },
           {
             "name": "Saavira Kambada Basadi, Moodbadri",
@@ -328,21 +390,27 @@
               "Dharmshala"
             ],
             "description": "Famous '1000-pillar temple' along with 17 other ancient temples (most temples are open only from 7 AM to 10 AM), get map from the jain mathada basadi. If bhojanshala is closed for some reason, you can go to Arihanth Ahaar restaurant for jain food.",
-            "mapsLink": "https://maps.app.goo.gl/5QsTveoeMHyGStVs5"
+            "mapsLink": "https://maps.app.goo.gl/5QsTveoeMHyGStVs5",
+            "lat": 13.0741236,
+            "lng": 74.9975011
           },
           {
             "name": "Vennoor Bahubali",
             "type": "Tirth",
             "facilities": [],
             "description": "A historic monolithic statue of Bahubali Swamy, 20 kms from Moodbadri. There is another temple behind the Bahubali statue.",
-            "mapsLink": "https://maps.app.goo.gl/S2tua24WUh6GBunT8"
+            "mapsLink": "https://maps.app.goo.gl/S2tua24WUh6GBunT8",
+            "lat": 13.0134857,
+            "lng": 75.1441043
           },
           {
             "name": "Adinath Swamy Basadi, Vennoor",
             "type": "Temple",
             "facilities": [],
             "description": "Located within 1 km of the Vennoor Bahubali statue.",
-            "mapsLink": "https://maps.app.goo.gl/nsF6QY9igwEPgghN7"
+            "mapsLink": "https://maps.app.goo.gl/nsF6QY9igwEPgghN7",
+            "lat": 13.0120732,
+            "lng": 75.1464408
           },
           {
             "name": "Dharmasthala Bahubali",
@@ -352,7 +420,9 @@
               "Dharmshala"
             ],
             "description": "Located 32 kms from Vennoor, has a modern monolith of Bahubali Swamy with a dedicated Jain dining hall. There is another jain temple in the town.",
-            "mapsLink": "https://maps.app.goo.gl/1yATe79N9rENbFuC9"
+            "mapsLink": "https://maps.app.goo.gl/1yATe79N9rENbFuC9",
+            "lat": 12.9552071,
+            "lng": 75.3790185
           },
           {
             "name": "Ratnatraya Basadi Atishay Kshetra",
@@ -361,7 +431,9 @@
               "Dharmshala"
             ],
             "description": "Located 23 kms from Dharmasthala, a sacred site offering night stay facilities.",
-            "mapsLink": "https://maps.app.goo.gl/DSsrxdy6Z4Sv2XZB8"
+            "mapsLink": "https://maps.app.goo.gl/DSsrxdy6Z4Sv2XZB8",
+            "lat": 12.9892745,
+            "lng": 75.2578019
           }
         ]
       },
@@ -376,28 +448,36 @@
               "Bhojanshala"
             ],
             "description": "Located 45 kms from Ratnatraya Basadi, it houses an ancient monolith of Bahubali Swamy. Out of 23 temples in the town, 12 temples are ancient - Chaturmukha Basadi and Annekere Basadi (lake temple) being some of them. The Kshetra is about 1000 year old and famous for sculptures.",
-            "mapsLink": "https://maps.app.goo.gl/CuqRmY8qwsczG2si7"
+            "mapsLink": "https://maps.app.goo.gl/CuqRmY8qwsczG2si7",
+            "lat": 13.2037575,
+            "lng": 75.0055558
           },
           {
             "name": "Chaturmukh Basadi, Karkala",
             "type": "Temple",
             "facilities": [],
             "description": "Unique four-faced architectural marvel of Karkala.",
-            "mapsLink": "https://maps.app.goo.gl/2bcR2Ya9L7JJ12Mc6"
+            "mapsLink": "https://maps.app.goo.gl/2bcR2Ya9L7JJ12Mc6",
+            "lat": 13.2085613,
+            "lng": 75.0049398
           },
           {
             "name": "Varanga Lake Jain Temple",
             "type": "Temple",
             "facilities": [],
             "description": "A beautiful temple situated in the middle of a lake, 27 kms from Karkala. A serene 12th-century, four-faced (Chaturmukha) temple located in the middle of a 14-acre lake in Varanga village, Udupi district, Karnataka. Dedicated to Parshwanatha, this 850-year-old temple is accessed by a 100-meter boat ride, featuring intricate, star-shaped architecture surrounded by water lilies and lush nature.",
-            "mapsLink": "https://maps.app.goo.gl/okw4uiJ3R5qkHi536"
+            "mapsLink": "https://maps.app.goo.gl/okw4uiJ3R5qkHi536",
+            "lat": 13.3961832,
+            "lng": 75.008536
           },
           {
             "name": "Kundadri Shri Parshwanath Basadi",
             "type": "Tirth",
             "facilities": [],
             "description": "Just 44 kms from Varanga, this place is known for being the tapasthali of Acharya Shri Kund Kund Swamy.",
-            "mapsLink": "https://maps.app.goo.gl/g8qBK6pFyQZbauWcA"
+            "mapsLink": "https://maps.app.goo.gl/g8qBK6pFyQZbauWcA",
+            "lat": 13.557892,
+            "lng": 75.16838
           },
           {
             "name": "Jwalamalini Atishay Kshetra, N R Pura",
@@ -407,7 +487,9 @@
               "Bhojanshala"
             ],
             "description": "Prominent temple dedicated to Yakshini Jwalamalini and Shri Chandraprabha Swamy, located 58 kms from Kundadri.",
-            "mapsLink": "https://maps.app.goo.gl/urS2X2aWcYCyM7fS7"
+            "mapsLink": "https://maps.app.goo.gl/urS2X2aWcYCyM7fS7",
+            "lat": 13.6052761,
+            "lng": 75.4975016
           },
           {
             "name": "Humcha Jain Temple",
@@ -417,7 +499,9 @@
               "Bhojanshala"
             ],
             "description": "Major pilgrimage center for Padmavati Devi and Shri Parshwanath Bhagwan. Located 55 kms from Jwalamalini Atishay Kshetra.",
-            "mapsLink": "https://maps.app.goo.gl/pM6Nc7yLhaAUCKEg9"
+            "mapsLink": "https://maps.app.goo.gl/pM6Nc7yLhaAUCKEg9",
+            "lat": 13.8616393,
+            "lng": 75.2057605
           }
         ]
       }
@@ -458,21 +542,27 @@
               "Bhojanshala"
             ],
             "description": "With moolnayak as golden colored idol of Shri Shantinath Bhagwan in kayotsarga posture, it is located 50 kms from Nagpur (buses and autos available from Nagpur). There are also 8 other temples in the complex. The place also has centre for Pratibhasthali (gurukul for jain girls) and Hathkargha.",
-            "mapsLink": "https://maps.app.goo.gl/4ySi3sFCCzVZWSFC7"
+            "mapsLink": "https://maps.app.goo.gl/4ySi3sFCCzVZWSFC7",
+            "lat": 21.4054964,
+            "lng": 79.3298658
           },
           {
             "name": "Seoni Bada Mandir",
             "type": "Temple",
             "facilities": [],
             "description": "Historical temple in Seoni, 80 kms from Ramtek.",
-            "mapsLink": "https://maps.app.goo.gl/QntghUwDe9MfEKGv8"
+            "mapsLink": "https://maps.app.goo.gl/QntghUwDe9MfEKGv8",
+            "lat": 22.0858667,
+            "lng": 79.551006
           },
           {
             "name": "Chhapara Jain Mandir",
             "type": "Temple",
             "facilities": [],
             "description": "Historical temple in Chhapara, 36 kms from Seoni.",
-            "mapsLink": "https://maps.app.goo.gl/6QJ6APxYH99Cto82A"
+            "mapsLink": "https://maps.app.goo.gl/6QJ6APxYH99Cto82A",
+            "lat": 22.3949037,
+            "lng": 79.5378726
           },
           {
             "name": "Lakhnadaun Jain Mandir (Samnapur Jinalay)",
@@ -481,7 +571,9 @@
               "Dharmshala"
             ],
             "description": "26 kms from Chhapara.",
-            "mapsLink": "ttps://maps.app.goo.gl/fMgBxCT2NEGUWd9d6"
+            "mapsLink": "https://maps.app.goo.gl/fMgBxCT2NEGUWd9d6",
+            "lat": 22.5956084,
+            "lng": 79.6096996
           },
           {
             "name": "Pisanhari ki Madhiya Ji, Jabalpur",
@@ -491,7 +583,9 @@
               "Bhojanshala"
             ],
             "description": "80 kms from Lakhnadaun. Scenic temples, both on hill and in the campus, with full stay and food facilities. ",
-            "mapsLink": "https://maps.app.goo.gl/wyfPPHzGa3goAF1n9"
+            "mapsLink": "https://maps.app.goo.gl/wyfPPHzGa3goAF1n9",
+            "lat": 23.152049,
+            "lng": 79.8854736
           }
         ]
       },
@@ -503,7 +597,9 @@
             "type": "Tirth",
             "facilities": [],
             "description": "The most ancient idol of Shri Aadinath Bhagwan. For lunch, you can either visit Madhiya Ji Bhojanshala, or try Padharo Sa Jain Restaurant.",
-            "mapsLink": "https://maps.app.goo.gl/LHJ5k3M35izfcgXY7"
+            "mapsLink": "https://maps.app.goo.gl/LHJ5k3M35izfcgXY7",
+            "lat": 23.1805781,
+            "lng": 79.937327
           },
           {
             "name": "Koni Ji Atishay Kshetra, Paatan",
@@ -513,7 +609,9 @@
               "Dharmshala"
             ],
             "description": "Located 38 kms from Jabalpur. Main idol is of vighnahar Chintamani Parasnathaji and 9 other temples.",
-            "mapsLink": "https://maps.app.goo.gl/k9342sg1z5FbZyx5A"
+            "mapsLink": "https://maps.app.goo.gl/k9342sg1z5FbZyx5A",
+            "lat": 23.328144,
+            "lng": 79.6686672
           },
           {
             "name": "Beena Baarah Atishay Kshetra",
@@ -523,14 +621,18 @@
               "Dharmshala"
             ],
             "description": "Located 80 kms from Koni Ji. Moolnayak bhagwan is Shri Shantinath Ji. Significant pilgrimage site with many ancient idols located in a large temple complex. The place has a large goshala and a centre for hathkargha.",
-            "mapsLink": "https://maps.app.goo.gl/sPiznKjC8KofuG5A8"
+            "mapsLink": "https://maps.app.goo.gl/sPiznKjC8KofuG5A8",
+            "lat": 23.3603637,
+            "lng": 79.0774178
           },
           {
             "name": "Patnaganj Jinalay, Rehli",
             "type": "Temple",
             "facilities": [],
             "description": "Located 38 kms from Beena Baarah. Moolnayak is Shri Mahavir Bhagwan.",
-            "mapsLink": "https://maps.app.goo.gl/bCwxgnVB3oyX145E6"
+            "mapsLink": "https://maps.app.goo.gl/bCwxgnVB3oyX145E6",
+            "lat": 23.6343749,
+            "lng": 79.0682226
           },
           {
             "name": "Pateriya Ji Atishay Kshetra, Garhakota",
@@ -539,7 +641,9 @@
               "Dharmshala"
             ],
             "description": "Located 25 kms from Rehli. Moolnayak bhagwan is Shri Parshwanath Ji.",
-            "mapsLink": "https://maps.app.goo.gl/4XCZenvqcfDK4Zqk9"
+            "mapsLink": "https://maps.app.goo.gl/4XCZenvqcfDK4Zqk9",
+            "lat": 23.7708638,
+            "lng": 79.1450767
           },
           {
             "name": "Shri Bade Baba, Kundalpur",
@@ -549,7 +653,9 @@
               "Bhojanshala"
             ],
             "description": "Located 70 kms from Garhakota. The massive idol of Adinath Bhagwan (Bade Baba) and 63 other temples located on the hill. This place is a Sidhh Kshetra, where shridhar kevali attained moksha.",
-            "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6"
+            "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6",
+            "lat": 23.9798043,
+            "lng": 79.724129
           }
         ]
       },
@@ -561,7 +667,9 @@
             "type": "Tirth",
             "facilities": [],
             "description": "Darshan of the various temples on the Kundalpur hills.",
-            "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6"
+            "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6",
+            "lat": 23.9798043,
+            "lng": 79.724129
           },
           {
             "name": "Chetanoday Tirth, Katni",
@@ -571,35 +679,45 @@
               "Dharmshala"
             ],
             "description": "Located 90 kms from Kundalpur Bade Baba.",
-            "mapsLink": "https://maps.app.goo.gl/r7ReULHAPMVQhprJ6"
+            "mapsLink": "https://maps.app.goo.gl/r7ReULHAPMVQhprJ6",
+            "lat": 23.8366161,
+            "lng": 80.3710373
           },
           {
             "name": "Shri Parshwanath Jinalay, Bilhari",
             "type": "Temple",
             "facilities": [],
             "description": "Located 13 kms from Katni.",
-            "mapsLink": "https://maps.app.goo.gl/oEyXDkuHJFgeGQop9"
+            "mapsLink": "https://maps.app.goo.gl/oEyXDkuHJFgeGQop9",
+            "lat": 23.7949068,
+            "lng": 80.2716705
           },
           {
             "name": "Bahoriband Atishay Kshetra",
             "type": "Tirth",
             "facilities": [],
             "description": "Located 33 kms from Bilhari, this place has a large Shantinath idol.",
-            "mapsLink": "https://maps.app.goo.gl/i5rmwXi6ZZX1Kxo86"
+            "mapsLink": "https://maps.app.goo.gl/i5rmwXi6ZZX1Kxo86",
+            "lat": 23.667284,
+            "lng": 80.063644
           },
           {
             "name": "Sammed Giri Tirth, Gosalpur",
             "type": "Tirth",
             "facilities": [],
             "description": "Located 40 kms from Bahoriband.",
-            "mapsLink": "https://maps.app.goo.gl/ehRV2fifKcy3d6Xj7"
+            "mapsLink": "https://maps.app.goo.gl/ehRV2fifKcy3d6Xj7",
+            "lat": 23.3908043,
+            "lng": 80.0510463
           },
           {
             "name": "Panagar Atishay Kshetra",
             "type": "Temple",
             "facilities": [],
             "description": "Located 18 kms from Gosalpur and 20 kms from Jabalpur.",
-            "mapsLink": "https://maps.app.goo.gl/trgBdrYGAirDCXyV7"
+            "mapsLink": "https://maps.app.goo.gl/trgBdrYGAirDCXyV7",
+            "lat": 23.2842124,
+            "lng": 79.9996587
           }
         ]
       }
@@ -637,7 +755,9 @@
               "Bhojanshala"
             ],
             "description": "Located 80 kms from Bangalore. Features a unique Samosharan temple and a scenic lake viewpoint on the hill (you can either climb or use your vehicle). On the base, there is a 21 feet monolithic idol of Shri Chandraprabhu Swamy and a pichhi shaped guru mandir.",
-            "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7"
+            "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7",
+            "lat": 13.3033664,
+            "lng": 77.1867383
           },
           {
             "name": "Assam Bhavan, Sravanabelgola",
@@ -647,7 +767,9 @@
               "Bhojanshala"
             ],
             "description": "120 kms from Mandargiri. Comfortable stay with AC rooms available. Can also go for 'Vidyanand Nilaya' for a cheaper stay or in case if this dharmshala is full. Bhojanshala is located near jain mutt temple.",
-            "mapsLink": "https://maps.app.goo.gl/vWRtuRmgkJcEefHE6"
+            "mapsLink": "https://maps.app.goo.gl/vWRtuRmgkJcEefHE6",
+            "lat": 12.8588959,
+            "lng": 76.4840878
           }
         ]
       },
@@ -659,14 +781,18 @@
             "type": "Tirth",
             "facilities": [],
             "description": "Site of 15 ancient temples, the Samadhi cave of Acharya Bhadrabahu and charan of Muni Chandragupta.",
-            "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8"
+            "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
+            "lat": 12.8616935,
+            "lng": 76.4840913
           },
           {
             "name": "Vindhyagiri Hill, Sravanabelgola",
             "type": "Tirth",
             "facilities": [],
             "description": "Home to the popular massive monolithic idol of Bahubali Swamy, built during the 10th century.",
-            "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9"
+            "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9",
+            "lat": 12.8571705,
+            "lng": 76.4867811
           },
           {
             "name": "Jain Mutt Temple",
@@ -675,28 +801,36 @@
               "Bhojanshala"
             ],
             "description": "Darshan, followed by lunch at the nearby Bhojanshala. There are 4-5 more temples in the town.",
-            "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7"
+            "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7",
+            "lat": 12.8565375,
+            "lng": 76.4892656
           },
           {
             "name": "Jinnathpuram",
             "type": "Tirth",
             "facilities": [],
             "description": "An ancient Jain pilgrimage site, just 2 kms from Sravanabelgola. 2 temples - Shri Parshwanath Basadi and Shri Shantinath Basadi are located here.",
-            "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8"
+            "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8",
+            "lat": 12.865561,
+            "lng": 76.4883788
           },
           {
             "name": "Kambadahalli Jain Mutt",
             "type": "Tirth",
             "facilities": [],
             "description": "Located 20 kms from Sravanabelgola, a 2000-year-old temple complex and gurukul run by the trust for young kids.",
-            "mapsLink": "https://maps.app.goo.gl/WfUWEAphw9icKQC5A"
+            "mapsLink": "https://maps.app.goo.gl/WfUWEAphw9icKQC5A",
+            "lat": 12.867771,
+            "lng": 76.6333742
           },
           {
             "name": "Shri Paras Dham Atishay Kshetra",
             "type": "Tirth",
             "facilities": [],
             "description": "Located just 24 kms from Kambadahalli, on the way to bangalore.",
-            "mapsLink": "https://maps.app.goo.gl/Bix7FzkzPYddrZ6F9"
+            "mapsLink": "https://maps.app.goo.gl/Bix7FzkzPYddrZ6F9",
+            "lat": 12.9743471,
+            "lng": 76.6937388
           }
         ]
       }
@@ -733,21 +867,27 @@
               "Bhojanshala"
             ],
             "description": "Houses a 4th-era idol of Shri Chandraprabhu Bhagwan.",
-            "mapsLink": "https://maps.app.goo.gl/eUGZwa29fvAMqmmH7"
+            "mapsLink": "https://maps.app.goo.gl/eUGZwa29fvAMqmmH7",
+            "lat": 17.3830865,
+            "lng": 78.4627109
           },
           {
             "name": "Shri Kalikund Parshwanath, Hathnoora",
             "type": "Temple",
             "facilities": [],
             "description": "72 kms from Hyderabad. An 800-year-old temple. The ancient idol was found from a local pond.",
-            "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6"
+            "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6",
+            "lat": 17.7365793,
+            "lng": 78.1494969
           },
           {
             "name": "Jogipet Jain Temple",
             "type": "Temple",
             "facilities": [],
             "description": "Located 30 kms from Hathnoora, this is a 150 years old temple.",
-            "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6"
+            "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6",
+            "lat": 17.7365793,
+            "lng": 78.1494969
           },
           {
             "name": "Shri Vighnahar Parshwanath, Kulcharam",
@@ -757,7 +897,9 @@
               "Bhojanshala"
             ],
             "description": "25 kms from Jogipet, this significant Atishay Kshetra features a 9th-century, 11-foot-3-inch black stone idol of Bhagwan Parshvanath in a standing posture.",
-            "mapsLink": "https://maps.app.goo.gl/fyzBSri8fvZTdvj1A"
+            "mapsLink": "https://maps.app.goo.gl/fyzBSri8fvZTdvj1A",
+            "lat": 17.9528288,
+            "lng": 78.1917029
           }
         ]
       }
@@ -796,14 +938,18 @@
               "Bhojanshala"
             ],
             "description": "150 kms from bangalore, penukonda features three significant ancient Jain temples - the Pachhe Parshwanath temple being one of them famous for green stone idol of Shree Parshwanath Bhagwan.",
-            "mapsLink": "https://maps.app.goo.gl/AzEd6MkmaREzwmkk6"
+            "mapsLink": "https://maps.app.goo.gl/AzEd6MkmaREzwmkk6",
+            "lat": 14.0817651,
+            "lng": 77.5946532
           },
           {
             "name": "Konda Kunda, Konakondla",
             "type": "Tirth",
             "facilities": [],
             "description": "140 kms from Penukonda, this is the sacred birthplace of Acharya Kunda Kunda. Also features a 1,700-year-old rock carving depicting the ancient “Jambudweep”, a cosmic map of the Jain universe. You can catch train to Hyderabad from Guntakal railway station, which is 6 kms from here or drive to Hyderabad (340 kms).",
-            "mapsLink": "https://maps.app.goo.gl/Jjas8pd3PNJJ3q4H9?g_st=aw"
+            "mapsLink": "https://maps.app.goo.gl/Jjas8pd3PNJJ3q4H9?g_st=aw",
+            "lat": 15.115792,
+            "lng": 77.3651478
           }
         ]
       }
