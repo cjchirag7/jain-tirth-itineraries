@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import ChatAssistant from "@/components/ChatAssistant";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://jainroutes.com'),
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <ChatAssistant />
       </body>
     </html>
   );
