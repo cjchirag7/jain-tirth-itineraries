@@ -94,7 +94,7 @@ ${JSON.stringify(minifiedItineraries)}
 
     const callAi = async (provider: Google) => {
         return streamText({
-            model: provider.generativeAI('gemini-1.5-flash'),
+            model: provider.generativeAI('models/gemini-flash-latest'),
             system: systemPrompt,
             messages,
             // Reduce retries for primary to switch to secondary faster if it fails
