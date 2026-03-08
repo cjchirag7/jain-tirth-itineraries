@@ -14,3 +14,17 @@
     font-weight: 600;
     text-decoration: underline;
 }
+
+.devLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    transition: color 0.2s;
+}
+
+.devLink:hover {
+    color: var(--primary);
+}
