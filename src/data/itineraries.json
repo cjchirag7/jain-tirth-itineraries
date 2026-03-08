@@ -964,5 +964,146 @@
       "Dharmshala",
       "Bhojanshala"
     ]
+  },
+  {
+    "id": "belagavi-district-dev-darshan",
+    "title": "Belagavi (Belgaum) District Dev Darshan",
+    "duration": "2 Days",
+    "states": [
+      "Karnataka"
+    ],
+    "author": "Pratik Akkole",
+    "authorInstagram": "https://www.instagram.com/pratik_akkole?igsh=MWQ5MndqbHFhcTI5aw==",
+    "description": "Complete dev darshan of Belagavi district, featuring ancient Ratta dynasty temples, sacred birthplaces of Acharyas, and unique underground cave temples.",
+    "days": [
+      {
+        "day": 1,
+        "stops": [
+          {
+            "name": "Belagavi Kamal Basadi",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Located inside Belgaum Fort in city of Belgaum, the Kamal Basadi derives its name from the lotus carvings extending from the dome of the centre roof. The lotus has 72 petals believed to represent 24 tirthankaras of past, present and future. Built by Birchiraja of ratta dynasty in 1204 AD.",
+            "mapsLink": "https://maps.app.goo.gl/Q8JAQNShf3ZeR63z9",
+            "lat": 15.8580122,
+            "lng": 74.5214454
+          },
+          {
+            "name": "Sankeshwar Shri Parshwanath Jain Temple",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Beautiful Ratta dynasty built jain temple",
+            "mapsLink": "https://maps.app.goo.gl/q6F3omJg3WawY9bB6",
+            "lat": 16.2541549,
+            "lng": 74.4788044
+          },
+          {
+            "name": "Shri Kshetra Nischay Giri",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "A prominent pilgrimage site located on a hill in Kanagala, near Nipani and Tavandi in the Belgaum (Belagavi) district of Karnataka.",
+            "mapsLink": "https://maps.app.goo.gl/766Nkw197nLjUi197",
+            "lat": 16.3488212,
+            "lng": 74.4373073
+          },
+          {
+            "name": "Atishay Kshetra Stavnidhi",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "Atishay Kshetra stavnidhi has beautiful nav khand parshwanath bhagwan jain temple",
+            "mapsLink": "https://maps.app.goo.gl/khyC3d4Hna4Rc8rdA",
+            "lat": 16.3560981,
+            "lng": 74.4083485
+          },
+          {
+            "name": "Shree Kshetra Shanti Giri Kothali",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "Birthplace of Acharya Deshabhushan ji.",
+            "mapsLink": "https://maps.app.goo.gl/qi25fgTFA7hcdbxw5",
+            "lat": 16.4361347,
+            "lng": 74.5154102
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "stops": [
+          {
+            "name": "Acharya Shri Shanti Sagar Janm Bhoomi, Bhoj",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "Acharya Shri Shanti sagar janm bhoomi 2 jain temples and teerth",
+            "mapsLink": "https://maps.app.goo.gl/oRxQEjiUz1bLuq8aA",
+            "lat": 16.535862,
+            "lng": 74.4413997
+          },
+          {
+            "name": "Acharya Shri Vidhya Sagar Janm Bhoomi, Sadalga",
+            "type": "Temple",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "There are 6 jain temples in village acharya Shri vidhya sagar Maharaj ji janm bhoomi",
+            "mapsLink": "https://maps.app.goo.gl/cBES4fTpwWNftZnM8",
+            "lat": 16.5559097,
+            "lng": 74.5294952
+          },
+          {
+            "name": "Kagwad Leni Temple",
+            "type": "Cave/Hill",
+            "facilities": [],
+            "description": "2 floor underground jain temple",
+            "mapsLink": "https://maps.app.goo.gl/CtRRxMZhD5Vx4L1E9",
+            "lat": 16.691346,
+            "lng": 74.7197342
+          },
+          {
+            "name": "Shedbal Ashram",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "Samadhi sthali of Acharya Shri Subal Sagar Maharaj.",
+            "mapsLink": "https://maps.app.goo.gl/wBYn5gKe1okB93ow8",
+            "lat": 16.6896186,
+            "lng": 74.7557422
+          },
+          {
+            "name": "Ugar Padmavati Atishya Kshetra",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Beautiful atishay parshwanath jain temple with padmavati mata. Nearest railway stations are Ugar and Miraj.",
+            "mapsLink": "https://maps.app.goo.gl/GMPwU5eHDtWQKLTk6",
+            "lat": 16.6474652,
+            "lng": 74.8003907
+          }
+        ]
+      }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Belagavi",
+      "Kamal Basadi",
+      "Sankeshwar",
+      "Stavnidhi",
+      "Kothali",
+      "Bhoj",
+      "Sadalga",
+      "Shedbal",
+      "Ugar",
+      "Jain Tirth"
+    ]
   }
 ]

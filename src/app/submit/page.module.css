@@ -332,6 +332,7 @@
         flex-direction: column;
     }
 }
+
 .motivationGrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -374,4 +375,12 @@
 .previewMessage p {
     color: var(--secondary);
     font-weight: 500;
+}
+
+.helpText {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+    font-style: italic;
 }

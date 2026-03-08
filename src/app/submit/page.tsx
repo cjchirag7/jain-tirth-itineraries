@@ -31,7 +31,8 @@ export default function SubmitItinerary() {
 
     const availableStates = [
         'Tamil Nadu', 'Karnataka', 'Maharashtra', 'Rajasthan',
-        'Gujarat', 'Madhya Pradesh', 'Kerala', 'Andhra Pradesh'
+        'Gujarat', 'Madhya Pradesh', 'Kerala', 'Andhra Pradesh',
+        'Uttar Pradesh', 'Bihar', 'Jharkhand'
     ];
 
     const handleStateToggle = (state: string) => {
@@ -114,36 +115,48 @@ export default function SubmitItinerary() {
         e.preventDefault();
         setSubmitting(true);
 
+        // Generate keywords automatically
+        const stopNames = days.flatMap(d => d.stops.map(s => s.name));
+        const keywords = Array.from(new Set([
+            ...states,
+            ...stopNames.slice(0, 10),
+            'Jain Tirth',
+            'Itinerary'
+        ])).filter(Boolean);
+
         const itineraryData = {
-            id: Date.now().toString(),
+            id: title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
             title,
             duration: `${duration} ${parseInt(duration) === 1 ? 'Day' : 'Days'}`,
             states,
             author,
             ...(authorInstagram && { authorInstagram }),
             description,
-            days
+            days,
+            keywords
         };
 
-        // Format JSON nicely
         const jsonString = JSON.stringify(itineraryData, null, 2);
 
-        // Create email body
-        const emailBody = `New Itinerary Submission
+        const emailBody = `Jai Jinendra! 🙏
+
+New Itinerary Submission for Jain Routes.
 
 Title: ${title}
 Duration: ${duration} ${parseInt(duration) === 1 ? 'Day' : 'Days'}
 States: ${states.join(', ')}
-Author: ${author}${authorInstagram ? `\nInstagram: ${authorInstagram}` : ''}
+Author: ${author}
+Instagram: ${authorInstagram || 'Not provided'}
 Description: ${description}
 
 Number of Days: ${days.length}
+Number of Stops: ${days.reduce((acc, d) => acc + d.stops.length, 0)}
 
----
+--- JSON DATA FOR ITINERARIES.JSON ---
 
-Complete JSON Data (copy and paste this into itineraries.json):
+${jsonString}
 
-${jsonString}`;
+--- END JSON ---`;
 
         // Create mailto link
         const mailtoLink = `mailto:routesjain@gmail.com?subject=${encodeURIComponent(`New Itinerary: ${title}`)}&body=${encodeURIComponent(emailBody)}`;
@@ -432,14 +445,16 @@ ${jsonString}`;
                                             </div>
 
                                             <div className={styles.formGroup}>
-                                                <label className={styles.label}>Google Maps Link</label>
+                                                <label className={styles.label}>Google Maps Link *</label>
                                                 <input
                                                     type="url"
                                                     value={stop.mapsLink}
                                                     onChange={(e) => updateStop(dayIndex, stopIndex, 'mapsLink', e.target.value)}
                                                     placeholder="https://maps.app.goo.gl/..."
                                                     className={styles.input}
+                                                    required
                                                 />
+                                                <small className={styles.helpText}>Essential for automatic coordinate generation.</small>
                                             </div>
                                         </div>
                                     ))}
