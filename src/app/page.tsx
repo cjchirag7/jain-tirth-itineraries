@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import styles from './page.module.css';
 import SearchFilters from '@/components/SearchFilters';
 import ItineraryCard from '@/components/ItineraryCard';
@@ -63,6 +64,21 @@ export default function Home() {
     return Array.from(suggestions).sort();
   }, []);
 
+  const totalRoutes = itineraries.length;
+  const totalUniqueTirths = useMemo(() => {
+    const tirths = new Set<string>();
+    itineraries.forEach(itinerary => {
+      itinerary.days.forEach(day => {
+        day.stops.forEach((stop: any) => {
+          if (stop.type === 'Tirth' || stop.type === 'Temple') {
+            tirths.add(stop.name);
+          }
+        });
+      });
+    });
+    return tirths.size;
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.hero}>
@@ -71,7 +87,7 @@ export default function Home() {
             Discover & Share <span className={styles.highlight}>Jain Routes</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Find detailed travel plans for Jain Tirths, complete with Dharmshala and Bhojanshala information. Plan your spiritual journey today.
+            Find detailed travel plans for Jain Tirths, complete with Dharmshalas. Plan your spiritual journey today.
           </p>
           <div className={styles.searchContainer}>
             <SearchFilters
@@ -83,6 +99,17 @@ export default function Home() {
               setSelectedDuration={setSelectedDuration}
               searchSuggestions={searchSuggestions}
             />
+          </div>
+          <div className={styles.ctaGroup}>
+            <Link href="/submit" className="btn btn-primary">
+              Share Your Route &rarr;
+            </Link>
+            <button className="btn btn-outline" onClick={() => {
+              const searchInput = document.querySelector('input');
+              if (searchInput) searchInput.focus();
+            }}>
+              Explore Routes
+            </button>
           </div>
         </div>
       </section>
@@ -97,7 +124,7 @@ export default function Home() {
         {filteredItineraries.length === 0 ? (
           <div className={styles.noResults}>
             <p>No itineraries found matching your search criteria.</p>
-            <p className={styles.noResultsHint}>Try adjusting your filters or search term.</p>
+            <p className={styles.noResultsHint}>Be the first to <Link href="/submit" style={{ color: 'var(--primary)', textDecoration: 'underline' }}>share a route</Link> for this area!</p>
           </div>
         ) : (
           <div className={styles.grid}>
@@ -109,10 +136,42 @@ export default function Home() {
                 duration={itinerary.duration}
                 states={itinerary.states}
                 description={itinerary.description}
+                author={itinerary.author}
+                authorInstagram={(itinerary as any).authorInstagram}
               />
             ))}
           </div>
         )}
+      </section>
+
+      <section className={styles.impactSection}>
+        <div className="container">
+          <h2 className={styles.sectionTitle} style={{ color: 'white' }}>Our Community Impact</h2>
+          <p className={styles.impactSubtitle}>Jain Routes is built by the community, for the community.</p>
+
+          <div className={styles.impactGrid}>
+            <div className={styles.impactItem}>
+              <h3>{totalUniqueTirths}</h3>
+              <p>Tirths Covered</p>
+            </div>
+            <div className={styles.impactItem}>
+              <h3>{totalRoutes}</h3>
+              <p>Verified Routes</p>
+            </div>
+            <div className={styles.impactItem}>
+              <h3>100+</h3>
+              <p>Yatris & Growing</p>
+            </div>
+          </div>
+
+          <div className={styles.contributionNudge}>
+            <h3>Earn Punya by Guiding Others</h3>
+            <p>Your travel experience can help a fellow Sadharmi plan their spiritual journey safely and comfortably.</p>
+            <Link href="/submit" className="btn btn-primary" style={{ padding: '1rem 2.5rem' }}>
+              Contribute an Itinerary
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );

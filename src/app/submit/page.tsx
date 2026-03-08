@@ -179,6 +179,21 @@ ${jsonString}`;
                     </p>
                 </div>
 
+                <div className={styles.motivationGrid}>
+                    <div className={styles.motivationCard}>
+                        <h3><span>🙏</span> Sadharmi Seva</h3>
+                        <p>Help fellow Jain Yatris plan their spiritual journeys with ease and safety.</p>
+                    </div>
+                    <div className={styles.motivationCard}>
+                        <h3><span>✨</span> Earn Punya</h3>
+                        <p>Sharing knowledge that helps others visit Tirths is a great form of service.</p>
+                    </div>
+                    <div className={styles.motivationCard}>
+                        <h3><span>🏆</span> Get Recognized</h3>
+                        <p>Your name and Instagram will be featured on the route you share.</p>
+                    </div>
+                </div>
+
                 {submitted ? (
                     <div className={styles.successMessage}>
                         <div className={styles.emailIcon}>✉️</div>
@@ -443,6 +458,10 @@ ${jsonString}`;
                         >
                             {submitting ? 'Opening Email...' : 'Generate Email to Submit'}
                         </button>
+
+                        <div className={styles.previewMessage}>
+                            <p>✨ After submission, your itinerary will be verified and published with your name and social link!</p>
+                        </div>
                     </form>
                 )}
             </div>

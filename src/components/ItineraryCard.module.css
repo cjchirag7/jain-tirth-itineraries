@@ -72,11 +72,39 @@
     margin-top: auto;
     border-top: 1px solid var(--border);
     padding-top: 1rem;
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cta {
     color: var(--primary);
     font-weight: 600;
     font-size: 0.9rem;
+}
+.authorInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.authorLabel {
+    color: var(--muted);
+}
+
+.authorName {
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.instagramLink {
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.instagramLink:hover {
+    transform: scale(1.2);
 }

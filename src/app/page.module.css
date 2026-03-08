@@ -1,5 +1,5 @@
 .wrapper {
-  padding-bottom: 4rem;
+  padding-bottom: 0;
 }
 
 .hero {
@@ -38,6 +38,7 @@
 
 .featuredSection {
   margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 
 .sectionTitle {
@@ -72,5 +73,62 @@
 @media (max-width: 768px) {
   .heroTitle {
     font-size: 2rem;
+  }
+}
+
+.ctaGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.impactSection {
+  padding: 6rem 0;
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.impactItem h3 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.impactItem p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.contributionNudge {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contributionNudge h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contributionNudge p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .ctaGroup {
+    flex-direction: column;
+    padding: 0 2rem;
   }
 }
