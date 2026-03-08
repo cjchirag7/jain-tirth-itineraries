@@ -159,7 +159,7 @@ export default function Home() {
               <p>Verified Routes</p>
             </div>
             <div className={styles.impactItem}>
-              <h3>100+</h3>
+              <h3>1000+</h3>
               <p>Yatris & Growing</p>
             </div>
           </div>
