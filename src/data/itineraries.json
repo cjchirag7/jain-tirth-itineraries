@@ -1316,5 +1316,195 @@
       "Shimoga",
       "Jain Tirth"
     ]
+  },
+  {
+    "id": "shikharji-panch-teerth-jain-yatra",
+    "title": "Shikharji & Panch Teerth Yatra",
+    "duration": "5 Days",
+    "states": [
+      "Jharkhand",
+      "Bihar"
+    ],
+    "author": "Jain Routes Community",
+    "description": "The ultimate pilgrimage covering Sammed Shikharji (Nirvan Bhumi of 20 Tirthankaras) and the five sidhh khetras, including the birthplaces of Bhagwan Mahavir and Vasupujya Swami.",
+    "days": [
+      {
+        "day": 1,
+        "stops": [
+          {
+            "name": "Madhuban (Shikharji Base)",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The base camp for Shikharji pilgrimage. Madhuban is home to dozens of beautiful Shwetambar and Digambar Kothis/Dharmshalas. You can do darshan of all the base temples in Madhuban itself. Note: Deoghar (DGH) is the nearest airport and Parasnath (PNME) is the nearest railway station.",
+            "mapsLink": "https://maps.app.goo.gl/TqGX29RnVBWhrngF7",
+            "lat": 24.0031889,
+            "lng": 86.1479963
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "stops": [
+          {
+            "name": "Sammed Shikharji Parvat Vandana",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "The holiest Jain Tirth. A 27 km trek to do vandana of the 25 'Tonks' where 20 out of 24 Tirthankaras attained Nirvana. Start early (2-3 AM) for the vandana.",
+            "mapsLink": "https://maps.app.goo.gl/HPAdGNAdFdCvUWy86",
+            "lat": 24.0014412,
+            "lng": 86.1468692
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "stops": [
+          {
+            "name": "Palganj Prachin Digambar Jain Mandir",
+            "type": "Temple",
+            "facilities": [],
+            "description": "An ancient atishay kshetra with a 2500-year-old idol of Bhagwan Parshwanath. Historically known as the original 'Taleti' or base of Shikharji.",
+            "mapsLink": "https://maps.app.goo.gl/VYGuDNFE2L3ekvXT8",
+            "lat": 24.0792541,
+            "lng": 86.2142246
+          },
+          {
+            "name": "Mandargiri Hill, Nirvan Bhoomi of Vasupujya Swami",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "The only place associated with all five Kalyanakas — Garbha, Janma, Tapa, Gyan, and Moksha — of 12th tirthankar, Bhagwan Vasupujya. The site is the tap, kevalgyan, and moksha sthali of Vasupujya Swami. Also has ropeway to the top.",
+            "mapsLink": "https://maps.app.goo.gl/fBzH9LDVLR4hYyWx9",
+            "lat": 24.8378014,
+            "lng": 87.0306156
+          },
+          {
+            "name": "Mandargiri Base Temple",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "Ancient temple of vasupujya swami, located near the railway station.",
+            "mapsLink": "https://maps.app.goo.gl/8Kq2fTWTKjK8FpSv5",
+            "lat": 24.8050908,
+            "lng": 87.0273588
+          },
+          {
+            "name": "Champapuri, Bhagalpur",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The garbha and janma sthal of Vasupujya Swami. Main 2 Kothis on the opposite sides of the road (19 Temples in Terahpanthi Kothi and 35 Vedis in Bispanthi Kothi).",
+            "mapsLink": "https://maps.app.goo.gl/gC1SFCFgWFVZEr2z7",
+            "lat": 25.237326,
+            "lng": 86.9409235
+          }
+        ]
+      },
+      {
+        "day": 4,
+        "stops": [
+          {
+            "name": "Kundalpur (Nalanda) Digambar Jain Mandir",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The sacred Janm Bhoomi (birthplace) of Bhagwan Mahavir Swami. There are 2 Kothis opposite to each other.",
+            "mapsLink": "https://maps.app.goo.gl/nj49shjiFEAZuBsaA",
+            "lat": 25.5244467,
+            "lng": 79.9451025
+          },
+          {
+            "name": "Pavapuri Jal Mandir",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The Moksh Bhoomi of Bhagwan Mahavir. The white marble temple is situated in the middle of a large lotus pond, marking the spot of his nirvana. There are 3 other temples in pavapuri.",
+            "mapsLink": "https://maps.app.goo.gl/sG7YToCJXqM9shjB9",
+            "lat": 25.0914304,
+            "lng": 84.3194964
+          },
+          {
+            "name": "Gunavaji Siddha Kshetra, Nawada",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The Moksh Bhoomi of Gautam Ganadhar.",
+            "mapsLink": "https://maps.app.goo.gl/rJftVmRPhEkoT3x69",
+            "lat": 24.9097925,
+            "lng": 85.1964792
+          },
+          {
+            "name": "Digambar Jain Dharmshala, Rajgir",
+            "type": "Tirth",
+            "facilities": [
+              "Bhojanshala",
+              "Dharmshala"
+            ],
+            "description": "Night stay and Bhojan available. Nearby is Shri Mahavir Swami Temple.",
+            "mapsLink": "https://maps.app.goo.gl/FybHTwYLUucmKuE79",
+            "lat": 25.026152,
+            "lng": 85.4190933
+          }
+        ]
+      },
+      {
+        "day": 5,
+        "stops": [
+          {
+            "name": "Bhagwaan Munisuvratnath Swami Janm Bhoomi, Rajgir",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "Ancient temple of Muni Suvratnath Swami, believed to be his birthplace.",
+            "mapsLink": "https://maps.app.goo.gl/8s7Zz9goYK3Uu1gB9",
+            "lat": 25.0263507,
+            "lng": 85.4148465
+          },
+          {
+            "name": "Parvat Vandana, Rajgir",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "You will need to do tanga for the parvat vandana. Do darshan at the five hills of Rajgir - Many munis (sky clad saints) attained salvation from the mountains present here namely Vaibhargiri, Vipulachal, Ratnagiri, Udaygiri, and Sonagiri. Vipulachal is the site of Bhagwan Mahavir's first 'Divya Dhwani' after attaining Kevalgyan.",
+            "mapsLink": "https://maps.app.goo.gl/bHuYFj3Hj1f3H3Jo9",
+            "lat": 25.0123094,
+            "lng": 85.3908394
+          },
+          {
+            "name": "Veerayatan Jain Museum, Rajgir",
+            "type": "Museum",
+            "facilities": [],
+            "description": "A spiritual and humanitarian organization featuring a beautiful Brahmi-Kala Mandir museum depicting Jain history through dioramas. For departure, nearest railway station is Rajgir. Nearest airports are Gaya and Patna.",
+            "mapsLink": "https://maps.app.goo.gl/bHuYFj3Hj1f3H3Jo9",
+            "lat": 25.0123094,
+            "lng": 85.3908394
+          }
+        ]
+      }
+    ],
+    "keywords": [
+      "Sammed Shikharji",
+      "Panch Teerth",
+      "Bihar",
+      "Jharkhand",
+      "Madhuban",
+      "Pavapuri",
+      "Rajgir",
+      "Kundalpur",
+      "Champapur",
+      "Mahavir Swami",
+      "Vasupujya Swami",
+      "Jain Yatra"
+    ]
   }
 ]
