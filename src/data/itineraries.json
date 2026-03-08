@@ -974,7 +974,7 @@
     ],
     "author": "Pratik Akkole",
     "authorInstagram": "https://www.instagram.com/pratik_akkole?igsh=MWQ5MndqbHFhcTI5aw==",
-    "description": "Complete dev darshan of Belagavi district, featuring ancient Ratta dynasty temples, sacred birthplaces of Acharyas, and unique underground cave temples.",
+    "description": "Complete tirth darshan of Belagavi district, featuring ancient Ratta dynasty temples, sacred Acharya birthplaces, and unique cave temples.",
     "days": [
       {
         "day": 1,
@@ -1103,6 +1103,217 @@
       "Sadalga",
       "Shedbal",
       "Ugar",
+      "Jain Tirth"
+    ]
+  },
+  {
+    "id": "malenadu-jain-teerth-kshetra-darshan",
+    "title": "Malenadu Jain Tirth Darshan",
+    "duration": "3 Days",
+    "states": [
+      "Karnataka"
+    ],
+    "author": "Pratik Akkole",
+    "authorInstagram": "https://www.instagram.com/pratik_akkole?igsh=MWQ5MndqbHFhcTI5aw==",
+    "description": "Explore Malenadu's heart, featuring India's highest waterfalls, Acharya Kundakunda's meditation sites, and the Pepper Queen's legacy.",
+    "days": [
+      {
+        "day": 1,
+        "stops": [
+          {
+            "name": "Hubballi Gabbur Shwetambar Jain Temple",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "A prominent Shwetambar center. The Shankheshwar Parshva Padmalayam offers excellent boarding and Bhojanshala facilities.",
+            "mapsLink": "https://maps.app.goo.gl/sxwDzetGTcQqpqjg8",
+            "lat": 15.3142882,
+            "lng": 75.1447826
+          },
+          {
+            "name": "Navagraha Teerth Kshetra, Varur",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "Features a majestic 61-foot monolithic statue of Shri 1008 Bhagwan Parshwanath, surrounded by smaller statues of the other 8 Graha-related Tirthankaras on a 'Meru Parvat' structure.",
+            "mapsLink": "https://maps.app.goo.gl/UprvCijRNavGtp7D8",
+            "lat": 15.2156096,
+            "lng": 75.1410389
+          },
+          {
+            "name": "Adinath Shantinath Jain Temple, Tadas",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Ancient and serene temples built with intricate stone carvings, reflecting the region's historical Jain roots.",
+            "mapsLink": "https://maps.app.goo.gl/nsNQWRa39JkFC4Uu6",
+            "lat": 15.1256766,
+            "lng": 75.1267424
+          },
+          {
+            "name": "Acharya Shri Punyasagar Maharaj Janm Bhoomi, Artal",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Sacred Janm Bhoomi of the revered Digambara monk Acharya Shri Punyasagar Maharaj.",
+            "mapsLink": "https://maps.app.goo.gl/yg6K1f4zYHPxuyzR9",
+            "lat": 15.0071194,
+            "lng": 75.1280655
+          },
+          {
+            "name": "Acharya Pujyapad Swami Upsarg Sthali, Banavasi",
+            "type": "Temple",
+            "facilities": [],
+            "description": "The site where the legendary grammarian Acharya Pujyapad Swami is said to have written the 'Shantyastak Stotra'. Legend says he regained his lost eyesight here after composing this stotra.",
+            "mapsLink": "https://maps.app.goo.gl/CB37goc9iofshwN66",
+            "lat": 14.5366553,
+            "lng": 75.0165344
+          }
+        ]
+      },
+      {
+        "day": 2,
+        "stops": [
+          {
+            "name": "Jog Falls",
+            "type": "Travel",
+            "facilities": [],
+            "description": "India's highest untiered waterfall (Niagara Falls of India), formed by the Sharavathi River.",
+            "mapsLink": "https://maps.app.goo.gl/T3X1JERdMA6DQG419",
+            "lat": 14.2241595,
+            "lng": 74.8092566
+          },
+          {
+            "name": "Shri Atishay Kshetra Vadanbailu Padmavati",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "A unique Tirth where the 'Chaturmukha Padmavathi' idol is enshrined within a live anthill in the dense forests of the Western Ghats.",
+            "mapsLink": "https://maps.app.goo.gl/8v6DbBJa5HqCZdqEA",
+            "lat": 14.2131356,
+            "lng": 74.7657693
+          },
+          {
+            "name": "Chaturmukha Basadi, Gerusoppa",
+            "type": "Tirth",
+            "facilities": [],
+            "description": "Capital of the famous 'Pepper Queen' Rani Chennabhairadevi. The cross-shaped Chaturmukha Basadi is an ASI protected monument with four entrances, each facing a Jina.",
+            "mapsLink": "https://maps.app.goo.gl/afVwaVcP7vZhZDS5A",
+            "lat": 14.2285255,
+            "lng": 74.662229
+          },
+          {
+            "name": "Muni Shri Payasagar Maharaj Janm Bhoomi, Halsasi",
+            "type": "Temple",
+            "facilities": [],
+            "description": "Birthplace of Muni Shri Payasagar Maharaj, set in a tranquil rural setting.",
+            "mapsLink": "https://maps.app.goo.gl/x9ssw2PD7u3ePSi36",
+            "lat": 13.9444687,
+            "lng": 74.7745312
+          },
+          {
+            "name": "Koduru Jain Temple",
+            "type": "Temple",
+            "facilities": [],
+            "description": "A peaceful village temple catering to the local Jain households.",
+            "mapsLink": "https://maps.app.goo.gl/WaDy2jps9XpNsL9B6",
+            "lat": 13.9760537,
+            "lng": 74.801891
+          },
+          {
+            "name": "Muni Shri Viditsagar Maharaj Janm Bhoomi, Harige",
+            "type": "Temple",
+            "facilities": [],
+            "description": "The sacred birthplace of Muni Shri Viditsagar Maharaj.",
+            "mapsLink": "https://maps.app.goo.gl/52eXGm8f2ztKiFCT6",
+            "lat": 13.9927057,
+            "lng": 74.8051544
+          }
+        ]
+      },
+      {
+        "day": 3,
+        "stops": [
+          {
+            "name": "Humcha (Huncha) Jain Mutt",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "The world-famous seat of Devi Padmavati. Known for the ancient Lakki tree and the historic Panchakuta Basadi.",
+            "mapsLink": "https://maps.app.goo.gl/BeLvsddejw36iMFg6",
+            "lat": 13.8616393,
+            "lng": 75.2057605
+          },
+          {
+            "name": "Kundadri Hill",
+            "type": "Cave/Hill",
+            "facilities": [],
+            "description": "The meditation grounds (Taposthali) of the legendary Acharya Kundakunda. Features a 17th-century Parshwanath Basadi with breathtaking views of the Shimoga forest.",
+            "mapsLink": "https://maps.app.goo.gl/dNNVFd7wWoCC1y2u8",
+            "lat": 13.557892,
+            "lng": 75.16838
+          },
+          {
+            "name": "NR Pura Atishay Kshetra",
+            "type": "Tirth",
+            "facilities": [
+              "Dharmshala",
+              "Bhojanshala"
+            ],
+            "description": "A significant atishay kshetra dedicated to Jwalamalini Devi, attracting devotees from across the state.",
+            "mapsLink": "https://maps.app.goo.gl/1PAjY5WTMnCMNGon6",
+            "lat": 13.6052761,
+            "lng": 75.4975016
+          },
+          {
+            "name": "Maddagadde Bird Sanctuary",
+            "type": "Travel",
+            "facilities": [],
+            "description": "An island bird sanctuary in the middle of the Tunga River, perfect for nature enthusiasts.",
+            "mapsLink": "https://maps.app.goo.gl/8PE9eSWWumM1EKeLA",
+            "lat": 13.7400716,
+            "lng": 75.4592356
+          },
+          {
+            "name": "Sakkrebayel Elephant Camp",
+            "type": "Travel",
+            "facilities": [],
+            "description": "A popular camp where elephants used in the Mysuru Dasara are fed and bathed. Visitors can interact with the gentle giants.",
+            "mapsLink": "https://maps.app.goo.gl/7kxNLFmRhCv6Yr7eA",
+            "lat": 13.8386528,
+            "lng": 75.5123914
+          },
+          {
+            "name": "Shivamogga Railway Station",
+            "type": "Travel",
+            "facilities": [],
+            "description": "Departure point from the Malenadu region.",
+            "mapsLink": "https://maps.app.goo.gl/A2hL9FbDYmioXPh26",
+            "lat": 13.9437641,
+            "lng": 75.5835661
+          }
+        ]
+      }
+    ],
+    "keywords": [
+      "Karnataka",
+      "Malenadu",
+      "Hubballi",
+      "Varur",
+      "Banavasi",
+      "Jog Falls",
+      "Vadanbailu",
+      "Gerusoppa",
+      "Humcha",
+      "Kundadri",
+      "NR Pura",
+      "Shimoga",
       "Jain Tirth"
     ]
   }

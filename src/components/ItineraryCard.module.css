@@ -63,7 +63,8 @@
     margin-bottom: 1.5rem;
     flex-grow: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -82,6 +83,7 @@
     font-weight: 600;
     font-size: 0.9rem;
 }
+
 .authorInfo {
     display: flex;
     align-items: center;
