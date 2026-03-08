@@ -137,6 +137,17 @@
     font-weight: 600;
 }
 
+.aiMessage a {
+    color: var(--primary);
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.aiMessage a:hover {
+    color: var(--primary-dark);
+}
+
 .inputArea {
     padding: 1.25rem;
     border-top: 1px solid var(--border);
