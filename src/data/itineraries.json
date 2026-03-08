@@ -335,7 +335,7 @@
             "lng": 76.6937388
           },
           {
-            "name": "Mandargiri Hill",
+            "name": "Mandargiri Hill, Tumkur",
             "type": "Tirth",
             "facilities": [
               "Bhojanshala"
@@ -749,7 +749,7 @@
         "day": 1,
         "stops": [
           {
-            "name": "Mandargiri Hill",
+            "name": "Mandargiri Hill, Tumkur",
             "type": "Tirth",
             "facilities": [
               "Bhojanshala"
@@ -1325,8 +1325,9 @@
       "Jharkhand",
       "Bihar"
     ],
-    "author": "Jain Routes Community",
-    "description": "The ultimate pilgrimage covering Sammed Shikharji (Nirvan Bhumi of 20 Tirthankaras) and the five sidhh khetras, including the birthplaces of Bhagwan Mahavir and Vasupujya Swami.",
+    "author": "Anubhav Jain",
+    "authorInstagram": "https://www.instagram.com/anubhav_jain__/",
+    "description": "The ultimate pilgrimage covering Sammed Shikharji (Nirvan Bhumi of 20 Tirthankaras), the five sidhh khetras and the birthplaces of Bhagwan Mahavir and Vasupujya Swami.",
     "days": [
       {
         "day": 1,

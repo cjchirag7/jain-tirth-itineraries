@@ -11,6 +11,7 @@ interface SearchFiltersProps {
     selectedDuration: string;
     setSelectedDuration: (duration: string) => void;
     searchSuggestions: string[];
+    states: string[];
 }
 
 export default function SearchFilters({
@@ -20,7 +21,8 @@ export default function SearchFilters({
     setSelectedState,
     selectedDuration,
     setSelectedDuration,
-    searchSuggestions
+    searchSuggestions,
+    states
 }: SearchFiltersProps) {
     return (
         <div className={`card ${styles.filters}`}>
@@ -44,13 +46,9 @@ export default function SearchFilters({
                     className={styles.select}
                 >
                     <option value="">All States</option>
-                    <option value="Tamil Nadu">Tamil Nadu</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Rajasthan">Rajasthan</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    {states.map((state) => (
+                        <option key={state} value={state}>{state}</option>
+                    ))}
                 </select>
             </div>
 

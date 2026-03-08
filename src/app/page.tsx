@@ -79,6 +79,14 @@ export default function Home() {
     return tirths.size;
   }, []);
 
+  const uniqueStates = useMemo(() => {
+    const states = new Set<string>();
+    itineraries.forEach(itinerary => {
+      itinerary.states.forEach(state => states.add(state));
+    });
+    return Array.from(states).sort();
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <section className={styles.hero}>
@@ -98,6 +106,7 @@ export default function Home() {
               selectedDuration={selectedDuration}
               setSelectedDuration={setSelectedDuration}
               searchSuggestions={searchSuggestions}
+              states={uniqueStates}
             />
           </div>
           <div className={styles.ctaGroup}>
