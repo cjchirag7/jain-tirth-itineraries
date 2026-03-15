@@ -13,9 +13,10 @@ interface MapEmbedProps {
     stops: Stop[];
     states: string[];
     previousDayLastStop?: Stop;
+    startLocation?: string;
 }
 
-export default function MapEmbed({ day, stops, states, previousDayLastStop }: MapEmbedProps) {
+export default function MapEmbed({ day, stops, states, previousDayLastStop, startLocation }: MapEmbedProps) {
     if (!stops || stops.length === 0) return null;
 
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
@@ -29,28 +30,40 @@ export default function MapEmbed({ day, stops, states, previousDayLastStop }: Ma
         return encodeURIComponent(`${stop.name}${stateContext}`);
     };
 
-    // Build the full list of routing stops, prepending previous day's last stop if available
-    const routingStops: Stop[] = previousDayLastStop
-        ? [previousDayLastStop, ...stops]
-        : stops;
+    // Build the full list of routing stops
+    // 1. If we have a startLocation (Day 1), prepend it
+    // 2. Else if we have previousDayLastStop, prepend it
+    // 3. Otherwise just use stops
+    let routingStops: (Stop | string)[] = stops;
+
+    if (day === 1 && startLocation) {
+        routingStops = [startLocation, ...stops];
+    } else if (previousDayLastStop) {
+        routingStops = [previousDayLastStop, ...stops];
+    }
+
+    const getStopString = (stop: Stop | string) => {
+        if (typeof stop === 'string') return encodeURIComponent(stop);
+        return formatStop(stop);
+    };
 
     let embedUrl = '';
     let universalLink = '';
 
     if (routingStops.length === 1) {
         // Single stop - use Place mode for embed and Search mode for link
-        const place = formatStop(routingStops[0]);
+        const place = getStopString(routingStops[0]);
         embedUrl = apiKey ? `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=${place}` : '';
         universalLink = `https://www.google.com/maps/search/?api=1&query=${place}`;
     } else {
         // Multiple stops - use Directions mode
-        const origin = formatStop(routingStops[0]);
-        const destination = formatStop(routingStops[routingStops.length - 1]);
+        const origin = getStopString(routingStops[0]);
+        const destination = getStopString(routingStops[routingStops.length - 1]);
 
         let waypoints = '';
         if (routingStops.length > 2) {
             const middleStops = routingStops.slice(1, routingStops.length - 1);
-            waypoints = middleStops.map(stop => formatStop(stop)).join('|');
+            waypoints = middleStops.map(stop => getStopString(stop)).join('|');
         }
 
         if (apiKey) {

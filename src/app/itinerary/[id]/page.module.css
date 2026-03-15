@@ -144,6 +144,85 @@
     margin-bottom: 0.75rem;
 }
 
+.travelContext {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+}
+
+.inputGroup label {
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.9rem;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.clearBtn {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.locationBtn {
+    background: none;
+    border: none;
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: transform 0.2s;
+}
+
+.locationBtn:hover {
+    transform: scale(1.1);
+}
+
+.inputActions {
+    position: absolute;
+    right: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.inputGroup small {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
 .stopName {
     font-size: 1.25rem;
     color: var(--secondary);
@@ -184,13 +263,42 @@
     display: inline-flex;
     align-items: center;
     gap: 0.25rem;
-    color: var(--primary);
+    color: white;
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    transition: all 0.2s;
 }
 
 .mapLink:hover {
-    text-decoration: underline;
+    background: var(--primary-dark);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.viewLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.viewLink:hover {
+    background: rgba(255, 107, 53, 0.05);
+}
+
+.stopActions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
 @media (max-width: 768px) {
