@@ -71,6 +71,7 @@ button {
   border: none;
   background: none;
   font-family: inherit;
+  font-size: inherit;
 }
 
 /* Utilities */
@@ -87,6 +88,7 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
   font-weight: 600;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.2s, transform 0.2s;
 }

@@ -267,6 +267,25 @@
     background: rgba(255, 107, 53, 0.05);
 }
 
+.addDayBottomBtn {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    background: white;
+    border: 2px dashed var(--primary-light);
+    border-radius: var(--radius);
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.addDayBottomBtn:hover {
+    border-color: var(--primary);
+    background: rgba(255, 107, 53, 0.05);
+}
+
 .successMessage {
     background: var(--card-bg);
     border: 1px solid var(--border);
@@ -383,4 +402,102 @@
     color: var(--muted);
     margin-top: 0.4rem;
     font-style: italic;
+}
+
+.typeSelector {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--card-bg);
+    padding: 0.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+.draftActions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+}
+
+.typeButton {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--muted);
+    border-radius: calc(var(--radius) - 0.25rem);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.typeButton:hover {
+    color: var(--secondary);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.activeType {
+    background: var(--primary);
+    color: white !important;
+    box-shadow: 0 4px 6px rgba(255, 107, 53, 0.2);
+}
+
+.activeType:hover {
+    background: var(--primary);
+}
+
+.headerActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.clearDraftBtn {
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.clearDraftBtn:hover {
+    color: #dc3545;
+}
+
+.fallbackTextArea {
+    width: 100%;
+    min-height: 250px;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8f9fa;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-family: monospace;
+    font-size: 0.9rem;
+    resize: vertical;
+    color: var(--secondary);
+}
+
+.noticeBox {
+    background: rgba(255, 107, 53, 0.05);
+    border-left: 4px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    margin-bottom: 2rem;
+}
+
+.noticeBox p {
+    color: var(--secondary);
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
