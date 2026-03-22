@@ -1,0 +1,270 @@
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: var(--radius) var(--radius) 0 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.backLink {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: white;
+}
+
+.categoryBadges {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.categoryBadge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    backdrop-filter: blur(4px);
+}
+
+.badgeDisabled {
+    opacity: 0.6;
+    background: rgba(255, 255, 255, 0.1);
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.shareSection {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contentGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+    .contentGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: white;
+    border-radius: var(--radius);
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    font-family: var(--font-heading);
+    color: var(--secondary);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.card p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Contact List */
+.contactList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contactItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+}
+
+@media (max-width: 600px) {
+    .contactItem {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contactType {
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.contactName {
+    font-size: 0.9rem;
+    color: var(--text);
+}
+
+.contactNotes {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
+.contactButton {
+    background: #ecfdf5;
+    color: #059669;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    border: 1px solid #a7f3d0;
+    white-space: nowrap;
+}
+
+.contactButton:hover {
+    background: #d1fae5;
+    transform: translateY(-1px);
+}
+
+.emptyState {
+    text-align: center;
+    color: var(--muted);
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+.suggestEditWrapper {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.suggestEditBtn {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.suggestEditBtn:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Sidebar */
+.mapButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: var(--secondary);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--radius);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    transition: opacity 0.2s;
+}
+
+.mapButton:hover {
+    opacity: 0.9;
+}
+
+.howToReach h3 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: var(--secondary);
+}
+
+.howToReach ul {
+    list-style: none;
+    padding: 0;
+}
+
+.howToReach li {
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed var(--border);
+    color: var(--text);
+}
+
+.howToReach li:last-child {
+    border-bottom: none;
+}
+
+.itineraryLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.itinLinkCard {
+    display: block;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s;
+}
+
+.itinLinkCard:hover {
+    border-color: var(--primary);
+    box-shadow: 0 2px 4px rgba(255, 107, 53, 0.1);
+    transform: translateY(-2px);
+}
+
+.itinLinkCard h4 {
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.itinLinkCard span {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 500;
+}

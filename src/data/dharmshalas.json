@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ponnur-malai-dharmshala",
+    "name": "Ponnur Malai Dharmshala",
+    "state": "Tamil Nadu",
+    "type": "Dharmshala",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/z9t8Jh9msM58f53v5",
+      "lat": 12.5017149,
+      "lng": 79.5235491
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  },
+  {
+    "id": "assam-bhavan-sravanabelgola",
+    "name": "Assam Bhavan, Sravanabelgola",
+    "state": "Karnataka",
+    "type": "Dharmshala",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/zaErmNeazsip7kpX6",
+      "lat": 12.8590098,
+      "lng": 76.4836772
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  }
+]

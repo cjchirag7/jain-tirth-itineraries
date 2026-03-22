@@ -18,6 +18,8 @@ interface Itinerary {
     days: {
         day: number;
         stops: {
+            tirthId?: string;
+            tirth?: any;
             name: string;
             type: string;
             facilities: string[];
@@ -35,6 +37,14 @@ interface ItineraryClientProps {
 
 export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
     const [startLocation, setStartLocation] = useState('');
+    const [expandedContacts, setExpandedContacts] = useState<Record<string, boolean>>({});
+
+    const toggleContacts = (stopId: string) => {
+        setExpandedContacts(prev => ({
+            ...prev,
+            [stopId]: !prev[stopId]
+        }));
+    };
 
     useEffect(() => {
         const saved = localStorage.getItem('userStartingLocation');
@@ -196,7 +206,45 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                                 </div>
                                             )}
 
-                                            <p className={styles.stopDescription}>{stop.description}</p>
+                                            <p className={styles.stopDescription}>{stop.description || stop.tirth?.introText}</p>
+
+                                            {stop.tirth && stop.tirth.contacts && stop.tirth.contacts.length > 0 && (
+                                                <div className={styles.contactsAccordion}>
+                                                    <button 
+                                                        className={styles.accordionToggle} 
+                                                        onClick={() => toggleContacts(`${dayIndex}-${index}`)}
+                                                    >
+                                                        <span>📞 Contact Information</span>
+                                                        <span className={styles.chevron}>
+                                                            {expandedContacts[`${dayIndex}-${index}`] ? '▲' : '▼'}
+                                                        </span>
+                                                    </button>
+                                                    
+                                                    {expandedContacts[`${dayIndex}-${index}`] && (
+                                                        <div className={styles.contactsContent}>
+                                                            <div className={styles.contactsList}>
+                                                                {stop.tirth.contacts.map((contact: any, i: number) => (
+                                                                    <div key={i} className={styles.contactItem}>
+                                                                        <span className={styles.contactType}>{contact.type} ({contact.name})</span>
+                                                                        <a href={`tel:${contact.number}`} className={styles.contactNumber}>{contact.number}</a>
+                                                                    </div>
+                                                                ))}
+                                                            </div>
+                                                            <div className={styles.contactFooter}>
+                                                                <span className={styles.verifiedBadge}>✓ verified</span>
+                                                                <a 
+                                                                    href={`https://docs.google.com/forms/d/e/1FAIpQLSfIfYSg3E1d1XI8lDNYkxVZAu_d3w0OJmFE4ea0cfKezoAhNg/viewform?usp=pp_url&entry.900429225=${encodeURIComponent(stop.name)}&entry.340669516=${encodeURIComponent(stop.tirth.id)}&entry.837366253=${encodeURIComponent(stop.type)}`}
+                                                                    target="_blank"
+                                                                    rel="noopener noreferrer"
+                                                                    className={styles.suggestEdit}
+                                                                >
+                                                                    Suggest Edit
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            )}
 
                                             <div className={styles.stopActions}>
                                                 <a
@@ -207,14 +255,30 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                                 >
                                                     Get Directions ↗
                                                 </a>
-                                                <a
-                                                    href={stop.mapsLink}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
-                                                    className={styles.viewLink}
-                                                >
-                                                    View Place
-                                                </a>
+                                                {stop.type === 'Dharmshala' && stop.tirth ? (
+                                                    <Link 
+                                                        href={`/dharmshala/${stop.tirth.id}`}
+                                                        className={styles.viewLink}
+                                                    >
+                                                        View Dharmshala
+                                                    </Link>
+                                                ) : (['Tirth', 'Temple'].includes(stop.type) && stop.tirth) ? (
+                                                    <Link 
+                                                        href={`/tirth/${stop.tirth.id}`}
+                                                        className={styles.viewLink}
+                                                    >
+                                                        View Place
+                                                    </Link>
+                                                ) : (
+                                                    <a
+                                                        href={stop.mapsLink}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={styles.viewLink}
+                                                    >
+                                                        View on Map ↗
+                                                    </a>
+                                                )}
                                             </div>
                                         </div>
                                     );

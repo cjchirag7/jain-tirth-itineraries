@@ -3,8 +3,16 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './page.module.css';
+import tirthsOriginal from '@/data/tirths.json';
+import dharmshalasOriginal from '@/data/dharmshalas.json';
+
+const allKnownPlaces = [
+    ...tirthsOriginal.map(t => ({ ...t, source: 'tirth' })),
+    ...dharmshalasOriginal.map(d => ({ ...d, source: 'dharmshala' }))
+];
 
 interface Stop {
+    tirthId?: string;
     name: string;
     type: string;
     facilities: string[];
@@ -122,7 +130,7 @@ export default function SubmitItinerary() {
     const addStop = (dayIndex: number) => {
         setDays(prev => prev.map((day, i) =>
             i === dayIndex
-                ? { ...day, stops: [...day.stops, { name: '', type: 'Tirth', facilities: [], description: '', mapsLink: '' }] }
+                ? { ...day, stops: [...day.stops, { name: '', type: 'Tirth', facilities: [], description: '', mapsLink: '', tirthId: '' }] }
                 : day
         ));
     };
@@ -146,6 +154,142 @@ export default function SubmitItinerary() {
                 }
                 : day
         ));
+    };
+
+    const handleClearPlaceLink = (dayIndex: number, stopIndex: number) => {
+        setDays(prev => prev.map((day, i) =>
+            i === dayIndex
+                ? {
+                    ...day,
+                    stops: day.stops.map((stop, si) =>
+                        si === stopIndex ? { ...stop, tirthId: '' } : stop
+                    )
+                }
+                : day
+        ));
+    };
+
+    const SearchableDropdown = ({ dayIndex, stopIndex, currentTirthId }: { dayIndex: number, stopIndex: number, currentTirthId: string }) => {
+        const [query, setQuery] = useState('');
+        const [isOpen, setIsOpen] = useState(false);
+        const [activeIndex, setActiveIndex] = useState(-1);
+
+        const filteredPlaces = query.trim() === ''
+            ? []
+            : allKnownPlaces.filter(place =>
+                place.name.toLowerCase().includes(query.toLowerCase()) ||
+                place.type.toLowerCase().includes(query.toLowerCase()) ||
+                (place as any).state?.toLowerCase().includes(query.toLowerCase())
+            ).slice(0, 8);
+
+        const handleSelect = (place: any) => {
+            handleSelectExistingPlace(dayIndex, stopIndex, place.id);
+            setQuery('');
+            setIsOpen(false);
+        };
+
+        const handleKeyDown = (e: React.KeyboardEvent) => {
+            if (e.key === 'ArrowDown') {
+                setActiveIndex(prev => Math.min(prev + 1, filteredPlaces.length - 1));
+            } else if (e.key === 'ArrowUp') {
+                setActiveIndex(prev => Math.max(prev - 1, 0));
+            } else if (e.key === 'Enter' && activeIndex >= 0) {
+                e.preventDefault();
+                handleSelect(filteredPlaces[activeIndex]);
+            } else if (e.key === 'Escape') {
+                setIsOpen(false);
+            }
+        };
+
+        if (currentTirthId) {
+            const place = allKnownPlaces.find(p => p.id === currentTirthId);
+            const route = place?.type === 'Dharmshala' ? 'dharmshala' : 'tirth';
+            return (
+                <div className={styles.linkedBadge}>
+                    <span>
+                        🔗 Linked to: 
+                        <a 
+                            href={`/${route}/${place?.id}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.linkedName}
+                        >
+                            <strong>{place?.name}</strong>
+                        </a>
+                        ({place?.type})
+                    </span>
+                    <button 
+                        type="button" 
+                        onClick={() => handleClearPlaceLink(dayIndex, stopIndex)}
+                        className={styles.clearLinkBtn}
+                        title="Clear link"
+                    >
+                        ×
+                    </button>
+                </div>
+            );
+        }
+
+        return (
+            <div className={styles.searchContainer}>
+                <input
+                    type="text"
+                    className={styles.input}
+                    placeholder="Search existing Tirth/Dharmshala (e.g. Arihantagiri)"
+                    value={query}
+                    onChange={(e) => {
+                        setQuery(e.target.value);
+                        setIsOpen(true);
+                        setActiveIndex(-1);
+                    }}
+                    onFocus={() => setIsOpen(true)}
+                    onBlur={() => setTimeout(() => setIsOpen(false), 200)}
+                    onKeyDown={handleKeyDown}
+                />
+                {isOpen && query.trim() !== '' && (
+                    <div className={styles.searchResults}>
+                        {filteredPlaces.length > 0 ? (
+                            filteredPlaces.map((place, idx) => (
+                                <div
+                                    key={place.id}
+                                    className={`${styles.searchResultItem} ${idx === activeIndex ? styles.searchResultItemActive : ''}`}
+                                    onClick={() => handleSelect(place)}
+                                >
+                                    <span className={styles.resultName}>{place.name}</span>
+                                    <span className={styles.resultMeta}>{place.type} • {(place as any).state}</span>
+                                </div>
+                            ))
+                        ) : (
+                            <div className={styles.noResults}>No matching places found. Continue typing or fill manually.</div>
+                        )}
+                    </div>
+                )}
+            </div>
+        );
+    };
+
+    const handleSelectExistingPlace = (dayIndex: number, stopIndex: number, placeId: string) => {
+        const place = allKnownPlaces.find(p => p.id === placeId);
+        if (place) {
+            setDays(prev => prev.map((day, i) =>
+                i === dayIndex
+                    ? {
+                        ...day,
+                        stops: day.stops.map((stop, si) =>
+                            si === stopIndex ? { 
+                                ...stop, 
+                                tirthId: place.id, 
+                                name: place.name, 
+                                type: place.type,
+                                facilities: place.facilities || [],
+                                description: (place as any).introText || '',
+                                mapsLink: place.location?.mapsLink || ''
+                            } : stop
+                        )
+                    }
+                    : day
+            ));
+        }
     };
 
     const toggleFacility = (dayIndex: number, stopIndex: number, facility: string) => {
@@ -344,17 +488,17 @@ ${quickOutline}
                             </button>
                         </div>
 
-                        <div className={styles.draftActions}>
-                            <button type="button" onClick={clearDraft} className={styles.clearDraftBtn}>
-                                🗑️ Clear Draft
-                            </button>
-                        </div>
-
                         {formType === 'quick' && (
                             <div className={styles.noticeBox}>
                                 <p><strong>Note:</strong> Submitting the detailed form helps us publish your itinerary quickly. Quick outlines are processed manually by our team taking longer, but they require less effort to submit. Just describe the places visited, duration, and any helpful tips.</p>
                             </div>
                         )}
+
+                        <div className={styles.draftActions}>
+                            <button type="button" onClick={clearDraft} className={styles.clearDraftBtn}>
+                                🗑️ Clear Draft
+                            </button>
+                        </div>
 
                         {/* Basic Info */}
                         <div className={styles.section}>
@@ -537,6 +681,16 @@ ${quickOutline}
 
                                                 <div className={styles.formRow}>
                                                     <div className={styles.formGroup}>
+                                                        <label className={styles.label}>Link Existing Place (Optional)</label>
+                                                        <SearchableDropdown 
+                                                            dayIndex={dayIndex} 
+                                                            stopIndex={stopIndex} 
+                                                            currentTirthId={stop.tirthId || ''} 
+                                                        />
+                                                        {!stop.tirthId && <small className={styles.helpText}>Link to a place in our database to auto-fill details.</small>}
+                                                    </div>
+
+                                                    <div className={styles.formGroup}>
                                                         <label className={styles.label}>Place Name *</label>
                                                         <input
                                                             type="text"
@@ -555,10 +709,12 @@ ${quickOutline}
                                                             onChange={(e) => updateStop(dayIndex, stopIndex, 'type', e.target.value)}
                                                             className={styles.select}
                                                             required
+                                                            disabled={!!stop.tirthId}
                                                         >
                                                             <option value="Tirth">Tirth</option>
                                                             <option value="Temple">Temple</option>
-                                                            <option value="Cave/Hill">Cave/Hill</option>
+                                                            <option value="Dharmshala">Dharmshala</option>
+                                                            <option value="Tourist-Attraction">Tourist-Attraction</option>
                                                             <option value="Travel">Travel</option>
                                                         </select>
                                                     </div>
@@ -598,14 +754,15 @@ ${quickOutline}
                                                 </div>
 
                                                 <div className={styles.formGroup}>
-                                                    <label className={styles.label}>Google Maps Link *</label>
+                                                    <label className={styles.label}>Google Maps Link {stop.tirthId ? '' : '*'}</label>
                                                     <input
                                                         type="url"
                                                         value={stop.mapsLink}
                                                         onChange={(e) => updateStop(dayIndex, stopIndex, 'mapsLink', e.target.value)}
                                                         placeholder="https://maps.app.goo.gl/..."
                                                         className={styles.input}
-                                                        required
+                                                        required={!stop.tirthId}
+                                                        readOnly={!!stop.tirthId}
                                                     />
                                                     <small className={styles.helpText}>Essential for automatic coordinate generation.</small>
                                                 </div>

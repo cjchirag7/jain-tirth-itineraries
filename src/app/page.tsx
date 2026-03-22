@@ -119,6 +119,9 @@ export default function Home() {
             }}>
               Explore Routes
             </button>
+            <Link href="/directory" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              📍 Places Directory
+            </Link>
           </div>
         </div>
       </section>

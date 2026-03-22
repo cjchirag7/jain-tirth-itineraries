@@ -1,0 +1,2290 @@
+[
+  {
+    "id": "shree-kshetra-arihantagiri",
+    "name": "Shree Kshetra Arihantagiri",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "Traces back over 2,300 years to the 2nd Century BCE. Believed to be where the last Shrutkevali Bhadrabahu resided with 8,000 saints for meditation.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/BMY91HTwYJb28bJ6A",
+      "lat": 12.5619055,
+      "lng": 79.2023465
+    },
+    "howToReach": {
+      "nearestRailway": "Katpadi (42km)",
+      "nearestBusStand": "Polur (10km)",
+      "nearestAirport": "Chennai (155km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "04181-244325"
+      },
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "04181-244433"
+      },
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "09345982671"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.629Z",
+    "introText": "Significant Digambar Jain pilgrimage center featuring four temples and a prominent 18-foot high idol of Tirthankar Neminath (Shikhamani Nadar). The complex includes ancient monk caves with rare paintings and carvings."
+  },
+  {
+    "id": "arihanthgiri-ancient-mountain-temples",
+    "name": "Arihanthgiri Ancient Mountain Temples",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "Famous for the Samadhi of Muni Sri Vadeebha Simha and 12th-century Chola-period artistic influences.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/tvwR7VEZAx2onwt6A",
+      "lat": 12.5567169,
+      "lng": 79.206001
+    },
+    "howToReach": {
+      "nearestRailway": "Katpadi (42km)",
+      "nearestBusStand": "Polur (10km)",
+      "nearestAirport": "Chennai (155km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.629Z",
+    "introText": "Mountain top segment of the Arihantagiri complex featuring the 18-foot Neminath idol and 12th-century rock-cut shrines."
+  },
+  {
+    "id": "arani-saidapet-jain-temple",
+    "name": "Arani Saidapet Jain Temple",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/vn2bdnZ6dHffEryNA",
+      "lat": 12.6686668,
+      "lng": 79.2742944
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "+91 9442424001"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.629Z",
+    "introText": "Ancient temple in Saidapet, Arani, dedicated to Tirthankar Ananthanath."
+  },
+  {
+    "id": "shri-1008-bhagwan-adinath-digambar-jain-temple-arani",
+    "name": "Shri 1008 Bhagwan Adinath Digambar Jain Temple, Arani",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/z8XRzafzBqSrLwq67",
+      "lat": 12.6618099,
+      "lng": 79.2879677
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "+91 9442424001"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant spiritual center located in Kosapalayam, Arani, dedicated to Lord Adinath."
+  },
+  {
+    "id": "poondi-ponezhil-nathar-digamber-jain-arugar-temple",
+    "name": "Poondi Ponezhil Nathar Digamber Jain (Arugar) Temple",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Built in 1305 CE by King Veerasamban during the Chola era. Protected by ASI.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/ekUZW9Pk8KkirKgj7",
+      "lat": 12.6973945,
+      "lng": 79.3015215
+    },
+    "howToReach": {
+      "nearestRailway": "Arani (3km)",
+      "nearestBusStand": "Arani (3km)",
+      "nearestAirport": "Chennai (150km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "700-year-old temple also known as Veeraveera Jinalayam, featuring a 3-foot Lord Parshwanath idol. Notable for Chola architecture."
+  },
+  {
+    "id": "ancient-jain-temple-munigiri-karandai",
+    "name": "Ancient Jain Temple Munigiri, Karandai",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Hosted major religious debates. Received patronage from Chola and Vijayanagar dynasties.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/FZpZ5YjZrFFsn1KMA",
+      "lat": 12.7609761,
+      "lng": 79.5875211
+    },
+    "howToReach": {
+      "nearestRailway": "Kanchipuram (19km)",
+      "nearestBusStand": "Vandavasi-Kanchi road",
+      "nearestAirport": "Chennai"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "8th-century heritage center associated with Acharya Akalanka. Features Kunthunath, Parshwanathar, and Adinathar temples."
+  },
+  {
+    "id": "thiruppanamoor-digambar-jain-temple-karandai",
+    "name": "Thiruppanamoor Digambar Jain Temple, Karandai",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Site where munis attained sallekhana. Features a unique two-tiered sanctum.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/w1MYvdSUS98KqGot6",
+      "lat": 12.7645493,
+      "lng": 79.5888364
+    },
+    "howToReach": {
+      "nearestRailway": "Kanchipuram (19km)",
+      "nearestBusStand": "Vandavasi-Kanchi road",
+      "nearestAirport": "Chennai"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "15th-century temple dedicated to Lord Pushpadanta featuring rare gilded plaster images and footprints of ancient munis."
+  },
+  {
+    "id": "thiruparuthikundram-sri-digambar-jain-temples-kanchivaram",
+    "name": "Thiruparuthikundram Sri Digambar Jain Temples, Kanchivaram",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Built by Pallava King Narasimhavarman II. Features a 2000-year-old Kura tree. Protected by Tamil Nadu Archaeology Dept.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/X7pa3Z9LAHezkUF47",
+      "lat": 12.8303113,
+      "lng": 79.6808334
+    },
+    "howToReach": {
+      "nearestRailway": "Kanchipuram (3km)",
+      "nearestBusStand": "Kanchipuram",
+      "nearestAirport": "Chennai (70km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Known as Jain Kanchi, this 8th-century complex features the Trilokyanatha Temple with 14th-century Vijayanagar roof paintings."
+  },
+  {
+    "id": "acharya-kund-kund-charan-ponnur-hill",
+    "name": "Acharya Kund Kund Charan, Ponnur Hill",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "One of the most significant sites for Digambar Jains due to its association with Kundkund Acharya.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/agDJH6552t5whrqw5",
+      "lat": 12.4986007,
+      "lng": 79.5235486
+    },
+    "howToReach": {
+      "nearestRailway": "Tindivanam (35km)",
+      "nearestBusStand": "Vandavasi (10km)",
+      "nearestAirport": "Chennai (133km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Sacred hill where Acharya Kundkund (author of Samayasara) practiced penance. Features his footprints at the peak."
+  },
+  {
+    "id": "sri-adinath-digamber-jain-temple-ponnur-malai",
+    "name": "Sri Adinath Digamber Jain Temple, Ponnur Malai",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/BuhXyhEditRjDpe37",
+      "lat": 12.5035798,
+      "lng": 79.5198345
+    },
+    "howToReach": {
+      "nearestRailway": "Tindivanam (35km)",
+      "nearestBusStand": "Vandavasi (10km)",
+      "nearestAirport": "Chennai (133km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Base temple featuring a 30-inch marble Adinath idol and a recently installed 24-foot Bahubali statue."
+  },
+  {
+    "id": "thirakoil-jain-hill",
+    "name": "Thirakoil Jain Hill",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Protected ASI monument. Features rare 8th-century rock-cut architecture.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/rSGVAQg2Gr7emVEw5",
+      "lat": 12.4503981,
+      "lng": 79.497132
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "8th-century site with cave abodes for monks and a 25-foot monolithic stone with carvings of four Tirthankaras."
+  },
+  {
+    "id": "ariyampoondi-rock-cut-mahavir-jain-temple",
+    "name": "Ariyampoondi Rock Cut Mahavir Jain Temple",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/gjLzbo5tXZUKijEm6",
+      "lat": 12.4341275,
+      "lng": 79.465263
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Rock-cut shrine in Poondi village near Arani. Often associated with the 700-year-old Ponnezhilnathar complex."
+  },
+  {
+    "id": "sri-1008-adinath-digambar-jain-temple-ponnur",
+    "name": "Sri 1008 Adinath Digambar Jain Temple, Ponnur",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/7Cg8hmdxrPruCEbL9",
+      "lat": 12.4716076,
+      "lng": 79.5419551
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Historic Swarnapuram site featuring an 18th-century inscription tablet and heavy spiritual presence."
+  },
+  {
+    "id": "ancient-bhagwan-adinath-temple-salukkai",
+    "name": "Ancient Bhagwan Adinath Temple, Salukkai",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "Dates back to Chola era (11th century).",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/dvWKomPB2s3gXL6K6",
+      "lat": 12.5360885,
+      "lng": 79.6265988
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "11th-century site known as Veera Kerala Perum Palli. Features a 5-foot granite statue of Lord Adinath."
+  },
+  {
+    "id": "1008-bhagavan-sri-adinath-digambar-jain-basadi-vizhukkam",
+    "name": "1008 Bhagavan Sri Adinath Digambar Jain Basadi, Vizhukkam",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/f6vL2wMHwjHUrBXE6",
+      "lat": 12.261088,
+      "lng": 79.5406257
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "16th-century Dravidian style temple featuring fortified walls and beautiful outer wall carvings of Tirthankaras."
+  },
+  {
+    "id": "mel-chitamur-jin-kanchi",
+    "name": "Mel Chitamur (Jin Kanchi)",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/1BpxaR8PVtssDWLG6",
+      "lat": 12.2702174,
+      "lng": 79.5137764
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Primary religious center (Math) for Tamil Jains. Features a 14-foot black Parsvanatha idol and 52-foot manastambha."
+  },
+  {
+    "id": "thirunathan-kundru-jain-hill-gingee",
+    "name": "Thirunathan Kundru Jain Hill, Gingee",
+    "state": "Tamil Nadu",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/75CheaLH4Jk7c5v18",
+      "lat": 12.2727841,
+      "lng": 79.4072352
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Rich heritage site near Gingee with rock carvings of all 24 Tirthankaras and 5th-century inscriptions."
+  },
+  {
+    "id": "shri-aadinath-digambar-jain-temple-srirangapatna",
+    "name": "Shri Aadinath Digambar Jain Temple, Srirangapatna",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/PwfdhRPq6iVRsU5a7",
+      "lat": 12.420903,
+      "lng": 76.6824007
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "1660 AD temple housing idols of Goddess Padmavathi and the 24 Tirthankaras."
+  },
+  {
+    "id": "shri-parshwanath-digambar-jain-temple-and-jain-boarding-dharmashala-mysuru",
+    "name": "Shri Parshwanath Digambar Jain Temple and Jain Boarding Dharmashala, Mysuru",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/uHSBUBX174x3EZgr7",
+      "lat": 12.1853185,
+      "lng": 76.5285637
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Centrally located temple in Mysuru on Chandragupta Road."
+  },
+  {
+    "id": "gommatgiri",
+    "name": "Gommatgiri",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/FcKCkstHTkVmtnTy9",
+      "lat": 12.3703136,
+      "lng": 76.4874708
+    },
+    "howToReach": {
+      "nearestRailway": "Mysuru (20km)",
+      "nearestBusStand": "Mysuru (20km)",
+      "nearestAirport": "Mysuru"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Famous for its 700-year-old 16-foot high monolithic statue of Bahubali atop Shravana Gudda."
+  },
+  {
+    "id": "shri-baahubali-theertha-kaaveri-dhaama-basadi-hosakote",
+    "name": "Shri Baahubali Theertha, Kaaveri Dhaama, (Basadi Hosakote)",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Statue consecrated during the reign of Hoysala king Vishnuvardhana. Recently held a major Mastakabhisheka with Cauvery river water.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/sVdCQETNydujVqYw5",
+      "lat": 12.4863104,
+      "lng": 76.4861975
+    },
+    "howToReach": {
+      "nearestRailway": "Mysuru (25km)",
+      "nearestBusStand": "Basti Hosakote",
+      "nearestAirport": "Mysuru"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant heritage center featuring an 18-foot-tall monolithic statue of Lord Bahubali established in 1147 CE. Located near the KRS Dam with scenic river views."
+  },
+  {
+    "id": "chandragiri-hill-sravanbelgola",
+    "name": "Chandragiri Hill, Sravanbelgola",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Final resting place of Emperor Chandragupta Maurya who took sallekhana here in 298 BCE alongside Bhadrabahu Svami.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
+      "lat": 12.8616935,
+      "lng": 76.4840913
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "One of the two sacred hills in Shravanabelagola, housing various Basadis and ancient inscriptions."
+  },
+  {
+    "id": "vindhyagiri-hill-sravanabelgola",
+    "name": "Vindhyagiri Hill, Sravanabelgola",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "The statue was built in 981-983 AD by Chavundaraya, the minister of the Ganga dynasty. Host of the grand Mahamastakabhisheka festival every 12 years.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9",
+      "lat": 12.8571705,
+      "lng": 76.4867811
+    },
+    "howToReach": {
+      "nearestRailway": "Shravanabelagola",
+      "nearestBusStand": "Shravanabelagola",
+      "nearestAirport": "Bengaluru (150km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "World-famous hill featuring the 57-foot monolithic statue of Lord Gommateshwara (Bahubali), carved from a single granite block."
+  },
+  {
+    "id": "jain-mutt-temple-sravanabelgola",
+    "name": "Jain Mutt Temple, Sravanabelgola",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7",
+      "lat": 12.8565375,
+      "lng": 76.4892656
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "08176-257224"
+      },
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "08176-257226"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The administrative and religious head of the Shravanabelagola complex, featuring beautiful wall paintings (murals) depicted in ancient styles."
+  },
+  {
+    "id": "jinnathpuram",
+    "name": "Jinnathpuram",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8",
+      "lat": 12.865561,
+      "lng": 76.4883788
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Small village near Shravanabelagola known for the Aregal Basadi and historical connections to the Ganga dynasty."
+  },
+  {
+    "id": "kambadahalli-jain-mutt",
+    "name": "Kambadahalli Jain Mutt",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "One of the oldest Jain centers in Karnataka. The Panchakuta Basadi is an ASI protected monument showing 10th-century craftsmanship.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/WfUWEAphw9icKQC5A",
+      "lat": 12.867771,
+      "lng": 76.6333742
+    },
+    "howToReach": {
+      "nearestRailway": "Shravanabelagola (18km)",
+      "nearestBusStand": "Nagamangala"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient center featuring the famous Panchakuta Basadi, a masterpiece of Western Ganga architecture."
+  },
+  {
+    "id": "shri-paras-dham-atishay-kshetra",
+    "name": "Shri Paras Dham Atishay Kshetra",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/Bix7FzkzPYddrZ6F9",
+      "lat": 12.9743471,
+      "lng": 76.6937388
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Spiritual center focused on the teachings of Rashtrasant Param Gurudev Shree Namramuni Maharaj Saheb, dedicated to Lord Parshwanath."
+  },
+  {
+    "id": "mandargiri-hill-tumkur",
+    "name": "Mandargiri Hill, Tumkur",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7",
+      "lat": 13.3033664,
+      "lng": 77.1867383
+    },
+    "howToReach": {
+      "nearestRailway": "Tumkur (10km)",
+      "nearestBusStand": "Tumkur highway (Pandithanahalli)",
+      "nearestAirport": "Bengaluru (60km)"
+    },
+    "facilities": [
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Also known as Basadi Betta, famous for its unique Peacock-feather shaped (Pinchi) Guru Mandir and 81-foot monolithic statue of Lord Chandranatha."
+  },
+  {
+    "id": "shri-digambar-jain-temple-mangaluru",
+    "name": "Shri Digambar Jain Temple, Mangaluru",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/RSJA5HV8y7gb4wz7A",
+      "lat": 12.8661886,
+      "lng": 74.8354635
+    },
+    "howToReach": {
+      "nearestRailway": "Mangaluru Central",
+      "nearestBusStand": "Bunder",
+      "nearestAirport": "Mangaluru (IXE)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient temple in the Bunder area of Mangaluru, primarily dedicated to Lord Shanthinath."
+  },
+  {
+    "id": "saavira-kambada-basadi-moodbadri",
+    "name": "Saavira Kambada Basadi, Moodbadri",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Built in 1430 AD. A pinnacle of Vijayanagara architecture in coastal Karnataka.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/5QsTveoeMHyGStVs5",
+      "lat": 13.0741236,
+      "lng": 74.9975011
+    },
+    "howToReach": {
+      "nearestRailway": "Mangaluru (35km)",
+      "nearestBusStand": "Moodbidri",
+      "nearestAirport": "Mangaluru (IXE)"
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Known as the \"Thousand Pillar Temple,\" it is the most magnificent of Moodbidri's 18 Basadis, featuring no two pillars with the same carving."
+  },
+  {
+    "id": "vennoor-bahubali",
+    "name": "Vennoor Bahubali",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Installed in 1604 AD by Timmanna Ajila, the ruler of the Ajila dynasty.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/S2tua24WUh6GBunT8",
+      "lat": 13.0134857,
+      "lng": 75.1441043
+    },
+    "howToReach": {
+      "nearestRailway": "Mangaluru (54km)",
+      "nearestBusStand": "Venur",
+      "nearestAirport": "Mangaluru (IXE)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Features a 35-foot monolithic Bahubali statue erected on an elevated platform on the banks of the Phalguni river."
+  },
+  {
+    "id": "adinath-swamy-basadi-vennoor",
+    "name": "Adinath Swamy Basadi, Vennoor",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/nsF6QY9igwEPgghN7",
+      "lat": 13.0120732,
+      "lng": 75.1464408
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant 17th-century Basadi in Venur associated with the local ruling dynasties."
+  },
+  {
+    "id": "dharmasthala-bahubali",
+    "name": "Dharmasthala Bahubali",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Sculpted by Renjala Gopala Shenoy in 1973. Symbolizes the \"Sarva-Dharma\" harmony of Dharmasthala.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/1yATe79N9rENbFuC9",
+      "lat": 12.9552071,
+      "lng": 75.3790185
+    },
+    "howToReach": {
+      "nearestRailway": "Ujire/Mangaluru",
+      "nearestBusStand": "Dharmasthala",
+      "nearestAirport": "Mangaluru (IXE)"
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "A 39-foot monolithic statue situated on Ratnagiri hill, heart of the Dharmasthala pilgrimage center."
+  },
+  {
+    "id": "ratnatraya-basadi-atishay-kshetra",
+    "name": "Ratnatraya Basadi Atishay Kshetra",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/DSsrxdy6Z4Sv2XZB8",
+      "lat": 12.9892745,
+      "lng": 75.2578019
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Tri-shrine complex (Trikoota) in Bilagi, dedicated to the three jewels of Jainism."
+  },
+  {
+    "id": "karkala-bahubali",
+    "name": "Karkala Bahubali",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Consecrated in 1432 AD by Veera Pandya, King of the Santara dynasty.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/CuqRmY8qwsczG2si7",
+      "lat": 13.2037575,
+      "lng": 75.0055558
+    },
+    "howToReach": {
+      "nearestRailway": "Udupi (40km)",
+      "nearestBusStand": "Karkala",
+      "nearestAirport": "Mangaluru (50km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Features a 42-foot monolithic Bahubali statue, the second tallest in Karnataka."
+  },
+  {
+    "id": "chaturmukh-basadi-karkala",
+    "name": "Chaturmukh Basadi, Karkala",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "ASI protected monument. Commissioned by Immadi Bhairarasa Vodeya in the late 16th century.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/2bcR2Ya9L7JJ12Mc6",
+      "lat": 13.2085613,
+      "lng": 75.0049398
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Unique four-faced temple built entirely of granite, featuring four identical entrances facing the four cardinal directions."
+  },
+  {
+    "id": "varanga-lake-jain-temple",
+    "name": "Varanga Lake Jain Temple",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/okw4uiJ3R5qkHi536",
+      "lat": 13.3961832,
+      "lng": 75.008536
+    },
+    "howToReach": {
+      "nearestRailway": "Udupi (38km)",
+      "nearestBusStand": "Varanga",
+      "nearestAirport": "Mangaluru (73km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Known as Kere Basadi, this beautiful 12th-century star-shaped temple is located in the middle of a scenic lake, accessible only by boat."
+  },
+  {
+    "id": "kundadri-shri-parshwanath-basadi",
+    "name": "Kundadri Shri Parshwanath Basadi",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Associated with the 4th-century monk Acharya Kundakunda who performed penance here.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/g8qBK6pFyQZbauWcA",
+      "lat": 13.557892,
+      "lng": 75.16838
+    },
+    "howToReach": {
+      "nearestRailway": "Shivamogga (92km)",
+      "nearestBusStand": "Thirthahalli (12km)",
+      "nearestAirport": "Shivamogga/Mangaluru"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient temple situated atop the Kundadri hill, surrounded by dense evergreen forests and rock ponds."
+  },
+  {
+    "id": "jwalamalini-atishay-kshetra-n-r-pura",
+    "name": "Jwalamalini Atishay Kshetra, N R Pura",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/urS2X2aWcYCyM7fS7",
+      "lat": 13.6052761,
+      "lng": 75.4975016
+    },
+    "howToReach": {
+      "nearestRailway": "Shivamogga",
+      "nearestBusStand": "N.R. Pura",
+      "nearestAirport": "Mangaluru"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Powerful center dedicated to Goddess Jwalamalini, the Yakshi of Lord Chandraprabha. Famous for its annual Rathotsava."
+  },
+  {
+    "id": "humcha-jain-temple",
+    "name": "Humcha Jain Temple",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Established in the 8th century CE as the capital of the Santara dynasty. One of India's most important Padmavati shrines.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/pM6Nc7yLhaAUCKEg9",
+      "lat": 13.8616393,
+      "lng": 75.2057605
+    },
+    "howToReach": {
+      "nearestRailway": "Arsalu (25km)",
+      "nearestBusStand": "Humcha",
+      "nearestAirport": "Mangaluru (150km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "08185-260126"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Extremely sacred site dedicated to Goddess Padmavati and Lord Parshwanatha, known for the \"Panchakuta Basadi\" and a lake that reputedly never dries."
+  },
+  {
+    "id": "ramtek-jain-temples",
+    "name": "Ramtek Jain Temples",
+    "state": "Maharashtra",
+    "type": "Tirth",
+    "description": "Believed to be built by Ramchandraji as per Padmapuran. Associated with the poet Kalidas who composed 'Meghdoot' nearby.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/4ySi3sFCCzVZWSFC7",
+      "lat": 21.4054964,
+      "lng": 79.3298658
+    },
+    "howToReach": {
+      "nearestRailway": "Ramtek (5km)",
+      "nearestBusStand": "Ramtek",
+      "nearestAirport": "Nagpur (60km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant ancient Tirth featuring a 4-meter golden-colored idol of Lord Shantinatha. The complex includes nine temples and a beautiful Manastambh."
+  },
+  {
+    "id": "seoni-bada-mandir",
+    "name": "Seoni Bada Mandir",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/QntghUwDe9MfEKGv8",
+      "lat": 22.0858667,
+      "lng": 79.551006
+    },
+    "howToReach": {
+      "nearestRailway": "Seoni (2km)",
+      "nearestBusStand": "Seoni",
+      "nearestAirport": "Nagpur (130km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Prominent Digambar Jain temple in Seoni city, known for its spiritual atmosphere and cultural significance."
+  },
+  {
+    "id": "chhapara-jain-mandir",
+    "name": "Chhapara Jain Mandir",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/6QJ6APxYH99Cto82A",
+      "lat": 22.3949037,
+      "lng": 79.5378726
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Historic Jain temple located in Chhapara, serving the local Digambar community."
+  },
+  {
+    "id": "lakhnadaun-jain-mandir-samnapur-jinalay",
+    "name": "Lakhnadaun Jain Mandir (Samnapur Jinalay)",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/fMgBxCT2NEGUWd9d6",
+      "lat": 22.5956084,
+      "lng": 79.6096996
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Sacred site in Lakhnadaun (Samnapur) dedicated to the Digambar tradition."
+  },
+  {
+    "id": "pisanhari-ki-madhiya-ji-jabalpur",
+    "name": "Pisanhari ki Madhiya Ji, Jabalpur",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "Named after the founder who ground flour to save for the construction. Her original quern stones are preserved.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/wyfPPHzGa3goAF1n9",
+      "lat": 23.152049,
+      "lng": 79.8854736
+    },
+    "howToReach": {
+      "nearestRailway": "Jabalpur Junction",
+      "nearestBusStand": "Jabalpur (5km)",
+      "nearestAirport": "Jabalpur"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "500-year-old temple complex on a 300-ft hill, built by a poor woman (Pisanhari) from her savings. Features 13 temples and a 55-foot Bahubali statue."
+  },
+  {
+    "id": "shasanoday-tirth-hanumantal-jabalpur",
+    "name": "Shasanoday Tirth, Hanumantal, Jabalpur",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/LHJ5k3M35izfcgXY7",
+      "lat": 23.1805781,
+      "lng": 79.937327
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Historic center in the Hanumantal area of Jabalpur, serving as a key Digambar pilgrimage site."
+  },
+  {
+    "id": "koni-ji-atishay-kshetra-paatan",
+    "name": "Koni Ji Atishay Kshetra, Paatan",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/k9342sg1z5FbZyx5A",
+      "lat": 23.328144,
+      "lng": 79.6686672
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient miraculous holy place (Atishay Kshetra) in Paatan, known for its historic idols."
+  },
+  {
+    "id": "beena-baarah-atishay-kshetra",
+    "name": "Beena Baarah Atishay Kshetra",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "Named after King Benu. The 16-foot Mahavir idol is believed to be one-of-a-kind.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/sPiznKjC8KofuG5A8",
+      "lat": 23.3603637,
+      "lng": 79.0774178
+    },
+    "howToReach": {
+      "nearestRailway": "Kareli (55km)",
+      "nearestBusStand": "Deori Kala (8km)",
+      "nearestAirport": "Jabalpur"
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Miraculous site near the Sukh-Chain river featuring a unique 16-foot limestone idol of Lord Mahavir in sitting posture."
+  },
+  {
+    "id": "patnaganj-jinalay-rehli",
+    "name": "Patnaganj Jinalay, Rehli",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/bCwxgnVB3oyX145E6",
+      "lat": 23.6343749,
+      "lng": 79.0682226
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant Digambar Jinalay located in the Rehli/Patnaganj region of Sagar district."
+  },
+  {
+    "id": "pateriya-ji-atishay-kshetra-garhakota",
+    "name": "Pateriya Ji Atishay Kshetra, Garhakota",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "Built in 1782 AD with a single day's cotton trade earnings. Known for the \"Atishaya Kund\" where pond water turned to ghee.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/4XCZenvqcfDK4Zqk9",
+      "lat": 23.7708638,
+      "lng": 79.1450767
+    },
+    "howToReach": {
+      "nearestRailway": "Damoh (30km)",
+      "nearestBusStand": "Garhakota",
+      "nearestAirport": "Jabalpur"
+    },
+    "facilities": [
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "200-year-old miraculous site featuring three 7-feet high black stone idols of Lord Parshvanath."
+  },
+  {
+    "id": "shri-bade-baba-kundalpur",
+    "name": "Shri Bade Baba, Kundalpur",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "Ancient 8th-century site rediscovered with help from Bundela ruler Chhatrasal. Place where Sri Sridhar Kevali attained Moksha.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6",
+      "lat": 23.9798043,
+      "lng": 79.724129
+    },
+    "howToReach": {
+      "nearestRailway": "Damoh (38km)",
+      "nearestBusStand": "Damoh",
+      "nearestAirport": "Jabalpur"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "One of India's most important Digambar sites, featuring the 15-foot \"Bade Baba\" (Lord Adinath) idol. A massive new 189-foot Nagara-style temple is under construction."
+  },
+  {
+    "id": "kundalpur-bade-baba-parvat",
+    "name": "Kundalpur Bade Baba Parvat",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/VNfhZPAji8etVwyK6",
+      "lat": 23.9798043,
+      "lng": 79.724129
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The sacred mountain at Kundalpur housing 46 temples, including the primary Bade Baba shrine."
+  },
+  {
+    "id": "chetanoday-tirth-katni",
+    "name": "Chetanoday Tirth, Katni",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/r7ReULHAPMVQhprJ6",
+      "lat": 23.8366161,
+      "lng": 80.3710373
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Modern Tirth in Katni focused on spiritual awakening and education."
+  },
+  {
+    "id": "shri-parshwanath-jinalay-bilhari",
+    "name": "Shri Parshwanath Jinalay, Bilhari",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/oEyXDkuHJFgeGQop9",
+      "lat": 23.7949068,
+      "lng": 80.2716705
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient site in Bilhari known for its historic carvings and Tirthankar idols."
+  },
+  {
+    "id": "bahoriband-atishay-kshetra",
+    "name": "Bahoriband Atishay Kshetra",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/i5rmwXi6ZZX1Kxo86",
+      "lat": 23.667284,
+      "lng": 80.063644
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Miraculous site in Katni district with ancient monolithic statues and inscriptions."
+  },
+  {
+    "id": "sammed-giri-tirth-gosalpur",
+    "name": "Sammed Giri Tirth, Gosalpur",
+    "state": "Madhya Pradesh",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/ehRV2fifKcy3d6Xj7",
+      "lat": 23.3908043,
+      "lng": 80.0510463
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Sacred hill tirth in Gosalpur providing a serene environment for meditation."
+  },
+  {
+    "id": "panagar-atishay-kshetra",
+    "name": "Panagar Atishay Kshetra",
+    "state": "Madhya Pradesh",
+    "type": "Temple",
+    "description": "Rich in Kalchuri era art. The 9-foot idol is a masterpiece of medieval sculpture.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/trgBdrYGAirDCXyV7",
+      "lat": 23.2842124,
+      "lng": 79.9996587
+    },
+    "howToReach": {
+      "nearestRailway": "Devri Station",
+      "nearestBusStand": "Panagar",
+      "nearestAirport": "Jabalpur"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "10th-century site featuring a 9-foot high idol of Lord Shantinath discovered via excavation from a pond."
+  },
+  {
+    "id": "chandragiri-hill-sravanabelgola",
+    "name": "Chandragiri Hill, Sravanabelgola",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Final resting place of Emperor Chandragupta Maurya who took sallekhana here in 298 BCE alongside Bhadrabahu Svami.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
+      "lat": 12.8616935,
+      "lng": 76.4840913
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "One of the two sacred hills in Shravanabelagola, housing various Basadis and ancient inscriptions."
+  },
+  {
+    "id": "jain-mutt-temple",
+    "name": "Jain Mutt Temple",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/mXnxf73rhzja74kX7",
+      "lat": 12.8565375,
+      "lng": 76.4892656
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "08176-257224"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The administrative head of the Shravanabelagola shrine. Known for its historical library and significant role in Jain history."
+  },
+  {
+    "id": "aghapura-jain-temple-hyderabad",
+    "name": "Aghapura Jain Temple, Hyderabad",
+    "state": "Telangana",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/eUGZwa29fvAMqmmH7",
+      "lat": 17.3830865,
+      "lng": 78.4627109
+    },
+    "howToReach": {
+      "nearestRailway": "Nampally (1km)",
+      "nearestBusStand": "Aghapura",
+      "nearestAirport": "Hyderabad (RGIA)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant 1008 Chandraprabhu Digambar temple in Hyderabad, known for its architectural grandeur and spiritual energy."
+  },
+  {
+    "id": "shri-kalikund-parshwanath-hathnoora",
+    "name": "Shri Kalikund Parshwanath, Hathnoora",
+    "state": "Telangana",
+    "type": "Temple",
+    "description": "Cultural and spiritual hub for the local Digambar community in Sangareddy district.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6",
+      "lat": 17.7365793,
+      "lng": 78.1494969
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant Atishay Kshetra (place of miracles) located in Hathnoora, Telangana, dedicated to Lord Parshwanath."
+  },
+  {
+    "id": "jogipet-jain-temple",
+    "name": "Jogipet Jain Temple",
+    "state": "Telangana",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/TTh9t3pnWs6iZ7kN6",
+      "lat": 17.7365793,
+      "lng": 78.1494969
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Local Jain temple in Jogipet serving the historical Jain population of Telangana."
+  },
+  {
+    "id": "shri-vighnahar-parshwanath-kulcharam",
+    "name": "Shri Vighnahar Parshwanath, Kulcharam",
+    "state": "Telangana",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/fyzBSri8fvZTdvj1A",
+      "lat": 17.9528288,
+      "lng": 78.1917029
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Known for its architectural beauty and the 'Vighnahar' (remover of obstacles) idol of Lord Parshwanath."
+  },
+  {
+    "id": "penukonda-jain-temples",
+    "name": "Penukonda Jain Temples",
+    "state": "Andhra Pradesh",
+    "type": "Temple",
+    "description": "Established as a Jain Mutt seat in 1359 AD. One of the four traditional Bhattaraka centers of learning in the south.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/AzEd6MkmaREzwmkk6",
+      "lat": 14.0817651,
+      "lng": 77.5946532
+    },
+    "howToReach": {
+      "nearestRailway": "Penukonda Junction",
+      "nearestBusStand": "Penukonda",
+      "nearestAirport": "Bengaluru (100km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient 14th-century site featuring the Sri Parshwanath and Sri Ajithanath temples. Known for the unique 'Pache' (green) Parshwanath idol."
+  },
+  {
+    "id": "konda-kunda-konakondla",
+    "name": "Konda Kunda, Konakondla",
+    "state": "Andhra Pradesh",
+    "type": "Tirth",
+    "description": "One of the most significant sites for Digambar Jains due to its foundational connection to Kundakunda's lineage.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/Jjas8pd3PNJJ3q4H9?g_st=aw",
+      "lat": 15.115792,
+      "lng": 77.3651478
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Historic village known as the birthplace of the legendary 4th-century monk Acharya Kundakunda."
+  },
+  {
+    "id": "belagavi-kamal-basadi",
+    "name": "Belagavi Kamal Basadi",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "Built in 1204 AD by the Ratta dynasty. An ASI protected monument dedicated to Lord Neminatha.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/Q8JAQNShf3ZeR63z9",
+      "lat": 15.8580122,
+      "lng": 74.5214454
+    },
+    "howToReach": {
+      "nearestRailway": "Belagavi",
+      "nearestBusStand": "Belagavi Fort",
+      "nearestAirport": "Belagavi (Sambram)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "1200-year-old Chalukya-style temple located inside the Belagavi Fort. Famous for its 72-petal monolithic lotus carving on the ceiling."
+  },
+  {
+    "id": "sankeshwar-shri-parshwanath-jain-temple",
+    "name": "Sankeshwar Shri Parshwanath Jain Temple",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/q6F3omJg3WawY9bB6",
+      "lat": 16.2541549,
+      "lng": 74.4788044
+    },
+    "howToReach": {
+      "nearestRailway": "Ramanagaram",
+      "nearestBusStand": "Sankeshwar"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Significant pilgrimage site on the Bangalore-Mysore highway dedicated to Lord Parshwanath."
+  },
+  {
+    "id": "shri-kshetra-nischay-giri",
+    "name": "Shri Kshetra Nischay Giri",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/766Nkw197nLjUi197",
+      "lat": 16.3488212,
+      "lng": 74.4373073
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Spiritual hill near Kothali known for its serene environment and association with modern Jain ascetics."
+  },
+  {
+    "id": "atishay-kshetra-stavnidhi",
+    "name": "Atishay Kshetra Stavnidhi",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/khyC3d4Hna4Rc8rdA",
+      "lat": 16.3560981,
+      "lng": 74.4083485
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient miraculous site featuring multiple temples and a historic idol of Lord Navagraha Parshwanath."
+  },
+  {
+    "id": "shree-kshetra-shanti-giri-kothali",
+    "name": "Shree Kshetra Shanti Giri Kothali",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/qi25fgTFA7hcdbxw5",
+      "lat": 16.4361347,
+      "lng": 74.5154102
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Prominent Digambar center and education hub associated with the lineage of Acharya Shantisagar Ji."
+  },
+  {
+    "id": "acharya-shri-shanti-sagar-janm-bhoomi-bhoj",
+    "name": "Acharya Shri Shanti Sagar Janm Bhoomi, Bhoj",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Highly revered as the starting point of the modern Digambar revival.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/oRxQEjiUz1bLuq8aA",
+      "lat": 16.535862,
+      "lng": 74.4413997
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Birthplace of the first Digambar Acharya of the 20th century, Shantisagar Ji Maharaj."
+  },
+  {
+    "id": "acharya-shri-vidhya-sagar-janm-bhoomi-sadalga",
+    "name": "Acharya Shri Vidhya Sagar Janm Bhoomi, Sadalga",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/cBES4fTpwWNftZnM8",
+      "lat": 16.5559097,
+      "lng": 74.5294952
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Birthplace of the highly revered modern saint Acharya Vidhyasagar Ji Maharaj."
+  },
+  {
+    "id": "kagwad-leni-temple",
+    "name": "Kagwad Leni Temple",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/CtRRxMZhD5Vx4L1E9",
+      "lat": 16.691346,
+      "lng": 74.7197342
+    },
+    "howToReach": {
+      "nearestRailway": "Shedbal (4.5km)",
+      "nearestBusStand": "Kagwad",
+      "nearestAirport": "Belagavi (105km)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Underground architectural spiritual marvel featuring multiple basements with Tirthankara idols."
+  },
+  {
+    "id": "shedbal-ashram",
+    "name": "Shedbal Ashram",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/wBYn5gKe1okB93ow8",
+      "lat": 16.6896186,
+      "lng": 74.7557422
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Historic ashram and temple complex in Shedbal, acting as a key spiritual retreat."
+  },
+  {
+    "id": "ugar-padmavati-atishya-kshetra",
+    "name": "Ugar Padmavati Atishya Kshetra",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/GMPwU5eHDtWQKLTk6",
+      "lat": 16.6474652,
+      "lng": 74.8003907
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Miraculous site in Ugarbudruk, Belagavi district, dedicated to Goddess Padmavati."
+  },
+  {
+    "id": "hubballi-gabbur-shwetambar-jain-temple",
+    "name": "Hubballi Gabbur Shwetambar Jain Temple",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/sxwDzetGTcQqpqjg8",
+      "lat": 15.3142882,
+      "lng": 75.1447826
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Beautiful Shwetambar temple in Gabbur, Hubli, known for its intricate marble work."
+  },
+  {
+    "id": "navagraha-teerth-kshetra-varur",
+    "name": "Navagraha Teerth Kshetra, Varur",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/UprvCijRNavGtp7D8",
+      "lat": 15.2156096,
+      "lng": 75.1410389
+    },
+    "howToReach": {
+      "nearestRailway": "Hubli Junction (17km)",
+      "nearestBusStand": "Varur (Pune-Bangalore Highway)",
+      "nearestAirport": "Hubli"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Modern pilgrimage site featuring India's tallest (61-foot) monolithic statue of Lord Parshwanatha, representing the nine planets."
+  },
+  {
+    "id": "adinath-shantinath-jain-temple-tadas",
+    "name": "Adinath Shantinath Jain Temple, Tadas",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/nsNQWRa39JkFC4Uu6",
+      "lat": 15.1256766,
+      "lng": 75.1267424
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient double-shrine (Dwikuta) temple in Tadas, featuring beautiful Chalukyan influences."
+  },
+  {
+    "id": "acharya-shri-punyasagar-maharaj-janm-bhoomi-artal",
+    "name": "Acharya Shri Punyasagar Maharaj Janm Bhoomi, Artal",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/yg6K1f4zYHPxuyzR9",
+      "lat": 15.0071194,
+      "lng": 75.1280655
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Commemorative temple at the birthplace of Acharya Punyasagar Ji, located in Artal, Karnataka."
+  },
+  {
+    "id": "acharya-pujyapad-swami-upsarg-sthali-banavasi",
+    "name": "Acharya Pujyapad Swami Upsarg Sthali, Banavasi",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/CB37goc9iofshwN66",
+      "lat": 14.5366553,
+      "lng": 75.0165344
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  },
+  {
+    "id": "shri-atishay-kshetra-vadanbailu-padmavati",
+    "name": "Shri Atishay Kshetra Vadanbailu Padmavati",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/8v6DbBJa5HqCZdqEA",
+      "lat": 14.2131356,
+      "lng": 74.7657693
+    },
+    "howToReach": {
+      "nearestRailway": "Talaguppa/Shivamogga",
+      "nearestBusStand": "Jog Falls (8km)",
+      "nearestAirport": "Hubli (175km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "+91 9448873007"
+      },
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "9449501548"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Miraculous Padmavati shrine located in a serene forest setting near Jog Falls."
+  },
+  {
+    "id": "chaturmukha-basadi-gerusoppa",
+    "name": "Chaturmukha Basadi, Gerusoppa",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "Former capital of the Saluva dynasty. Shows fusion of Chalukya and Vijayanagara styles.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/afVwaVcP7vZhZDS5A",
+      "lat": 14.2285255,
+      "lng": 74.662229
+    },
+    "howToReach": {
+      "nearestRailway": "Talaguppa (45km)",
+      "nearestBusStand": "Gerusoppa/Honnavar",
+      "nearestAirport": "Hubli/Mangaluru"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "14th-century architectural masterpiece with four identical entrances, built by the 'Pepper Queen' Chennabhairadevi."
+  },
+  {
+    "id": "muni-shri-payasagar-maharaj-janm-bhoomi-halsasi",
+    "name": "Muni Shri Payasagar Maharaj Janm Bhoomi, Halsasi",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/x9ssw2PD7u3ePSi36",
+      "lat": 13.9444687,
+      "lng": 74.7745312
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Birthplace temple of Muni Payasagar Maharaj in the historic village of Halsi, Belagavi."
+  },
+  {
+    "id": "koduru-jain-temple",
+    "name": "Koduru Jain Temple",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/WaDy2jps9XpNsL9B6",
+      "lat": 13.9760537,
+      "lng": 74.801891
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  },
+  {
+    "id": "muni-shri-viditsagar-maharaj-janm-bhoomi-harige",
+    "name": "Muni Shri Viditsagar Maharaj Janm Bhoomi, Harige",
+    "state": "Karnataka",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/52eXGm8f2ztKiFCT6",
+      "lat": 13.9927057,
+      "lng": 74.8051544
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Commemorative temple at the birthplace of Muni Viditsagar Ji in Harige, Shimoga."
+  },
+  {
+    "id": "humcha-huncha-jain-mutt",
+    "name": "Humcha (Huncha) Jain Mutt",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/BeLvsddejw36iMFg6",
+      "lat": 13.8616393,
+      "lng": 75.2057605
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  },
+  {
+    "id": "kundadri-hill",
+    "name": "Kundadri Hill",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/dNNVFd7wWoCC1y2u8",
+      "lat": 13.557892,
+      "lng": 75.16838
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": ""
+  },
+  {
+    "id": "nr-pura-atishay-kshetra",
+    "name": "NR Pura Atishay Kshetra",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/1PAjY5WTMnCMNGon6",
+      "lat": 13.6052761,
+      "lng": 75.4975016
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Jwalamalini Atishay Kshetra in Narasimharajapura, a powerful shrine for Goddess Jwalamalini."
+  },
+  {
+    "id": "madhuban-shikharji-base",
+    "name": "Madhuban (Shikharji Base)",
+    "state": "Jharkhand",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/TqGX29RnVBWhrngF7",
+      "lat": 24.0031889,
+      "lng": 86.1479963
+    },
+    "howToReach": {
+      "nearestRailway": "Parasnath (ISP) (24km)",
+      "nearestBusStand": "Madhuban",
+      "nearestAirport": "Deoghar (95km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "+91 7992324866"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The base camp and primary religious junction for climbing Sammed Shikharji. Hosts various Dharmshalas and Kothis."
+  },
+  {
+    "id": "sammed-shikharji-parvat-vandana",
+    "name": "Sammed Shikharji Parvat Vandana",
+    "state": "Jharkhand",
+    "type": "Tirth",
+    "description": "Most sacred site for all Jain sects. Includes Jal-Mandir and various Tonks (shrines) dedicated to Tirthankaras.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/HPAdGNAdFdCvUWy86",
+      "lat": 24.0014412,
+      "lng": 86.1468692
+    },
+    "howToReach": {
+      "nearestRailway": "Parasnath (ISP)",
+      "nearestBusStand": "Madhuban",
+      "nearestAirport": "Ranchi/Deoghar"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The holiest peaks in Jainism where 20 of the 24 Tirthankaras attained Nirvana."
+  },
+  {
+    "id": "palganj-prachin-digambar-jain-mandir",
+    "name": "Palganj Prachin Digambar Jain Mandir",
+    "state": "Jharkhand",
+    "type": "Temple",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/VYGuDNFE2L3ekvXT8",
+      "lat": 24.0792541,
+      "lng": 86.2142246
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Ancient temple in Palganj, traditionally visited by pilgrims on the way to Sammed Shikharji."
+  },
+  {
+    "id": "mandargiri-hill-nirvan-bhoomi-of-vasupujya-swami",
+    "name": "Mandargiri Hill, Nirvan Bhoomi of Vasupujya Swami",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/fBzH9LDVLR4hYyWx9",
+      "lat": 24.8378014,
+      "lng": 87.0306156
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Sacred hill near Champapuri marking the Nirvana site of Lord Vasupujya Swami, the 12th Tirthankara."
+  },
+  {
+    "id": "mandargiri-base-temple",
+    "name": "Mandargiri Base Temple",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/8Kq2fTWTKjK8FpSv5",
+      "lat": 24.8050908,
+      "lng": 87.0273588
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "The base temple serving pilgrims visiting Mandargiri Hill in Bihar."
+  },
+  {
+    "id": "champapuri-bhagalpur",
+    "name": "Champapuri, Bhagalpur",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/gC1SFCFgWFVZEr2z7",
+      "lat": 25.237326,
+      "lng": 86.9409235
+    },
+    "howToReach": {
+      "nearestRailway": "Bhagalpur (6km)",
+      "nearestBusStand": "Bhagalpur"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Unique Siddhakshtera where all five Kalyanakas of Tirthankar Vasupujya occurred. 2500-year-old ancient temple."
+  },
+  {
+    "id": "kundalpur-nalanda-digambar-jain-mandir",
+    "name": "Kundalpur (Nalanda) Digambar Jain Mandir",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/nj49shjiFEAZuBsaA",
+      "lat": 25.147455,
+      "lng": 85.4479844
+    },
+    "howToReach": {
+      "nearestRailway": "Nalanda (4km)",
+      "nearestBusStand": "Nalanda/Rajgir",
+      "nearestAirport": "Patna (110km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Revered as the birthplace of Lord Mahavira (24th Tirthankar) and Gautam Swami. Features a 4.5-foot Mahavira idol."
+  },
+  {
+    "id": "pavapuri-jal-mandir",
+    "name": "Pavapuri Jal Mandir",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "Site where Mahavira attained salvation in 490 BC. The lake was formed by devotees collecting sacred earth from the cremation site.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/sG7YToCJXqM9shjB9",
+      "lat": 25.0914304,
+      "lng": 84.3194964
+    },
+    "howToReach": {
+      "nearestRailway": "Pawapuri Road/Rajgir",
+      "nearestBusStand": "Pawapuri",
+      "nearestAirport": "Patna (101km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Magnificent white marble temple in the middle of a lotus pond, marking the Nirvana place of Lord Mahavira."
+  },
+  {
+    "id": "gunavaji-siddha-kshetra-nawada",
+    "name": "Gunavaji Siddha Kshetra, Nawada",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/rJftVmRPhEkoT3x69",
+      "lat": 24.9097925,
+      "lng": 85.1964792
+    },
+    "howToReach": {
+      "nearestRailway": "Nawada (3km)",
+      "nearestBusStand": "Nawada",
+      "nearestAirport": "Gaya"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Office",
+        "name": "Contact",
+        "number": "06324-213160"
+      }
+    ],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Nirvana place of Indrabhuti Gautam Ganadhar (chief disciple of Mahavira). Temple is in the middle of a pond."
+  },
+  {
+    "id": "digambar-jain-dharmshala-rajgir",
+    "name": "Digambar Jain Dharmshala, Rajgir",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/FybHTwYLUucmKuE79",
+      "lat": 25.026152,
+      "lng": 85.4190933
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Primary accommodation facility for Digambar pilgrims in the holy city of Rajgir."
+  },
+  {
+    "id": "bhagwaan-munisuvratnath-swami-janm-bhoomi-rajgir",
+    "name": "Bhagwaan Munisuvratnath Swami Janm Bhoomi, Rajgir",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "Celebrates the Garbha, Janma, Tapa, and Gyan Kalyanakas of the Lord.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/8s7Zz9goYK3Uu1gB9",
+      "lat": 25.0263507,
+      "lng": 85.4148465
+    },
+    "howToReach": {
+      "nearestRailway": "Rajgir",
+      "nearestBusStand": "Rajgir",
+      "nearestAirport": "Patna"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Birthplace of the 20th Tirthankar Munisuvratnath. Known as 'Lal Mandir'."
+  },
+  {
+    "id": "parvat-vandana-rajgir",
+    "name": "Parvat Vandana, Rajgir",
+    "state": "Bihar",
+    "type": "Tirth",
+    "description": "",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/bHuYFj3Hj1f3H3Jo9",
+      "lat": 25.0123094,
+      "lng": 85.3908394
+    },
+    "howToReach": {
+      "nearestRailway": "",
+      "nearestBusStand": "",
+      "nearestAirport": ""
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-03-15T20:18:47.630Z",
+    "introText": "Pilgrimage to the five hills of Rajgir (Vipulachala, Ratnagiri, etc.) where many saints attained liberation."
+  }
+]
