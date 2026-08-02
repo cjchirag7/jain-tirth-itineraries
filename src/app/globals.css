@@ -156,3 +156,24 @@ button {
   transform: translateY(-2px);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
+@media print {
+  header, footer, nav, [class*="chatWrapper"] {
+    display: none !important;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+}

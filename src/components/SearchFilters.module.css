@@ -44,3 +44,28 @@
         align-items: stretch;
     }
 }
+
+.searchActionGroup {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.searchBtn {
+    height: 48px;
+    min-width: 200px;
+    padding: 0 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .searchActionGroup {
+        width: 100%;
+        margin-top: 0.75rem;
+    }
+    .searchBtn {
+        width: 100%;
+    }
+}

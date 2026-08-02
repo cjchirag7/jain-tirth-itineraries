@@ -12,6 +12,7 @@ interface SearchFiltersProps {
     setSelectedDuration: (duration: string) => void;
     searchSuggestions: string[];
     states: string[];
+    onSearchClick?: () => void;
 }
 
 export default function SearchFilters({
@@ -22,7 +23,8 @@ export default function SearchFilters({
     selectedDuration,
     setSelectedDuration,
     searchSuggestions,
-    states
+    states,
+    onSearchClick
 }: SearchFiltersProps) {
     return (
         <div className={`card ${styles.filters}`}>
@@ -67,6 +69,17 @@ export default function SearchFilters({
                     <option value="4">4 Days</option>
                     <option value="5+">5+ Days</option>
                 </select>
+            </div>
+            
+            <div className={styles.searchActionGroup}>
+                <button 
+                  className={`btn btn-primary ${styles.searchBtn}`} 
+                  onClick={onSearchClick}
+                  aria-label="Search Routes"
+                  type="button"
+                >
+                    Search
+                </button>
             </div>
         </div>
     );

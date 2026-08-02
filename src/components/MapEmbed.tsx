@@ -14,9 +14,10 @@ interface MapEmbedProps {
     states: string[];
     previousDayLastStop?: Stop;
     startLocation?: string;
+    endLocation?: string;
 }
 
-export default function MapEmbed({ day, stops, states, previousDayLastStop, startLocation }: MapEmbedProps) {
+export default function MapEmbed({ day, stops, states, previousDayLastStop, startLocation, endLocation }: MapEmbedProps) {
     if (!stops || stops.length === 0) return null;
 
     const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
@@ -33,13 +34,17 @@ export default function MapEmbed({ day, stops, states, previousDayLastStop, star
     // Build the full list of routing stops
     // 1. If we have a startLocation (Day 1), prepend it
     // 2. Else if we have previousDayLastStop, prepend it
-    // 3. Otherwise just use stops
-    let routingStops: (Stop | string)[] = stops;
+    // 3. If we have an endLocation (Last Day), append it
+    let routingStops: (Stop | string)[] = [...stops];
 
     if (day === 1 && startLocation) {
-        routingStops = [startLocation, ...stops];
+        routingStops = [startLocation, ...routingStops];
     } else if (previousDayLastStop) {
-        routingStops = [previousDayLastStop, ...stops];
+        routingStops = [previousDayLastStop, ...routingStops];
+    }
+
+    if (endLocation) {
+        routingStops = [...routingStops, endLocation];
     }
 
     const getStopString = (stop: Stop | string) => {

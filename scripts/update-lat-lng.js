@@ -48,11 +48,19 @@ async function extractLatLng(page, mapsLink) {
                 return { lat: parseFloat(pinMatch[1]), lng: parseFloat(pinMatch[2]) };
             }
 
-            // Fallback: match the viewport center (@lat,lng)
-            const viewMatch = currentUrl.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
-            if (viewMatch) {
-                return { lat: parseFloat(viewMatch[1]), lng: parseFloat(viewMatch[2]) };
-            }
+            // We wait for up to 10 seconds for the URL to update to !3d...!4d...
+            // Do NOT eagerly return @lat,lng because that's just the viewport, which is often wrong!
+        }
+
+        // If we exit the loop, try checking the final URL or og:url for viewMatch as a last resort
+        const finalUrl = page.url();
+        const finalPinMatch = finalUrl.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/);
+        if (finalPinMatch) {
+            return { lat: parseFloat(finalPinMatch[1]), lng: parseFloat(finalPinMatch[2]) };
+        }
+        const finalViewMatch = finalUrl.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
+        if (finalViewMatch) {
+            return { lat: parseFloat(finalViewMatch[1]), lng: parseFloat(finalViewMatch[2]) };
         }
 
         // Fallback: check og:url meta tag

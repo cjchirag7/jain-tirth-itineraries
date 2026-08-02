@@ -14,6 +14,8 @@ interface Itinerary {
     author: string;
     authorInstagram?: string;
     description: string;
+    startingCity?: string;
+    endingCity?: string;
     keywords?: string[];
     days: {
         day: number;
@@ -37,6 +39,8 @@ interface ItineraryClientProps {
 
 export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
     const [startLocation, setStartLocation] = useState('');
+    const [endLocation, setEndLocation] = useState('');
+    const [showHint, setShowHint] = useState(false);
     const [expandedContacts, setExpandedContacts] = useState<Record<string, boolean>>({});
 
     const toggleContacts = (stopId: string) => {
@@ -47,16 +51,59 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
     };
 
     useEffect(() => {
-        const saved = localStorage.getItem('userStartingLocation');
-        if (saved) setStartLocation(saved);
-    }, []);
+        const savedStart = localStorage.getItem('userStartingLocation');
+        const savedEnd = localStorage.getItem('userEndingLocation');
+        const hasSeenHint = localStorage.getItem('hasSeenLocationHint');
+        
+        if (savedStart) {
+            setStartLocation(savedStart);
+        } else if (itinerary.startingCity) {
+            setStartLocation(itinerary.startingCity);
+        }
+
+        if (savedEnd) {
+            setEndLocation(savedEnd);
+        } else if (itinerary.endingCity || itinerary.startingCity) {
+            setEndLocation(itinerary.endingCity || itinerary.startingCity || 'Bangalore, Karnataka, India');
+        }
+
+        if (!hasSeenHint) {
+            setShowHint(true);
+        }
+
+        // Expand all accordions before printing
+        const handleBeforePrint = () => {
+            const newExpanded: Record<string, boolean> = {};
+            itinerary.days.forEach((day, dayIndex) => {
+                day.stops.forEach((stop, index) => {
+                    if (stop.tirth && stop.tirth.contacts && stop.tirth.contacts.length > 0) {
+                        newExpanded[`${dayIndex}-${index}`] = true;
+                    }
+                });
+            });
+            setExpandedContacts(newExpanded);
+        };
+
+        window.addEventListener('beforeprint', handleBeforePrint);
+        return () => window.removeEventListener('beforeprint', handleBeforePrint);
+    }, [itinerary]);
+
+    const dismissHint = () => {
+        setShowHint(false);
+        localStorage.setItem('hasSeenLocationHint', 'true');
+    };
 
     const handleStartLocationChange = (val: string) => {
         setStartLocation(val);
         localStorage.setItem('userStartingLocation', val);
     };
 
-    const handleUseMyLocation = () => {
+    const handleEndLocationChange = (val: string) => {
+        setEndLocation(val);
+        localStorage.setItem('userEndingLocation', val);
+    };
+
+    const handleUseMyLocationForStart = () => {
         if (!navigator.geolocation) {
             alert('Geolocation is not supported by your browser');
             return;
@@ -66,6 +113,24 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
             (position) => {
                 const { latitude, longitude } = position.coords;
                 handleStartLocationChange(`${latitude},${longitude}`);
+            },
+            (error) => {
+                console.error('Error getting location:', error);
+                alert('Unable to retrieve your location. Please check your browser permissions.');
+            }
+        );
+    };
+
+    const handleUseMyLocationForEnd = () => {
+        if (!navigator.geolocation) {
+            alert('Geolocation is not supported by your browser');
+            return;
+        }
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const { latitude, longitude } = position.coords;
+                handleEndLocationChange(`${latitude},${longitude}`);
             },
             (error) => {
                 console.error('Error getting location:', error);
@@ -105,45 +170,198 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                 </div>
                 <p className={styles.description}>{itinerary.description}</p>
 
-                <WhatsAppShareButton title={itinerary.title} />
+                <div className={styles.actionButtons}>
+                    <WhatsAppShareButton title={itinerary.title} />
+                    <button 
+                        onClick={() => window.print()}
+                        className={styles.printBtn}
+                        aria-label="Print or Save as PDF"
+                    >
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                            <rect x="6" y="14" width="12" height="8"></rect>
+                        </svg>
+                        Save as PDF / Print
+                    </button>
+                </div>
 
-                <div className={styles.travelContext}>
-                    <div className={styles.inputGroup}>
-                        <label htmlFor="startLocation">📍 My Starting Location</label>
-                        <div className={styles.inputWrapper}>
-                            <input
-                                type="text"
-                                id="startLocation"
-                                value={startLocation}
-                                onChange={(e) => handleStartLocationChange(e.target.value)}
-                                placeholder="e.g. Bangalore"
-                                className={styles.input}
-                            />
-                            <div className={styles.inputActions}>
-                                {!startLocation && (
-                                    <button
-                                        onClick={handleUseMyLocation}
-                                        className={styles.locationBtn}
-                                        title="Use my current location"
-                                    >
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                            <path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path>
-                                        </svg>
-                                    </button>
-                                )}
-                                {startLocation && (
-                                    <button
-                                        onClick={() => handleStartLocationChange('')}
-                                        className={styles.clearBtn}
-                                        title="Clear location"
-                                    >
-                                        ×
-                                    </button>
-                                )}
+                {/* Interactive At-a-Glance Summary Matrix */}
+                {(() => {
+                    let totalStops = 0;
+                    let totalTirths = 0;
+
+                    itinerary.days.forEach((day) => {
+                        totalStops += day.stops.length;
+                        day.stops.forEach((stop) => {
+                            if (stop.type === 'Tirth' || stop.type === 'Temple') {
+                                totalTirths += 1;
+                            }
+                        });
+                    });
+
+                    return (
+                        <div className={styles.summaryMatrixCard}>
+                            <div className={styles.summaryMatrixHeader}>
+                                <h3>📋 Itinerary Overview at a Glance</h3>
+                                <div className={styles.summaryStats}>
+                                    <span className={styles.statBadge}>⏱ {itinerary.duration}</span>
+                                    <span className={styles.statBadge}>📍 {totalStops} Total Stops</span>
+                                    <span className={styles.statBadge}>🛕 {totalTirths} Tirths</span>
+                                </div>
+                            </div>
+                            
+                            <div className={styles.summaryTableWrapper}>
+                                <table className={styles.summaryTable}>
+                                    <thead>
+                                        <tr>
+                                            <th style={{ width: '90px' }}>Day</th>
+                                            <th>Places Covered (Click to Jump)</th>
+                                            <th style={{ width: '180px' }}>Night Stay / End Stop</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {itinerary.days.map((day, dayIndex) => {
+                                            const lastStop = day.stops[day.stops.length - 1];
+                                            const dharmshalaStop = lastStop && (lastStop.type === 'Dharmshala' || lastStop.facilities?.includes('Dharmshala')) ? lastStop : null;
+                                            const isLastDay = dayIndex === itinerary.days.length - 1;
+
+                                            return (
+                                                <tr key={day.day}>
+                                                    <td className={styles.dayCell}>
+                                                        <strong>Day {day.day}</strong>
+                                                        <span className={styles.stopCountText}>{day.stops.length} stops</span>
+                                                    </td>
+                                                    <td>
+                                                        <div className={styles.chipsContainer}>
+                                                            {day.stops.map((stop, stopIndex) => (
+                                                                <button
+                                                                    key={stopIndex}
+                                                                    className={styles.stopChip}
+                                                                    onClick={() => {
+                                                                        const el = document.getElementById(`stop-${dayIndex}-${stopIndex}`);
+                                                                        if (el) {
+                                                                            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                                                        }
+                                                                    }}
+                                                                    title={`Click to jump to ${stop.name}`}
+                                                                >
+                                                                    <span className={styles.chipNum}>{stopIndex + 1}</span>
+                                                                    <span className={styles.chipName}>{stop.name}</span>
+                                                                </button>
+                                                            ))}
+                                                        </div>
+                                                    </td>
+                                                    <td className={styles.stayCell}>
+                                                        {isLastDay && lastStop ? (
+                                                            <div className={styles.endStopBadge} title="End of Journey / Final Stop">
+                                                                <span>🏁 {lastStop.name}</span>
+                                                            </div>
+                                                        ) : dharmshalaStop ? (
+                                                            <div className={styles.stayBadge} title="Night Stay Dharmshala Available">
+                                                                <span>🏨 {dharmshalaStop.name}</span>
+                                                            </div>
+                                                        ) : lastStop ? (
+                                                            <div className={styles.endStopBadge} title="End of Day / Final Stop">
+                                                                <span>📍 {lastStop.name}</span>
+                                                            </div>
+                                                        ) : (
+                                                            <span className={styles.mutedText}>—</span>
+                                                        )}
+                                                    </td>
+                                                </tr>
+                                            );
+                                        })}
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <small>Directions for the first stop will start from here.</small>
+                    );
+                })()}
+
+                <div className={styles.travelContext}>
+                    <div className={styles.locationsRow}>
+                        <div className={styles.inputGroup}>
+                            <label htmlFor="startLocation">📍 My Starting Location</label>
+                            <div className={styles.inputWrapper}>
+                                <input
+                                    type="text"
+                                    id="startLocation"
+                                    value={startLocation}
+                                    onChange={(e) => handleStartLocationChange(e.target.value)}
+                                    placeholder="e.g. Bangalore"
+                                    className={styles.input}
+                                />
+                                <div className={styles.inputActions}>
+                                    {!startLocation && (
+                                        <button
+                                            onClick={handleUseMyLocationForStart}
+                                            className={styles.locationBtn}
+                                            title="Use my current location"
+                                        >
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path>
+                                            </svg>
+                                        </button>
+                                    )}
+                                    {startLocation && (
+                                        <button
+                                            onClick={() => handleStartLocationChange('')}
+                                            className={styles.clearBtn}
+                                            title="Clear location"
+                                        >
+                                            ×
+                                        </button>
+                                    )}
+                                </div>
+                            </div>
+                            <small>Directions for the first stop will start from here.</small>
+                            {showHint && (
+                                <div className={styles.locationHint}>
+                                    💡 <strong>Hint:</strong> You can change your start & end cities here or click the GPS icon to use your current location.
+                                    <button onClick={dismissHint} className={styles.dismissHintBtn}>Got it</button>
+                                </div>
+                            )}
+                        </div>
+
+                        <div className={styles.inputGroup}>
+                            <label htmlFor="endLocation">🏁 My Ending Location</label>
+                            <div className={styles.inputWrapper}>
+                                <input
+                                    type="text"
+                                    id="endLocation"
+                                    value={endLocation}
+                                    onChange={(e) => handleEndLocationChange(e.target.value)}
+                                    placeholder="e.g. Bangalore"
+                                    className={styles.input}
+                                />
+                                <div className={styles.inputActions}>
+                                    {!endLocation && (
+                                        <button
+                                            onClick={handleUseMyLocationForEnd}
+                                            className={styles.locationBtn}
+                                            title="Use my current location"
+                                        >
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path>
+                                            </svg>
+                                        </button>
+                                    )}
+                                    {endLocation && (
+                                        <button
+                                            onClick={() => handleEndLocationChange('')}
+                                            className={styles.clearBtn}
+                                            title="Clear location"
+                                        >
+                                            ×
+                                        </button>
+                                    )}
+                                </div>
+                            </div>
+                            <small>Return directions from the final stop will end here.</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -163,6 +381,7 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                 states={itinerary.states}
                                 previousDayLastStop={previousDayLastStop}
                                 startLocation={dayIndex === 0 ? startLocation : undefined}
+                                endLocation={dayIndex === itinerary.days.length - 1 ? endLocation : undefined}
                             />
                             <div className={styles.stopsList}>
                                 {day.stops.map((stop, index) => {
@@ -188,7 +407,7 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                     const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(dest)}`;
 
                                     return (
-                                        <div key={index} className={styles.stopCard}>
+                                        <div key={index} id={`stop-${dayIndex}-${index}`} className={styles.stopCard}>
                                             <div className={styles.stopHeader}>
                                                 <h3 className={styles.stopName}>
                                                     {index + 1}. {stop.name}
@@ -255,6 +474,16 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                                 >
                                                     Get Directions ↗
                                                 </a>
+                                                {dayIndex === itinerary.days.length - 1 && index === day.stops.length - 1 && (
+                                                    <a
+                                                        href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(dest)}&destination=${encodeURIComponent(endLocation || 'My+Location')}`}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className={styles.returnLink}
+                                                    >
+                                                        Return Directions ↗
+                                                    </a>
+                                                )}
                                                 {stop.type === 'Dharmshala' && stop.tirth ? (
                                                     <Link 
                                                         href={`/dharmshala/${stop.tirth.id}`}

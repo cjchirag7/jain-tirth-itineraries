@@ -11,8 +11,8 @@ export default function Header() {
           <span className={styles.title}>Jain Routes</span>
         </Link>
         <nav className={styles.nav}>
-          <Link href="/submit" className="btn btn-primary">
-            Submit Itinerary
+          <Link href="/directory" className="btn btn-outline" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            📍 Places Directory
           </Link>
         </nav>
       </div>

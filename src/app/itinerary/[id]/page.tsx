@@ -14,6 +14,8 @@ interface Itinerary {
     author: string;
     authorInstagram?: string;
     description: string;
+    startingCity?: string;
+    endingCity?: string;
     keywords?: string[];
     days: {
         day: number;
@@ -31,7 +33,7 @@ interface Itinerary {
     }[];
 }
 
-const itineraries: Itinerary[] = itinerariesOriginal as Itinerary[];
+const itineraries: Itinerary[] = itinerariesOriginal as unknown as Itinerary[];
 
 export async function generateStaticParams() {
     return itineraries.map((itinerary) => ({

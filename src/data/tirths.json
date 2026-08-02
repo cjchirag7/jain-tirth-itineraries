@@ -380,8 +380,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/75CheaLH4Jk7c5v18",
-      "lat": 12.2727841,
-      "lng": 79.4072352
+      "lat": 12.2728433,
+      "lng": 79.4069722
     },
     "howToReach": {
       "nearestRailway": "",
@@ -422,8 +422,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/uHSBUBX174x3EZgr7",
-      "lat": 12.1853185,
-      "lng": 76.5285637
+      "lat": 12.3097534,
+      "lng": 76.6576961
     },
     "howToReach": {
       "nearestRailway": "",
@@ -446,8 +446,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/FcKCkstHTkVmtnTy9",
-      "lat": 12.3703136,
-      "lng": 76.4874708
+      "lat": 12.3703396,
+      "lng": 76.4874403
     },
     "howToReach": {
       "nearestRailway": "Mysuru (20km)",
@@ -481,15 +481,15 @@
     "introText": "Significant heritage center featuring an 18-foot-tall monolithic statue of Lord Bahubali established in 1147 CE. Located near the KRS Dam with scenic river views."
   },
   {
-    "id": "chandragiri-hill-sravanbelgola",
-    "name": "Chandragiri Hill, Sravanbelgola",
+    "id": "chandragiri-hill-shravanabelgola",
+    "name": "Chandragiri Hill, Shravanabelgola",
     "state": "Karnataka",
     "type": "Tirth",
     "description": "Final resting place of Emperor Chandragupta Maurya who took sallekhana here in 298 BCE alongside Bhadrabahu Svami.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
-      "lat": 12.8616935,
-      "lng": 76.4840913
+      "lat": 12.8623154,
+      "lng": 76.4866723
     },
     "howToReach": {
       "nearestRailway": "",
@@ -502,15 +502,15 @@
     "introText": "One of the two sacred hills in Shravanabelagola, housing various Basadis and ancient inscriptions."
   },
   {
-    "id": "vindhyagiri-hill-sravanabelgola",
-    "name": "Vindhyagiri Hill, Sravanabelgola",
+    "id": "vindhyagiri-hill-shravanabelgola",
+    "name": "Vindhyagiri Hill, Shravanabelgola",
     "state": "Karnataka",
     "type": "Tirth",
     "description": "The statue was built in 981-983 AD by Chavundaraya, the minister of the Ganga dynasty. Host of the grand Mahamastakabhisheka festival every 12 years.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/1qcyYw63Za5qHSzP9",
-      "lat": 12.8571705,
-      "lng": 76.4867811
+      "lat": 12.8572541,
+      "lng": 76.4870954
     },
     "howToReach": {
       "nearestRailway": "Shravanabelagola",
@@ -523,8 +523,8 @@
     "introText": "World-famous hill featuring the 57-foot monolithic statue of Lord Gommateshwara (Bahubali), carved from a single granite block."
   },
   {
-    "id": "jain-mutt-temple-sravanabelgola",
-    "name": "Jain Mutt Temple, Sravanabelgola",
+    "id": "jain-mutt-temple-shravanabelgola",
+    "name": "Jain Mutt Temple, Shravanabelgola",
     "state": "Karnataka",
     "type": "Tirth",
     "description": "",
@@ -564,8 +564,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/nk99By7J43ZkAtZE8",
-      "lat": 12.865561,
-      "lng": 76.4883788
+      "lat": 12.8654815,
+      "lng": 76.488389
     },
     "howToReach": {
       "nearestRailway": "",
@@ -626,7 +626,7 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/6nvECHgEJuFPZQ5k7",
-      "lat": 13.3033664,
+      "lat": 13.3033666,
       "lng": 77.1867383
     },
     "howToReach": {
@@ -637,7 +637,13 @@
     "facilities": [
       "Bhojanshala"
     ],
-    "contacts": [],
+    "contacts": [
+      {
+        "type": "Bhojanshala",
+        "name": "Contact",
+        "number": "+91 8618810806"
+      }
+    ],
     "lastVerified": "2026-03-15T20:18:47.630Z",
     "introText": "Also known as Basadi Betta, famous for its unique Peacock-feather shaped (Pinchi) Guru Mandir and 81-foot monolithic statue of Lord Chandranatha."
   },
@@ -729,6 +735,80 @@
     "introText": "Significant 17th-century Basadi in Venur associated with the local ruling dynasties."
   },
   {
+    "id": "haalebeedu-shantinath-basadi",
+    "name": "Haalebeedu Shantinath Basadi",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "We can find 3 ancient temples all constructed within a single complex by queen Shantadevi in 12th century. The 3 temples have 18 feet Parshwanath, 2 feet Aadinath and 18 feet Shantinath as moolnayak. The Halebeedu Jain temple architecture is special because of its highly polished lathe-turned pillars, and intricate pillar carvings.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/6BqGy2DBGsDQWmBbA",
+      "lat": 13.208636,
+      "lng": 75.9952154
+    },
+    "howToReach": {
+      "nearestRailway": "Hassan (34 km)",
+      "nearestBusStand": "Hassan (34 km)",
+      "nearestAirport": "Bengaluru (BLR)"
+    },
+    "facilities": [],
+    "contacts": [],
+    "lastVerified": "2026-08-02T20:18:47.630Z",
+    "introText": "Built in the 12th century during the Hoysala era, the complex features three main basadis (temples) dedicated to the Tirthankaras Parshvanatha, Shantinatha, and Adinatha."
+  },
+  {
+    "id": "jainara-gutthi",
+    "name": "Jainara Gutthi Atishay Kshetra",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "The indoor temple has idols of Parshwanatha bhagwan, Adinath bhagwan, Munisuvratnath bhagwan, Bahubali bhagwan and 24 Thirthankars. 11 idols were discovered underground. In the open, there are 2 big idols of Sheetalnath Bhagwan and Munisuvratnath Bhagwan. Bhojan is served only on order basis, so please call on bhojanshala number before arriving.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/Y7j6gUrt29RwEhv89",
+      "lat": 13.1640844,
+      "lng": 76.0284748
+    },
+    "howToReach": {
+      "nearestRailway": "Hassan (34 km)",
+      "nearestBusStand": "Hassan (34 km)",
+      "nearestAirport": "Bengaluru (BLR)"
+    },
+    "facilities": [
+      "Bhojanshala"
+    ],
+    "contacts": [
+      {
+        "type": "Bhojanshala",
+        "name": "Bahubali Bhaiya",
+        "number": "+91 7022522077"
+      }
+    ],
+    "lastVerified": "2026-08-02T20:18:47.630Z",
+    "introText": "Known for many ancient idols discovered from the earth in the year 2021, under guidance of Muni Shri 108 Veer Sagar Ji Maharaj Dakshin."
+  },
+  {
+    "id": "kanakagiri-sidhh-kshetra",
+    "name": "Kanakagiri Sidhh Kshetra",
+    "state": "Karnataka",
+    "type": "Tirth",
+    "description": "It is the Samadhi place of Aacharya Pujyapad Swamy. The place also witnessed vihar of Lord Mahavirji. It is beautiful mountain of huge stones. The great Supratishth Mahamuni because omniscient and achieved salvation here. Inscription and caves related to last Shrutkewali Bhadrabahuji are found here. The hill top has shri vijay parshwanath idol and a miniature of shri sammed shikharji tirth. In the mid hill, there an idol of shri Bahubali Swamy. Note that you can also go to the hill via your car.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/iwX8Gb6TanZn9kng8",
+      "lat": 11.9498319,
+      "lng": 76.7688089
+    },
+    "howToReach": {
+      "nearestRailway": "Mysuru",
+      "nearestBusStand": "Mysuru",
+      "nearestAirport": "Mysuru"
+    },
+    "facilities": [
+      "Bhojanshala",
+      "Dharmshala"
+    ],
+    "contacts": [],
+    "lastVerified": "2026-08-02T20:18:47.630Z",
+    "introText": "The only sidhh kshetra of Karnataka and the holy samadhi place of Acharya Shri Pujyapaad Swami."
+  },
+  {
     "id": "dharmasthala-bahubali",
     "name": "Dharmasthala Bahubali",
     "state": "Karnataka",
@@ -771,7 +851,13 @@
     "facilities": [
       "Dharmshala"
     ],
-    "contacts": [],
+    "contacts": [
+      {
+        "type": "Dharmshala",
+        "name": "Contact",
+        "number": "+91 8256233577"
+      }
+    ],
     "lastVerified": "2026-03-15T20:18:47.630Z",
     "introText": "Tri-shrine complex (Trikoota) in Bilagi, dedicated to the three jewels of Jainism."
   },
@@ -795,7 +881,13 @@
       "Dharmshala",
       "Bhojanshala"
     ],
-    "contacts": [],
+    "contacts": [
+      {
+        "type": "Dharmshala",
+        "name": "Contact",
+        "number": "+91 9480657321"
+      }
+    ],
     "lastVerified": "2026-03-15T20:18:47.630Z",
     "introText": "Features a 42-foot monolithic Bahubali statue, the second tallest in Karnataka."
   },
@@ -825,7 +917,7 @@
     "name": "Varanga Lake Jain Temple",
     "state": "Karnataka",
     "type": "Temple",
-    "description": "",
+    "description": "Varanga Lake Jain Basadi (Kere Basadi) is open daily from 8:30 AM to 1:00 PM in the morning and 3:00 PM to 6:00 PM in the evening.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/okw4uiJ3R5qkHi536",
       "lat": 13.3961832,
@@ -849,8 +941,8 @@
     "description": "Associated with the 4th-century monk Acharya Kundakunda who performed penance here.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/g8qBK6pFyQZbauWcA",
-      "lat": 13.557892,
-      "lng": 75.16838
+      "lat": 13.5579471,
+      "lng": 75.1686377
     },
     "howToReach": {
       "nearestRailway": "Shivamogga (92km)",
@@ -910,7 +1002,12 @@
       {
         "type": "Office",
         "name": "Contact",
-        "number": "08185-260126"
+        "number": "+91 8185260126"
+      },
+      {
+        "type": "Dharmshala",
+        "name": "Contact",
+        "number": "+91 9418944083"
       }
     ],
     "lastVerified": "2026-03-15T20:18:47.630Z",
@@ -1058,8 +1155,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/k9342sg1z5FbZyx5A",
-      "lat": 23.328144,
-      "lng": 79.6686672
+      "lat": 23.3281293,
+      "lng": 79.6687168
     },
     "howToReach": {
       "nearestRailway": "",
@@ -1106,8 +1203,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/bCwxgnVB3oyX145E6",
-      "lat": 23.6343749,
-      "lng": 79.0682226
+      "lat": 23.6343837,
+      "lng": 79.0683012
     },
     "howToReach": {
       "nearestRailway": "",
@@ -1294,27 +1391,6 @@
     "contacts": [],
     "lastVerified": "2026-03-15T20:18:47.630Z",
     "introText": "10th-century site featuring a 9-foot high idol of Lord Shantinath discovered via excavation from a pond."
-  },
-  {
-    "id": "chandragiri-hill-sravanabelgola",
-    "name": "Chandragiri Hill, Sravanabelgola",
-    "state": "Karnataka",
-    "type": "Tirth",
-    "description": "Final resting place of Emperor Chandragupta Maurya who took sallekhana here in 298 BCE alongside Bhadrabahu Svami.",
-    "location": {
-      "mapsLink": "https://maps.app.goo.gl/6DJe75vT7xAss9qY8",
-      "lat": 12.8616935,
-      "lng": 76.4840913
-    },
-    "howToReach": {
-      "nearestRailway": "",
-      "nearestBusStand": "",
-      "nearestAirport": ""
-    },
-    "facilities": [],
-    "contacts": [],
-    "lastVerified": "2026-03-15T20:18:47.630Z",
-    "introText": "One of the two sacred hills in Shravanabelagola, housing various Basadis and ancient inscriptions."
   },
   {
     "id": "jain-mutt-temple",
@@ -1844,7 +1920,7 @@
       {
         "type": "Office",
         "name": "Contact",
-        "number": "9449501548"
+        "number": "+91 9449501548"
       }
     ],
     "lastVerified": "2026-03-15T20:18:47.630Z",
@@ -1966,8 +2042,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/dNNVFd7wWoCC1y2u8",
-      "lat": 13.557892,
-      "lng": 75.16838
+      "lat": 13.5579471,
+      "lng": 75.1686377
     },
     "howToReach": {
       "nearestRailway": "",
@@ -2011,8 +2087,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/TqGX29RnVBWhrngF7",
-      "lat": 24.0031889,
-      "lng": 86.1479963
+      "lat": 24.0032794,
+      "lng": 86.1482646
     },
     "howToReach": {
       "nearestRailway": "Parasnath (ISP) (24km)",
@@ -2041,8 +2117,8 @@
     "description": "Most sacred site for all Jain sects. Includes Jal-Mandir and various Tonks (shrines) dedicated to Tirthankaras.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/HPAdGNAdFdCvUWy86",
-      "lat": 24.0014412,
-      "lng": 86.1468692
+      "lat": 24.0011798,
+      "lng": 86.1468113
     },
     "howToReach": {
       "nearestRailway": "Parasnath (ISP)",
@@ -2063,7 +2139,7 @@
     "location": {
       "mapsLink": "https://maps.app.goo.gl/VYGuDNFE2L3ekvXT8",
       "lat": 24.0792541,
-      "lng": 86.2142246
+      "lng": 86.2167995
     },
     "howToReach": {
       "nearestRailway": "",
@@ -2083,8 +2159,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/fBzH9LDVLR4hYyWx9",
-      "lat": 24.8378014,
-      "lng": 87.0306156
+      "lat": 24.8402595,
+      "lng": 87.0358658
     },
     "howToReach": {
       "nearestRailway": "",
@@ -2128,8 +2204,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/gC1SFCFgWFVZEr2z7",
-      "lat": 25.237326,
-      "lng": 86.9409235
+      "lat": 25.2373257,
+      "lng": 86.941701
     },
     "howToReach": {
       "nearestRailway": "Bhagalpur (6km)",
@@ -2176,7 +2252,7 @@
     "location": {
       "mapsLink": "https://maps.app.goo.gl/sG7YToCJXqM9shjB9",
       "lat": 25.0914304,
-      "lng": 84.3194964
+      "lng": 85.5389788
     },
     "howToReach": {
       "nearestRailway": "Pawapuri Road/Rajgir",
@@ -2199,8 +2275,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/rJftVmRPhEkoT3x69",
-      "lat": 24.9097925,
-      "lng": 85.1964792
+      "lat": 24.909716,
+      "lng": 85.5379932
     },
     "howToReach": {
       "nearestRailway": "Nawada (3km)",
@@ -2229,8 +2305,8 @@
     "description": "",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/FybHTwYLUucmKuE79",
-      "lat": 25.026152,
-      "lng": 85.4190933
+      "lat": 25.0261308,
+      "lng": 85.419896
     },
     "howToReach": {
       "nearestRailway": "",
@@ -2253,8 +2329,8 @@
     "description": "Celebrates the Garbha, Janma, Tapa, and Gyan Kalyanakas of the Lord.",
     "location": {
       "mapsLink": "https://maps.app.goo.gl/8s7Zz9goYK3Uu1gB9",
-      "lat": 25.0263507,
-      "lng": 85.4148465
+      "lat": 25.0259487,
+      "lng": 85.4208854
     },
     "howToReach": {
       "nearestRailway": "Rajgir",
@@ -2275,7 +2351,7 @@
     "location": {
       "mapsLink": "https://maps.app.goo.gl/bHuYFj3Hj1f3H3Jo9",
       "lat": 25.0123094,
-      "lng": 85.3908394
+      "lng": 85.4098938
     },
     "howToReach": {
       "nearestRailway": "",
