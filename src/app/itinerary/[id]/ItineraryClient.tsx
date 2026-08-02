@@ -173,7 +173,29 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                 <div className={styles.actionButtons}>
                     <WhatsAppShareButton title={itinerary.title} />
                     <button 
-                        onClick={() => window.print()}
+                        onClick={async (e) => {
+                            const btn = e.currentTarget;
+                            const originalHTML = btn.innerHTML;
+                            btn.innerHTML = '⏳ Preparing Maps...';
+                            
+                            const iframes = document.querySelectorAll('iframe');
+                            
+                            // Programmatically scroll to each iframe to trigger lazy loading and rendering
+                            for (let i = 0; i < iframes.length; i++) {
+                                iframes[i].scrollIntoView({ block: 'center' });
+                                // Wait 1.5s for each map to fully load and render
+                                await new Promise(resolve => setTimeout(resolve, 1500));
+                            }
+                            
+                            // Scroll back to the top of the page
+                            window.scrollTo(0, 0);
+                            
+                            // Small buffer before opening print dialog
+                            setTimeout(() => {
+                                window.print();
+                                btn.innerHTML = originalHTML;
+                            }, 500);
+                        }}
                         className={styles.printBtn}
                         aria-label="Print or Save as PDF"
                     >
