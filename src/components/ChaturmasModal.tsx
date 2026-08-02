@@ -49,6 +49,22 @@ export default function ChaturmasModal({ isOpen: controlledIsOpen, onClose }: Ch
                     <p>Start planning your tirth yatras in South India. Download our special curated itinerary guides:</p>
 
                     <div className={styles.pdfLinks}>
+                        <a href="/pdfs/gyanoday-travel-guide-en.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfCard}>
+                            <div className={styles.pdfIcon}>📍</div>
+                            <div className={styles.pdfDetails}>
+                                <strong>How to Reach Shri Gyanoday Tirth Bengaluru?</strong>
+                                <span>English Version</span>
+                            </div>
+                        </a>
+
+                        <a href="/pdfs/gyanoday-travel-guide-hi.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfCard}>
+                            <div className={styles.pdfIcon}>🗺️</div>
+                            <div className={styles.pdfDetails}>
+                                <strong>श्री ज्ञानोदय तीर्थ बेंगलुरु कैसे पहुँचें?</strong>
+                                <span>हिंदी संस्करण</span>
+                            </div>
+                        </a>
+
                         <a href="/pdfs/karnataka-itinerary-en.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfCard}>
                             <div className={styles.pdfIcon}>📄</div>
                             <div className={styles.pdfDetails}>

@@ -150,7 +150,7 @@ export default function Home() {
               🙏 Bengaluru Chaturmaas 2026 (आत्म-सिलिकॉन वर्षायोग) - Itinerary PDFs
             </h3>
             <p style={{ margin: '0.25rem 0 0', color: '#c2410c', fontSize: '0.9rem' }}>
-              Download ready-to-use print & digital itinerary tables for Karnataka & Tamil Nadu.
+              Download ready-to-use print & digital itinerary tables.
             </p>
           </div>
 
@@ -159,6 +159,49 @@ export default function Home() {
             gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
             gap: '1rem'
           }}>
+            <a
+              href="/pdfs/gyanoday-travel-guide-en.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                padding: '0.85rem 1rem',
+                background: 'white',
+                border: '1px solid #fdba74',
+                textDecoration: 'none'
+              }}
+            >
+              <span style={{ fontSize: '1.5rem' }}>📍</span>
+              <div>
+                <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>How to Reach Shri Gyanoday Tirth</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>English PDF</span>
+              </div>
+            </a>
+
+            <a
+              href="/pdfs/gyanoday-travel-guide-hi.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="card"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                padding: '0.85rem 1rem',
+                background: 'white',
+                border: '1px solid #fdba74',
+                textDecoration: 'none'
+              }}
+            >
+              <span style={{ fontSize: '1.5rem' }}>🗺️</span>
+              <div>
+                <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>श्री ज्ञानोदय तीर्थ कैसे पहुँचें?</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>हिंदी PDF</span>
+              </div>
+            </a>
             <a
               href="/pdfs/karnataka-itinerary-en.pdf"
               target="_blank"
