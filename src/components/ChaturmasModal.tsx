@@ -12,17 +12,21 @@ export default function ChaturmasModal({ isOpen: controlledIsOpen, onClose }: Ch
 
     useEffect(() => {
         if (controlledIsOpen === undefined) {
-            // Show popup on reload with a slight smooth delay
-            const timer = setTimeout(() => {
-                setInternalOpen(true);
-            }, 600);
-            return () => clearTimeout(timer);
+            const hasSeen = sessionStorage.getItem('hasSeenChaturmasModal');
+            if (!hasSeen) {
+                // Show popup on reload with a slight smooth delay
+                const timer = setTimeout(() => {
+                    setInternalOpen(true);
+                }, 600);
+                return () => clearTimeout(timer);
+            }
         }
     }, [controlledIsOpen]);
 
     const isVisible = controlledIsOpen !== undefined ? controlledIsOpen : internalOpen;
 
     const handleClose = () => {
+        sessionStorage.setItem('hasSeenChaturmasModal', 'true');
         if (onClose) {
             onClose();
         } else {
