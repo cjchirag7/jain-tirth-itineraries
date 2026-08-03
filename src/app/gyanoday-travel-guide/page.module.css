@@ -1,0 +1,264 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: var(--font-primary), system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+.title {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+}
+
+.address {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.langToggle {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.langToggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--primary);
+}
+
+.downloadBtn {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: opacity 0.2s;
+  border: none;
+}
+
+.downloadBtn:hover {
+  opacity: 0.9;
+}
+
+.mapsBtn {
+  background: #ea4335;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mapsBtn:hover {
+  opacity: 0.9;
+}
+
+.section {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+}
+
+.sectionTitle {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.table th, .table td {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.table th {
+  background: #f8fafc;
+  font-weight: 600;
+  color: var(--secondary);
+  width: 30%;
+}
+
+.table td {
+  background: white;
+}
+
+.table a {
+  color: var(--primary);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.table a:hover {
+  text-decoration: underline;
+}
+
+.optionBlock {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+.optionBlock:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.optionTitle {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.recommended {
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.detailsList {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--text);
+}
+
+.detailsList li {
+  margin-bottom: 0.25rem;
+}
+
+.highlight {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.tipsList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.tipsList li {
+  margin-bottom: 0.75rem;
+}
+
+.routeArrow {
+  color: var(--muted);
+  font-size: 1.2rem;
+  display: block;
+  margin: 0.25rem 0;
+  padding-left: 0.5rem;
+}
+
+.bottomAction {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .actions {
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .langToggle, .downloadBtn, .mapsBtn {
+    justify-content: center;
+  }
+  
+  .table th, .table td {
+    display: block;
+    width: 100%;
+  }
+  
+  .table th {
+    border-bottom: none;
+    background: #f1f5f9;
+  }
+  
+  .table td {
+    border-top: none;
+    margin-bottom: 1rem;
+  }
+  
+  .table tr:last-child td {
+    margin-bottom: 0;
+  }
+}

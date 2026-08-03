@@ -160,9 +160,7 @@ export default function Home() {
             gap: '1rem'
           }}>
             <a
-              href="/pdfs/gyanoday-travel-guide-en.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/gyanoday-travel-guide?lang=en"
               className="card"
               style={{
                 display: 'flex',
@@ -177,14 +175,12 @@ export default function Home() {
               <span style={{ fontSize: '1.5rem' }}>📍</span>
               <div>
                 <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>How to Reach Shri Gyanoday Tirth</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>English PDF</span>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>English Guide</span>
               </div>
             </a>
 
             <a
-              href="/pdfs/gyanoday-travel-guide-hi.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/gyanoday-travel-guide?lang=hi"
               className="card"
               style={{
                 display: 'flex',
@@ -199,7 +195,7 @@ export default function Home() {
               <span style={{ fontSize: '1.5rem' }}>🗺️</span>
               <div>
                 <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>श्री ज्ञानोदय तीर्थ कैसे पहुँचें?</strong>
-                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>हिंदी PDF</span>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>हिंदी मार्गदर्शिका</span>
               </div>
             </a>
             <a
