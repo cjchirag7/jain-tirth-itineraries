@@ -8,6 +8,7 @@ import styles from './page.module.css';
 function TravelGuideContent() {
   const searchParams = useSearchParams();
   const [lang, setLang] = useState<'en' | 'hi'>('en');
+  const [selectedHub, setSelectedHub] = useState<string | null>(null);
 
   useEffect(() => {
     const langParam = searchParams.get('lang');
@@ -112,6 +113,95 @@ function TravelGuideContent() {
   const pdfUrl = isHi ? '/pdfs/gyanoday-travel-guide-hi.pdf' : '/pdfs/gyanoday-travel-guide-en.pdf';
   const mapUrl = 'https://www.google.com/maps?cid=10167995298631462920';
 
+  const hubs = [
+    { id: 'flight', icon: '✈️', name: isHi ? 'हवाई अड्डा (BLR Airport)' : 'Airport (BLR)' },
+    { id: 'kr-puram', icon: '🚂', name: isHi ? 'KR पुरम स्टेशन' : 'KR Puram Station' },
+    { id: 'smvt', icon: '🚂', name: isHi ? 'SMVT टर्मिनल' : 'SMVT Terminal' },
+    { id: 'majestic', icon: '🚂', name: isHi ? 'मैजेस्टिक स्टेशन' : 'Majestic Station' },
+    { id: 'yesvantpur', icon: '🚂', name: isHi ? 'यशवंतपुर जंक्शन' : 'Yesvantpur Junction' },
+    { id: 'cantonment', icon: '🚂', name: isHi ? 'कैंटोनमेंट स्टेशन' : 'Cantonment Station' },
+    { id: 'bus', icon: '🚌', name: isHi ? 'बस स्टैंड (BMTC)' : 'Bus Station (BMTC)' }
+  ];
+
+  const renderSelectedContent = () => {
+    switch (selectedHub) {
+      case 'flight':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>✈️ {t.flightTitle}</h3>
+            <p className={styles.address} style={{ fontWeight: 600, color: 'var(--secondary)' }}>{t.flightSubtitle}</p>
+            <p className={styles.address}>{t.distTime}</p>
+            
+            <div className={styles.optionBlock}>
+              <h4 className={styles.optionTitle}>{t.flightOpt1} <span className={styles.recommended}>★ Recommended</span></h4>
+              <p>{t.flightOpt1Desc}</p>
+              <p className={styles.highlight}>{t.fareTime1}</p>
+            </div>
+
+            <div className={styles.optionBlock}>
+              <h4 className={styles.optionTitle}>{t.flightOpt2}</h4>
+              <p>{t.flightOpt2Desc}</p>
+              <p className={styles.highlight}>{t.fareTime2}</p>
+            </div>
+          </section>
+        );
+      case 'kr-puram':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚂 {t.krPuram}</h3>
+            <div className={styles.optionBlock}>
+              <p style={{ whiteSpace: 'pre-line' }}>{t.krPuramDesc}</p>
+            </div>
+          </section>
+        );
+      case 'smvt':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚂 {t.smvt}</h3>
+            <div className={styles.optionBlock}>
+              <p>{t.smvtDesc}</p>
+            </div>
+          </section>
+        );
+      case 'majestic':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚂 {t.majestic}</h3>
+            <div className={styles.optionBlock}>
+              <p>{t.majesticDesc}</p>
+            </div>
+          </section>
+        );
+      case 'yesvantpur':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚂 {t.yesvantpur}</h3>
+            <div className={styles.optionBlock}>
+              <p>{t.yesvantpurDesc}</p>
+            </div>
+          </section>
+        );
+      case 'cantonment':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚂 {t.cantonment}</h3>
+            <div className={styles.optionBlock}>
+              <p>{t.cantonmentDesc}</p>
+            </div>
+          </section>
+        );
+      case 'bus':
+        return (
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>🚌 {t.busTitle}</h3>
+            <p>{t.busDesc}</p>
+          </section>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -139,91 +229,59 @@ function TravelGuideContent() {
         </div>
       </div>
 
-      <section className={styles.section}>
-        <h3 className={styles.sectionTitle}>ℹ️ {t.quickInfo}</h3>
-        <div className={styles.tableContainer}>
-          <table className={styles.table}>
-            <tbody>
-              <tr>
-                <th>{t.airportLabel}</th>
-                <td>{t.airportVal}</td>
-              </tr>
-              <tr>
-                <th>{t.metroLabel}</th>
-                <td>{t.metroVal}</td>
-              </tr>
-              <tr>
-                <th>{t.railLabel}</th>
-                <td>{t.railVal}</td>
-              </tr>
-              <tr>
-                <th>{t.cabLabel}</th>
-                <td>{t.cabVal}</td>
-              </tr>
-              <tr>
-                <th>{t.autoLabel}</th>
-                <td>{t.autoVal}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+      {!selectedHub ? (
+        <>
+          <h3 className={styles.hubPrompt}>{isHi ? 'आप कहाँ पहुँच रहे हैं?' : 'Where are you arriving?'}</h3>
+          <div className={styles.hubGrid}>
+            {hubs.map(hub => (
+              <button key={hub.id} onClick={() => setSelectedHub(hub.id)} className={styles.hubCard}>
+                <span className={styles.hubIcon}>{hub.icon}</span>
+                <span className={styles.hubName}>{hub.name}</span>
+              </button>
+            ))}
+          </div>
+          
+          <section className={styles.section}>
+            <h3 className={styles.sectionTitle}>ℹ️ {t.quickInfo}</h3>
+            <div className={styles.tableContainer}>
+              <table className={styles.table}>
+                <tbody>
+                  <tr>
+                    <th>{t.airportLabel}</th>
+                    <td>{t.airportVal}</td>
+                  </tr>
+                  <tr>
+                    <th>{t.metroLabel}</th>
+                    <td>{t.metroVal}</td>
+                  </tr>
+                  <tr>
+                    <th>{t.railLabel}</th>
+                    <td>{t.railVal}</td>
+                  </tr>
+                  <tr>
+                    <th>{t.cabLabel}</th>
+                    <td>{t.cabVal}</td>
+                  </tr>
+                  <tr>
+                    <th>{t.autoLabel}</th>
+                    <td>{t.autoVal}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </>
+      ) : (
+        <>
+          <button onClick={() => setSelectedHub(null)} className={styles.backBtn}>
+            ← {isHi ? 'वापस जाएँ (Back to Options)' : 'Back to Options'}
+          </button>
+          
+          {renderSelectedContent()}
+        </>
+      )}
 
-      <section className={styles.section}>
-        <h3 className={styles.sectionTitle}>✈️ {t.flightTitle}</h3>
-        <p className={styles.address} style={{ fontWeight: 600, color: 'var(--secondary)' }}>{t.flightSubtitle}</p>
-        <p className={styles.address}>{t.distTime}</p>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.flightOpt1} <span className={styles.recommended}>★ Recommended</span></h4>
-          <p>{t.flightOpt1Desc}</p>
-          <p className={styles.highlight}>{t.fareTime1}</p>
-        </div>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.flightOpt2}</h4>
-          <p>{t.flightOpt2Desc}</p>
-          <p className={styles.highlight}>{t.fareTime2}</p>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <h3 className={styles.sectionTitle}>🚂 {t.trainTitle}</h3>
-        <p>{t.trainDesc}</p>
-        <br />
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.krPuram}</h4>
-          <p style={{ whiteSpace: 'pre-line' }}>{t.krPuramDesc}</p>
-        </div>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.smvt}</h4>
-          <p>{t.smvtDesc}</p>
-        </div>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.majestic}</h4>
-          <p>{t.majesticDesc}</p>
-        </div>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.yesvantpur}</h4>
-          <p>{t.yesvantpurDesc}</p>
-        </div>
-
-        <div className={styles.optionBlock}>
-          <h4 className={styles.optionTitle}>{t.cantonment}</h4>
-          <p>{t.cantonmentDesc}</p>
-        </div>
-      </section>
-
-      <section className={styles.section}>
-        <h3 className={styles.sectionTitle}>🚌 {t.busTitle}</h3>
-        <p>{t.busDesc}</p>
-      </section>
-
-      <section className={styles.section}>
+      <section className={styles.section} style={{ marginTop: selectedHub ? '0' : '2rem' }}>
         <h3 className={styles.sectionTitle}>💡 {t.tipsTitle}</h3>
         <ul className={styles.tipsList}>
           {t.tips.map((tip, idx) => (
