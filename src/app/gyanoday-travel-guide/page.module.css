@@ -69,27 +69,9 @@
 }
 
 .downloadBtn {
-  background: var(--primary);
-  color: white;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: opacity 0.2s;
-  border: none;
-}
-
-.downloadBtn:hover {
-  opacity: 0.9;
-}
-
-.mapsBtn {
-  background: #ea4335;
-  color: white;
+  background: white;
+  color: var(--secondary);
+  border: 1px solid var(--border);
   padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
@@ -97,10 +79,33 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.downloadBtn:hover {
+  background: var(--bg-hover);
+  border-color: var(--primary);
+}
+
+.mapsBtn {
+  background: white;
+  color: var(--secondary);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
 }
 
 .mapsBtn:hover {
-  opacity: 0.9;
+  background: var(--bg-hover);
+  border-color: var(--primary);
 }
 
 .section {
@@ -161,20 +166,21 @@
 }
 
 .optionBlock {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px dashed var(--border);
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .optionBlock:last-child {
   margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
 }
 
 .optionTitle {
-  font-size: 1.1rem;
-  color: var(--secondary);
+  font-size: 1.15rem;
+  color: var(--primary);
   font-weight: 600;
   margin: 0 0 0.5rem 0;
 }
