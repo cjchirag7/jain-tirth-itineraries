@@ -47,21 +47,6 @@ export default function ChaturmasModal({ isOpen: controlledIsOpen, onClose }: Ch
 
                 <div className={styles.modalContent}>
                     <div className={styles.pdfLinks}>
-                        <a href="/gyanoday-travel-guide?lang=en" className={styles.pdfCard}>
-                            <div className={styles.pdfIcon}>📍</div>
-                            <div className={styles.pdfDetails}>
-                                <strong>How to Reach Shri Gyanoday Tirth</strong>
-                                <span>English Guide</span>
-                            </div>
-                        </a>
-
-                        <a href="/gyanoday-travel-guide?lang=hi" className={styles.pdfCard}>
-                            <div className={styles.pdfIcon}>🗺️</div>
-                            <div className={styles.pdfDetails}>
-                                <strong>श्री ज्ञानोदय तीर्थ कैसे पहुँचें?</strong>
-                                <span>हिंदी मार्गदर्शिका</span>
-                            </div>
-                        </a>
 
                         <a href="/pdfs/karnataka-itinerary-en.pdf" target="_blank" rel="noopener noreferrer" className={styles.pdfCard}>
                             <div className={styles.pdfIcon}>📄</div>
