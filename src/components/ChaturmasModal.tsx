@@ -94,6 +94,22 @@ export default function ChaturmasModal({ isOpen: controlledIsOpen, onClose }: Ch
                                 <span>हिंदी संस्करण</span>
                             </div>
                         </a>
+
+                        <a href="/chaturmas-cabs?lang=en" className={styles.pdfCard}>
+                            <div className={styles.pdfIcon}>🚖</div>
+                            <div className={styles.pdfDetails}>
+                                <strong>Negotiated Cabs & Tours</strong>
+                                <span>English Version</span>
+                            </div>
+                        </a>
+
+                        <a href="/chaturmas-cabs?lang=hi" className={styles.pdfCard}>
+                            <div className={styles.pdfIcon}>🚖</div>
+                            <div className={styles.pdfDetails}>
+                                <strong>रियायती कैब और यात्रा दरें</strong>
+                                <span>हिंदी संस्करण</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
 

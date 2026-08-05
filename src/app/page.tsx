@@ -285,6 +285,46 @@ export default function Home() {
                 <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>हिंदी PDF</span>
               </div>
             </a>
+
+            <a
+              href="/chaturmas-cabs?lang=en"
+              className="card"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                padding: '0.85rem 1rem',
+                background: 'white',
+                border: '1px solid #fdba74',
+                textDecoration: 'none'
+              }}
+            >
+              <span style={{ fontSize: '1.5rem' }}>🚖</span>
+              <div>
+                <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>Negotiated Cabs & Tours</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>English Version</span>
+              </div>
+            </a>
+
+            <a
+              href="/chaturmas-cabs?lang=hi"
+              className="card"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                padding: '0.85rem 1rem',
+                background: 'white',
+                border: '1px solid #fdba74',
+                textDecoration: 'none'
+              }}
+            >
+              <span style={{ fontSize: '1.5rem' }}>🚖</span>
+              <div>
+                <strong style={{ display: 'block', color: 'var(--secondary)', fontSize: '0.95rem' }}>रियायती कैब और यात्रा दरें</strong>
+                <span style={{ fontSize: '0.8rem', color: 'var(--muted)' }}>हिंदी संस्करण</span>
+              </div>
+            </a>
           </div>
         </div>
       </section>

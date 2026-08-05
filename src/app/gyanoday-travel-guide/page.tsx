@@ -131,11 +131,21 @@ function TravelGuideContent() {
             <h3 className={styles.sectionTitle}>✈️ {t.flightTitle}</h3>
             <p className={styles.address} style={{ fontWeight: 600, color: 'var(--secondary)' }}>{t.flightSubtitle}</p>
             <p className={styles.address}>{t.distTime}</p>
-            
+
             <div className={styles.optionBlock}>
               <h4 className={styles.optionTitle}>{t.flightOpt1} <span className={styles.recommended}>★ Recommended</span></h4>
               <p>{t.flightOpt1Desc}</p>
-              <p className={styles.highlight}>{t.fareTime1}</p>
+              <div style={{ marginTop: '0.75rem', padding: '0.75rem', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '8px' }}>
+                <p style={{ margin: 0, fontSize: '0.9rem', color: '#166534', lineHeight: 1.5 }}>
+                  <strong style={{ display: 'block', marginBottom: '0.25rem' }}>{isHi ? '🎉 विशेष ऑफर:' : '🎉 Special Offer:'}</strong>
+                  {isHi ? 'Airport यात्रियों के लिए Aishwarya Cabs द्वारा विशेष एयरपोर्ट ड्रॉप/पिकअप (₹900 + toll) उपलब्ध है।' : 'Aishwarya Cabs offers a special fixed rate (₹900+toll) for airport travelers.'}
+                  <br />
+                  <a href="https://www.aishwaryacabs.in/" target="_blank" rel="noopener noreferrer" style={{ color: '#15803d', textDecoration: 'underline', fontWeight: 600, display: 'inline-block', marginTop: '0.25rem' }}>
+                    {isHi ? 'यहाँ बुक करें' : 'Book Here'}
+                  </a>
+                </p>
+              </div>
+              <p className={styles.highlight} style={{ marginTop: '0.75rem' }}>{t.fareTime1}</p>
             </div>
 
             <div className={styles.optionBlock}>
@@ -240,7 +250,7 @@ function TravelGuideContent() {
               </button>
             ))}
           </div>
-          
+
           <section className={styles.section}>
             <h3 className={styles.sectionTitle}>ℹ️ {t.quickInfo}</h3>
             <div className={styles.tableContainer}>
@@ -276,7 +286,7 @@ function TravelGuideContent() {
           <button onClick={() => setSelectedHub(null)} className={styles.backBtn}>
             ← {isHi ? 'वापस जाएँ (Back to Options)' : 'Back to Options'}
           </button>
-          
+
           {renderSelectedContent()}
         </>
       )}
