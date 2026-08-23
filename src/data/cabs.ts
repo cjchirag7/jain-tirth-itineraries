@@ -9,12 +9,12 @@ export interface CabOption {
 }
 
 const rawCabOptions: CabOption[] = [
-  { vehicleType: 'Innova Crysta', ratePerKm: 17, companyName: 'Bhushan', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 6 },
-  { vehicleType: 'Innova Crysta ac', ratePerKm: 19, companyName: 'Bhushan', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 6 },
-  { vehicleType: 'Etios/Dzire', ratePerKm: 12.5, companyName: 'Bhushan', bataPerDay: 300, contact: '9900206252', priorityOrder: 1, capacity: 4 },
-  { vehicleType: 'Ertiga', ratePerKm: 15, companyName: 'Bhushan', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 7 },
-  { vehicleType: 'Tempo Traveller', ratePerKm: 19.5, companyName: 'Bhushan', bataPerDay: 500, contact: '9900206252', priorityOrder: 1, capacity: 12 },
-  { vehicleType: 'Tempo Traveller ac', ratePerKm: 21.5, companyName: 'Bhushan', bataPerDay: 500, contact: '9900206252', priorityOrder: 1, capacity: 12 },
+  { vehicleType: 'Innova Crysta', ratePerKm: 17, companyName: 'Bhushan Jain', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 6 },
+  { vehicleType: 'Innova Crysta ac', ratePerKm: 19, companyName: 'Bhushan Jain', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 6 },
+  { vehicleType: 'Etios/Dzire', ratePerKm: 12.5, companyName: 'Bhushan Jain', bataPerDay: 300, contact: '9900206252', priorityOrder: 1, capacity: 4 },
+  { vehicleType: 'Ertiga', ratePerKm: 15, companyName: 'Bhushan Jain', bataPerDay: 400, contact: '9900206252', priorityOrder: 1, capacity: 7 },
+  { vehicleType: 'Tempo Traveller', ratePerKm: 19.5, companyName: 'Bhushan Jain', bataPerDay: 500, contact: '9900206252', priorityOrder: 1, capacity: 12 },
+  { vehicleType: 'Tempo Traveller ac', ratePerKm: 21.5, companyName: 'Bhushan Jain', bataPerDay: 500, contact: '9900206252', priorityOrder: 1, capacity: 12 },
 
   { vehicleType: 'Innova Crysta', ratePerKm: 18, companyName: 'Rakesh', bataPerDay: 400, contact: '9741403091', priorityOrder: 2, capacity: 6 },
   { vehicleType: 'Etios/Dzire', ratePerKm: 12, companyName: 'Rakesh', bataPerDay: 350, contact: '9741403091', priorityOrder: 2, capacity: 4 },
