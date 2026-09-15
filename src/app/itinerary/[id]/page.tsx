@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import itinerariesOriginal from '@/data/itineraries.json';
@@ -93,5 +94,9 @@ export default function ItineraryDetails({ params }: { params: { id: string } })
         })),
     };
 
-    return <ItineraryClient itinerary={enrichedItinerary} />;
+    return (
+        <Suspense fallback={<div>Loading itinerary...</div>}>
+            <ItineraryClient itinerary={enrichedItinerary} />
+        </Suspense>
+    );
 }

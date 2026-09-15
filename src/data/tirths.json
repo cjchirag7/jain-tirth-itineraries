@@ -1,19 +1,19 @@
 [
   {
-    "id": "shree-kshetra-arihantagiri",
-    "name": "Shree Kshetra Arihantagiri",
-    "state": "Tamil Nadu",
+    "id": "chandragiri-tirth-dongargarh",
+    "name": "Chandragiri Tirth, Dongargarh",
+    "state": "Chattisgarh",
     "type": "Tirth",
-    "description": "Traces back over 2,300 years to the 2nd Century BCE. Believed to be where the last Shrutkevali Bhadrabahu resided with 8,000 saints for meditation.",
+    "description": "Samadhi Sthali of Acharya Shri Vidhya Sagar Ji Maharaj.",
     "location": {
-      "mapsLink": "https://maps.app.goo.gl/BMY91HTwYJb28bJ6A",
-      "lat": 12.5619055,
-      "lng": 79.2023465
+      "mapsLink": "https://maps.app.goo.gl/8CkZaEDR6F8WRfnV7",
+      "lat": 21.1649481,
+      "lng": 80.7513464
     },
     "howToReach": {
-      "nearestRailway": "Katpadi (42km)",
-      "nearestBusStand": "Polur (10km)",
-      "nearestAirport": "Chennai (155km)"
+      "nearestRailway": "Dongargarh",
+      "nearestBusStand": "Dongargarh",
+      "nearestAirport": "Raipur"
     },
     "facilities": [
       "Dharmshala",
@@ -38,6 +38,29 @@
     ],
     "lastVerified": "2026-03-15T20:18:47.629Z",
     "introText": "Significant Digambar Jain pilgrimage center featuring four temples and a prominent 18-foot high idol of Tirthankar Neminath (Shikhamani Nadar). The complex includes ancient monk caves with rare paintings and carvings."
+  },
+  {
+    "id": "shree-kshetra-arihantagiri",
+    "name": "Shree Kshetra Arihantagiri",
+    "state": "Tamil Nadu",
+    "type": "Tirth",
+    "description": "Traces back over 2,300 years to the 2nd Century BCE. Believed to be where the last Shrutkevali Bhadrabahu resided with 8,000 saints for meditation.",
+    "location": {
+      "mapsLink": "https://maps.app.goo.gl/BMY91HTwYJb28bJ6A",
+      "lat": 12.5619055,
+      "lng": 79.2023465
+    },
+    "howToReach": {
+      "nearestRailway": "Katpadi (42km)",
+      "nearestBusStand": "Polur (10km)",
+      "nearestAirport": "Chennai (155km)"
+    },
+    "facilities": [
+      "Dharmshala",
+      "Bhojanshala"
+    ],
+    "lastVerified": "2026-09-15T20:18:47.629Z",
+    "introText": "Built on Chandragiri hill, away from town noise.  Features an ancient idol of the Jain Tirthankara Lord Chandraprabhu, alongside a large 21-foot-tall statue."
   },
   {
     "id": "arihanthgiri-ancient-mountain-temples",

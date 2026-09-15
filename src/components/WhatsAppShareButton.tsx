@@ -7,7 +7,8 @@ interface WhatsAppShareButtonProps {
 export default function WhatsAppShareButton({ title }: WhatsAppShareButtonProps) {
     const handleWhatsAppShare = () => {
         const url = window.location.href;
-        const text = `Check out this Tirth Yatra itinerary: *${title}*\n\n${url}`;
+        const isCustom = url.includes('?c=') || url.includes('&c=');
+        const text = `Check out this ${isCustom ? 'customized ' : ''}Tirth Yatra itinerary: *${title}*\n\n${url}`;
         const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
         window.open(whatsappUrl, '_blank');
     };

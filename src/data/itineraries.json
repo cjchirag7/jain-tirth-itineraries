@@ -743,11 +743,17 @@
     ],
     "author": "Chirag Jain",
     "authorInstagram": "https://instagram.com/cjchirag7",
-    "description": "A deep exploration of Jainism in Madhya Pradesh, including the magnificent Kundalpur Bade Baba and Ramtek. The pilgrimage starts from Nagpur and ends at Jabalpur",
+    "description": "A deep exploration of Jainism in Madhya Pradesh, including the magnificent Kundalpur Bade Baba and Ramtek. The pilgrimage starts from Dongargarh and ends at Jabalpur",
     "days": [
       {
         "day": 1,
         "stops": [
+          {
+            "tirthId": "chandragiri-tirth-dongargarh",
+            "name": "Chandragiri Tirth, Dongargarh",
+            "type": "Tirth",
+            "description": "Samadhi Sthali of Acharya Shri Vidhya Sagar Ji Maharaj."
+          },
           {
             "tirthId": "ramtek-jain-temples",
             "name": "Ramtek Jain Temples",
@@ -874,8 +880,8 @@
       "Dharmshala",
       "Bhojanshala"
     ],
-    "startingCity": "Nagpur",
-    "endingCity": "Nagpur"
+    "startingCity": "Dongargarh",
+    "endingCity": "Jabalpur"
   },
   {
     "id": "mandargiri-shravanabelgola-circuit",

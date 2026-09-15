@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import styles from './page.module.css';
 import WhatsAppShareButton from '@/components/WhatsAppShareButton';
 import MapEmbed from '@/components/MapEmbed';
@@ -38,10 +39,167 @@ interface ItineraryClientProps {
 }
 
 export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
+    const router = useRouter();
+    const pathname = usePathname();
+    const searchParams = useSearchParams();
+
     const [startLocation, setStartLocation] = useState('');
     const [endLocation, setEndLocation] = useState('');
     const [showHint, setShowHint] = useState(false);
     const [expandedContacts, setExpandedContacts] = useState<Record<string, boolean>>({});
+
+    // --- Customization State ---
+    const [isEditing, setIsEditing] = useState(false);
+
+    const parseCustomUrl = () => {
+        const cParam = searchParams.get('c');
+        if (!cParam) return null;
+        
+        const days = cParam.split('~');
+        return days.map(dayStr => {
+            if (!dayStr) return [];
+            return dayStr.split('-').map(stopRef => {
+                const [d, s] = stopRef.split('_').map(Number);
+                return { originalDay: d, originalStop: s };
+            });
+        });
+    };
+
+    const getInitialDays = () => {
+        const customStructure = parseCustomUrl();
+        if (customStructure) {
+            return customStructure.map((dayRef, index) => {
+                const stops = dayRef.map(ref => {
+                    const originalDay = itinerary.days[ref.originalDay];
+                    const originalStop = originalDay ? originalDay.stops[ref.originalStop] : null;
+                    if (originalStop) {
+                        return { ...originalStop, _ref: `${ref.originalDay}_${ref.originalStop}` };
+                    }
+                    return null;
+                }).filter(Boolean) as any[];
+                
+                return {
+                    day: index + 1,
+                    stops
+                };
+            });
+        }
+        
+        return itinerary.days.map((day, dIdx) => ({
+            ...day,
+            stops: day.stops.map((stop, sIdx) => ({
+                ...stop,
+                _ref: `${dIdx}_${sIdx}`
+            }))
+        }));
+    };
+
+    const [activeDays, setActiveDays] = useState(getInitialDays());
+    const [editableDays, setEditableDays] = useState(activeDays);
+    
+    const daysToRender = isEditing ? editableDays : activeDays;
+
+    useEffect(() => {
+        const newActiveDays = getInitialDays();
+        setActiveDays(newActiveDays);
+        if (!isEditing) {
+            setEditableDays(newActiveDays);
+        }
+    }, [itinerary, searchParams, isEditing]); // Ensure activeDays updates when URL changes
+
+    const handleApplyChanges = () => {
+        const filteredDays = editableDays.filter(day => day.stops.length > 0);
+        
+        const cParam = filteredDays.map(day => {
+            return day.stops.map((stop: any) => stop._ref).join('-');
+        }).join('~');
+        
+        const params = new URLSearchParams(searchParams.toString());
+        if (cParam) {
+            params.set('c', cParam);
+        } else {
+            params.delete('c');
+        }
+        
+        router.push(`${pathname}?${params.toString()}`, { scroll: false });
+        setIsEditing(false);
+    };
+
+    const moveStop = (dayIdx: number, stopIdx: number, direction: 'up' | 'down') => {
+        const newDays = [...editableDays];
+        const dayStops = [...newDays[dayIdx].stops];
+        if (direction === 'up' && stopIdx > 0) {
+            const temp = dayStops[stopIdx];
+            dayStops[stopIdx] = dayStops[stopIdx - 1];
+            dayStops[stopIdx - 1] = temp;
+        } else if (direction === 'down' && stopIdx < dayStops.length - 1) {
+            const temp = dayStops[stopIdx];
+            dayStops[stopIdx] = dayStops[stopIdx + 1];
+            dayStops[stopIdx + 1] = temp;
+        }
+        newDays[dayIdx].stops = dayStops;
+        setEditableDays(newDays);
+    };
+
+    const moveStopDay = (dayIdx: number, stopIdx: number, direction: 'prev' | 'next') => {
+        const newDays = [...editableDays];
+        const targetDayIdx = direction === 'prev' ? dayIdx - 1 : dayIdx + 1;
+        
+        if (targetDayIdx >= 0 && targetDayIdx < newDays.length) {
+            const stop = newDays[dayIdx].stops[stopIdx];
+            newDays[dayIdx].stops = newDays[dayIdx].stops.filter((_, i) => i !== stopIdx);
+            
+            if (direction === 'prev') {
+                newDays[targetDayIdx].stops = [...newDays[targetDayIdx].stops, stop];
+            } else {
+                newDays[targetDayIdx].stops = [stop, ...newDays[targetDayIdx].stops];
+            }
+            setEditableDays(newDays);
+        }
+    };
+
+    const removeStop = (dayIdx: number, stopIdx: number) => {
+        const newDays = [...editableDays];
+        newDays[dayIdx].stops = newDays[dayIdx].stops.filter((_, i) => i !== stopIdx);
+        setEditableDays(newDays);
+    };
+
+    const reverseItinerary = () => {
+        const newDays = [...editableDays].reverse().map((day, idx) => ({
+            ...day,
+            day: idx + 1,
+            stops: [...day.stops].reverse()
+        }));
+        setEditableDays(newDays);
+    };
+
+    const getRemovedStops = () => {
+        const activeRefs = new Set(editableDays.flatMap(d => d.stops.map(s => s._ref)));
+        const removed: any[] = [];
+        
+        itinerary.days.forEach((day, dIdx) => {
+            day.stops.forEach((stop, sIdx) => {
+                const ref = `${dIdx}_${sIdx}`;
+                if (!activeRefs.has(ref)) {
+                    removed.push({ ...stop, _ref: ref });
+                }
+            });
+        });
+        return removed;
+    };
+
+    const removedStops = isEditing ? getRemovedStops() : [];
+
+    const restoreStop = (stopToRestore: any) => {
+        const newDays = [...editableDays];
+        if (newDays.length === 0) {
+            newDays.push({ day: 1, stops: [stopToRestore] });
+        } else {
+            newDays[newDays.length - 1].stops.push(stopToRestore);
+        }
+        setEditableDays(newDays);
+    };
+    // --- End Customization State ---
 
     const toggleContacts = (stopId: string) => {
         setExpandedContacts(prev => ({
@@ -51,17 +209,26 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
     };
 
     useEffect(() => {
+        const urlStart = searchParams.get('start');
+        const urlEnd = searchParams.get('end');
+        
         const savedStart = localStorage.getItem('userStartingLocation');
         const savedEnd = localStorage.getItem('userEndingLocation');
         const hasSeenHint = localStorage.getItem('hasSeenLocationHint');
         
-        if (savedStart) {
+        if (urlStart) {
+            setStartLocation(urlStart);
+            localStorage.setItem('userStartingLocation', urlStart);
+        } else if (savedStart) {
             setStartLocation(savedStart);
         } else if (itinerary.startingCity) {
             setStartLocation(itinerary.startingCity);
         }
 
-        if (savedEnd) {
+        if (urlEnd) {
+            setEndLocation(urlEnd);
+            localStorage.setItem('userEndingLocation', urlEnd);
+        } else if (savedEnd) {
             setEndLocation(savedEnd);
         } else if (itinerary.endingCity || itinerary.startingCity) {
             setEndLocation(itinerary.endingCity || itinerary.startingCity || 'Bangalore, Karnataka, India');
@@ -71,10 +238,9 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
             setShowHint(true);
         }
 
-        // Expand all accordions before printing
         const handleBeforePrint = () => {
             const newExpanded: Record<string, boolean> = {};
-            itinerary.days.forEach((day, dayIndex) => {
+            daysToRender.forEach((day, dayIndex) => {
                 day.stops.forEach((stop, index) => {
                     if (stop.tirth && stop.tirth.contacts && stop.tirth.contacts.length > 0) {
                         newExpanded[`${dayIndex}-${index}`] = true;
@@ -86,7 +252,40 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
 
         window.addEventListener('beforeprint', handleBeforePrint);
         return () => window.removeEventListener('beforeprint', handleBeforePrint);
-    }, [itinerary]);
+    }, [itinerary]); // Run once on mount
+
+    // Sync locations to URL
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            const params = new URLSearchParams(searchParams.toString());
+            let changed = false;
+            
+            if (startLocation) {
+                if (params.get('start') !== startLocation) {
+                    params.set('start', startLocation);
+                    changed = true;
+                }
+            } else if (params.has('start')) {
+                params.delete('start');
+                changed = true;
+            }
+            
+            if (endLocation) {
+                if (params.get('end') !== endLocation) {
+                    params.set('end', endLocation);
+                    changed = true;
+                }
+            } else if (params.has('end')) {
+                params.delete('end');
+                changed = true;
+            }
+
+            if (changed) {
+                router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+            }
+        }, 500);
+        return () => clearTimeout(timeoutId);
+    }, [startLocation, endLocation, pathname, router, searchParams]);
 
     const dismissHint = () => {
         setShowHint(false);
@@ -172,6 +371,29 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
 
                 <div className={styles.actionButtons}>
                     <WhatsAppShareButton title={itinerary.title} />
+                    {!isEditing ? (
+                        <button 
+                            onClick={() => {
+                                setIsEditing(true);
+                                setEditableDays(activeDays);
+                            }} 
+                            className={styles.customizeBtn}
+                        >
+                            ✏️ Customize Itinerary
+                        </button>
+                    ) : (
+                        <>
+                            <button onClick={reverseItinerary} className={styles.customizeBtn} title="Reverse order of days and stops">
+                                🔄 Reverse
+                            </button>
+                            <button onClick={handleApplyChanges} className={styles.applyBtn}>
+                                ✅ Apply
+                            </button>
+                            <button onClick={() => setIsEditing(false)} className={styles.cancelBtn}>
+                                ❌ Cancel
+                            </button>
+                        </>
+                    )}
                     <button 
                         onClick={async (e) => {
                             const btn = e.currentTarget;
@@ -243,10 +465,10 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {itinerary.days.map((day, dayIndex) => {
+                                        {daysToRender.map((day, dayIndex) => {
                                             const lastStop = day.stops[day.stops.length - 1];
                                             const dharmshalaStop = lastStop && (lastStop.type === 'Dharmshala' || lastStop.facilities?.includes('Dharmshala')) ? lastStop : null;
-                                            const isLastDay = dayIndex === itinerary.days.length - 1;
+                                            const isLastDay = dayIndex === daysToRender.length - 1;
 
                                             return (
                                                 <tr key={day.day}>
@@ -389,8 +611,8 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
             </div>
 
             <div className={styles.timeline}>
-                {itinerary.days.map((day, dayIndex) => {
-                    const prevDayStops = dayIndex > 0 ? itinerary.days[dayIndex - 1].stops : [];
+                {daysToRender.map((day, dayIndex) => {
+                    const prevDayStops = dayIndex > 0 ? daysToRender[dayIndex - 1].stops : [];
                     const lastStop = prevDayStops.length > 0 ? prevDayStops[prevDayStops.length - 1] : undefined;
                     const previousDayLastStop = lastStop ? { name: lastStop.name, lat: lastStop.lat, lng: lastStop.lng } : undefined;
 
@@ -403,7 +625,7 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                 states={itinerary.states}
                                 previousDayLastStop={previousDayLastStop}
                                 startLocation={dayIndex === 0 ? startLocation : undefined}
-                                endLocation={dayIndex === itinerary.days.length - 1 ? endLocation : undefined}
+                                endLocation={dayIndex === daysToRender.length - 1 ? endLocation : undefined}
                             />
                             <div className={styles.stopsList}>
                                 {day.stops.map((stop, index) => {
@@ -430,6 +652,15 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
 
                                     return (
                                         <div key={index} id={`stop-${dayIndex}-${index}`} className={styles.stopCard}>
+                                            {isEditing && (
+                                                <div className={styles.editControls}>
+                                                    <button onClick={() => moveStop(dayIndex, index, 'up')} disabled={index === 0} title="Move Up">⬆️</button>
+                                                    <button onClick={() => moveStop(dayIndex, index, 'down')} disabled={index === day.stops.length - 1} title="Move Down">⬇️</button>
+                                                    <button onClick={() => moveStopDay(dayIndex, index, 'prev')} disabled={dayIndex === 0} title="Move to Previous Day">⬅️</button>
+                                                    <button onClick={() => moveStopDay(dayIndex, index, 'next')} disabled={dayIndex === daysToRender.length - 1} title="Move to Next Day">➡️</button>
+                                                    <button onClick={() => removeStop(dayIndex, index)} title="Remove Stop" className={styles.removeBtn}>❌</button>
+                                                </div>
+                                            )}
                                             <div className={styles.stopHeader}>
                                                 <h3 className={styles.stopName}>
                                                     {index + 1}. {stop.name}
@@ -437,9 +668,9 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                                 <span className={styles.stopType}>{stop.type}</span>
                                             </div>
 
-                                            {stop.facilities.length > 0 && (
+                                            {stop.facilities?.length > 0 && (
                                                 <div className={styles.facilities}>
-                                                    {stop.facilities.map((fac) => (
+                                                    {stop.facilities.map((fac: string) => (
                                                         <span key={fac} className={styles.facilityTag}>
                                                             {fac === 'Bhojanshala' ? '🍽️' : '🏨'} {fac}
                                                         </span>
@@ -496,7 +727,7 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                                                 >
                                                     Get Directions ↗
                                                 </a>
-                                                {dayIndex === itinerary.days.length - 1 && index === day.stops.length - 1 && (
+                                                {dayIndex === daysToRender.length - 1 && index === day.stops.length - 1 && (
                                                     <a
                                                         href={`https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(dest)}&destination=${encodeURIComponent(endLocation || 'My+Location')}`}
                                                         target="_blank"
@@ -539,6 +770,26 @@ export default function ItineraryClient({ itinerary }: ItineraryClientProps) {
                     );
                 })}
             </div>
+
+            {isEditing && removedStops.length > 0 && (
+                <div className={styles.removedSection}>
+                    <h2 className={styles.removedTitle}>🗑️ Removed Places</h2>
+                    <p className={styles.removedSubtitle}>Click "Add Back" to restore these places to the end of your itinerary.</p>
+                    <div className={styles.removedStopsList}>
+                        {removedStops.map((stop, idx) => (
+                            <div key={idx} className={styles.removedStopCard}>
+                                <div className={styles.removedStopInfo}>
+                                    <h4 className={styles.stopName}>{stop.name}</h4>
+                                    <span className={styles.stopType}>{stop.type}</span>
+                                </div>
+                                <button onClick={() => restoreStop(stop)} className={styles.restoreBtn}>
+                                    ➕ Add Back
+                                </button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
